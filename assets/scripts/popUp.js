@@ -1,4 +1,3 @@
-
 var plot = require("plot");
 
 cc.Class({

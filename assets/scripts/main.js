@@ -1,4 +1,5 @@
 var Story = require('story');
+var Pop = require('popUp')
 cc.Class({
     extends: cc.Component,
 
@@ -18,6 +19,10 @@ cc.Class({
         Story:{
             default: null,
             type: Story
+        },
+        Pop:{
+            default: null,
+            type: Pop
         }
     },
 

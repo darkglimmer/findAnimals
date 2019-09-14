@@ -2,7 +2,11 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        button: {
+        BtnClose: {
+            default: null,
+            type: cc.Button
+        },
+        BtnInfo:{
             default: null,
             type: cc.Button
         },
@@ -17,7 +21,8 @@ cc.Class({
     },
 
     onLoad () {
-        this.readme.active = 0
+        this.readme.active = false
+        this.BtnClose.node.active = false
     },
 
     start () {
@@ -26,7 +31,18 @@ cc.Class({
 
 
     showReadme: function (event) {
-        this.readme.active = 1;
+        this.readme.active = true;
+        this.BtnClose.node.active = true
+        if (this.readme.active) {
+            this.mask.on('touchstart', emptyFunc, this);
+        } else {
+            this.mask.off('touchstart', emptyFunc, this);
+        }
+    },
+
+    closeReadme: function (event) {
+        this.readme.active = false;
+        this.BtnClose.node.active = false;
         if (this.readme.active) {
             this.mask.on('touchstart', emptyFunc, this);
         } else {
