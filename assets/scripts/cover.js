@@ -21,7 +21,7 @@ cc.Class({
     },
 
     callback: function(){
-        cc.director.loadScene("main");
+        cc.director.loadScene("selectMode");
     }
 
     // update (dt) {},
