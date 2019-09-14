@@ -1,3 +1,4 @@
+var Story = require('story');
 cc.Class({
     extends: cc.Component,
 
@@ -8,26 +9,54 @@ cc.Class({
         },
         FGRight:{
             default: null,
-            type: cc.Sprite
+            type: cc.Node
         },
         BGImage:{
             default: null,
-            type: cc.Sprite
+            type: cc.Node
+        },
+        Story:{
+            default: null,
+            type: Story
         }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        cc.loader.loadRes("images/zt1", function(err, img){
-            console.log('?');
-            this.FGLeft.spriteFrame = cc.instantiate(img);
-        })
+        var self = this;
+        cc.loader.loadRes("images/zt1", cc.SpriteFrame, function (err, spriteFrame) {
+            self.FGLeft.spriteFrame = spriteFrame;
+        });
+        this.node.on('onclick', function (event) {
+            event.stopPropagation();
+            // console.log(self.Story.change);
+            const change = self.Story.change;
+            console.log(change);
+            if(change){
+                let url = 'zt'
+                switch (change[0]){
+                    case 'normal': {
+                        url += '1';
+                        break;
+                    }
+                    case 'smile': {
+                        url += '2';
+                        break;
+                    }
+                }
+                cc.loader.loadRes(`images/${url}`, cc.SpriteFrame, function (err, spriteFrame) {
+                    self.FGLeft.spriteFrame = spriteFrame;
+                });
+            }else{
+                console.log('change is undefined');
+            }
+        });
+        // this.button.node.on('click', this.callback, this);
     },
 
     start () {
 
     },
-
     // update (dt) {},
 });
