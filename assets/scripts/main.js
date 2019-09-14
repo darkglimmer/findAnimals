@@ -30,7 +30,6 @@ cc.Class({
         });
         this.node.on('onclick', function (event) {
             event.stopPropagation();
-            // console.log(self.Story.change);
             const change = self.Story.change;
             console.log(change);
             if(change){
