@@ -14,7 +14,6 @@ cc.Class({
             default: null,
             type: cc.Sprite
         }
-
     },
 
     // LIFE-CYCLE CALLBACKS:
