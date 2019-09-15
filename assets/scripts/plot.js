@@ -5,6 +5,10 @@ var imgControl = {
     3: ['smile'],
     5: ['normal']
 }
+var popControl = {
+    2: "为什么呢？",
+    4: "他去哪了"
+}
 
 module.exports={
     story:[
@@ -14,5 +18,6 @@ module.exports={
         "咦，这是什么？",
         "啊，是师父给我的信！",
     ],
-    imgControl: imgControl
+    imgControl: imgControl,
+    popControl: popControl 
 }

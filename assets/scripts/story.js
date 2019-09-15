@@ -8,7 +8,8 @@ cc.Class({
         plotNum: 0,
         richTextInfo: cc.RichText,
         change: [],
-        mask:{
+        ifPop: [],
+        readme:{
             default: null,
             type: cc.Node
         }
@@ -29,7 +30,8 @@ cc.Class({
 
     onClick: function() {
         this.change = plot.imgControl[this.plotNum];
-        if(this.mask.active === false){
+        this.ifPop = plot.popControl[this.plotNum];
+        if(this.readme.active === false){
             this.node.dispatchEvent( new cc.Event.EventCustom('onclick', true) );
             this.nextText();
         }
