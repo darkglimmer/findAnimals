@@ -12,11 +12,11 @@ var popControl = {
 
 module.exports={
     story:[
-        "hello，我是<color=#ff00ff>甄探</color>，是一名初出茅庐的见习侦探",
+        "hello，我是<color=#495A80>甄探</color>，是一名初出茅庐的见习侦探",
         "最近师父有事出差了，留我一个人在事务所里无所事事。",
         "好无聊啊——！",
         "咦，这是什么？",
-        "啊，是师父给我的信！",
+        "啊，是<color=#FE4C40>师父给我的信！</color>",
     ],
     imgControl: imgControl,
     popControl: popControl 
