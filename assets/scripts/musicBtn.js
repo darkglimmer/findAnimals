@@ -12,7 +12,7 @@ cc.Class({
     onLoad () {
         // if(this.node._name == 'musicBtn'){
             let changeImg = 0;
-            let button = this.node.getComponent(cc.Sprite);
+            let button = this.node.getComponent(cc.Button);
             let audioID = cc.audioEngine.playMusic(this.audio, false);
             this.node.on(cc.Node.EventType.MOUSE_DOWN, function(){
                 //切换音乐状态
@@ -32,15 +32,15 @@ cc.Class({
                     musicImg = 'musicBtn';
                     changeImg = 0;
                 }
-                cc.loader.loadRes("resources/images/UI/" + musicImg + ".png", cc.SpriteFrame, function (err, spriteFrame) {
-                    button.spriteFrame = spriteFrame;
+                cc.loader.loadRes("images/UI/" + musicImg, cc.SpriteFrame, function (err, spriteFrame) {
+                    button.normalSprite = spriteFrame;
                 });
-                // cc.loader.loadRes("resources/images/UI/" + musicImg + ".png", cc.SpriteFrame, function (err, spriteFrame) {
-                //     button.pressedSprite = spriteFrame;
-                // });
-                // cc.loader.loadRes("resources/images/UI/" + musicImg + "Hover.png", cc.SpriteFrame, function (err, spriteFrame) {
-                //     button.hoverSprite = spriteFrame;
-                // });
+                cc.loader.loadRes("images/UI/" + musicImg, cc.SpriteFrame, function (err, spriteFrame) {
+                    button.pressedSprite = spriteFrame;
+                });
+                cc.loader.loadRes("images/UI/" + musicImg + "Hover", cc.SpriteFrame, function (err, spriteFrame) {
+                    button.hoverSprite = spriteFrame;
+                });
                 
             }, this)
             cc.game.addPersistRootNode(this.node);

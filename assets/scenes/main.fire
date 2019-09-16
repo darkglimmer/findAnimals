@@ -517,11 +517,13 @@
     },
     "_enabled": true,
     "_fontFamily": "Arial",
-    "_isSystemFontUsed": true,
+    "_isSystemFontUsed": false,
     "_N$string": "",
     "_N$horizontalAlign": 0,
-    "_N$fontSize": 26,
-    "_N$font": null,
+    "_N$fontSize": 28,
+    "_N$font": {
+      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
+    },
     "_N$maxWidth": 700,
     "_N$lineHeight": 50,
     "_N$imageAtlas": null,
@@ -594,7 +596,7 @@
         "__id__": 35
       }
     ],
-    "_active": true,
+    "_active": false,
     "_level": 2,
     "_components": [],
     "_prefab": null,
