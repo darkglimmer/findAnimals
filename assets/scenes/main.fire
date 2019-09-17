@@ -20,7 +20,7 @@
         "__id__": 14
       }
     ],
-    "_active": true,
+    "_active": false,
     "_level": 0,
     "_components": [],
     "_prefab": null,
@@ -78,13 +78,13 @@
       }
     ],
     "_active": true,
-    "_level": 0,
+    "_level": 1,
     "_components": [
       {
-        "__id__": 48
+        "__id__": 46
       },
       {
-        "__id__": 49
+        "__id__": 47
       }
     ],
     "_prefab": null,
@@ -328,16 +328,13 @@
       },
       {
         "__id__": 39
-      },
-      {
-        "__id__": 45
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 47
+        "__id__": 45
       }
     ],
     "_prefab": null,
@@ -1952,75 +1949,6 @@
     "_id": "923syn8+tFTJb9QChg11DZ"
   },
   {
-    "__type__": "cc.Node",
-    "_name": "star",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 7
-    },
-    "_children": [],
-    "_active": true,
-    "_level": 2,
-    "_components": [
-      {
-        "__id__": 46
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "_id": "a0B/MoXQhB74F3M2ZQjmR9"
-  },
-  {
-    "__type__": "674264MiZNOvqjxmQpfQo1d",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 45
-    },
-    "_enabled": true,
-    "score": 2,
-    "_id": "d57va2Pl1LfIjw6utLYzKd"
-  },
-  {
     "__type__": "8707bdKXVRALb/BZEmkXdsC",
     "_name": "",
     "_objFlags": 0,
@@ -2070,6 +1998,10 @@
     "FGLeft": {
       "__id__": 6
     },
+    "star": {
+      "__uuid__": "59d433d1-4fdc-498f-aa0e-5f294ea1aa5a"
+    },
+    "score": 2,
     "FGRight": null,
     "BGImage": null,
     "Story": {

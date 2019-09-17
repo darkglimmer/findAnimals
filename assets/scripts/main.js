@@ -7,6 +7,11 @@ cc.Class({
             default: null,
             type: cc.Sprite
         },
+        star: {
+            default: null,
+            type: cc.Prefab
+        },
+        score: 2,
         FGRight:{
             default: null,
             type: cc.Node
@@ -51,5 +56,20 @@ cc.Class({
         //         console.log('change is undefined');
         //     }
         // });
-    }
+        this.spawnNewStar();
+    },
+    spawnNewStar () {
+        for(var i = 0; i < this.score; i++){
+            var newStar = cc.instantiate(this.star);
+            // 将新增的节点添加到 Canvas 节点下面
+            this.node.addChild(newStar);
+            // 为星星设置一个随机位置
+            newStar.setPosition(this.getNewStarPosition(i));
+        }
+    },
+    getNewStarPosition : function(i) {
+        var positionX = (i-3.5) * 100;
+        var positionY = 250;
+        return cc.v2(positionX, positionY);
+    },
 });
