@@ -7,6 +7,11 @@ cc.Class({
             default: null,
             type: cc.Sprite
         },
+        star: {
+            default: null,
+            type: cc.Prefab
+        },
+        score: 2,
         FGRight:{
             default: null,
             type: cc.Node
