@@ -24,7 +24,7 @@ cc.Class({
         var self = this
         this.pop.active = false
         this.node.on('onclick', function (event) {
-            event.stopPropagation();
+            // event.stopPropagation();
             const ifPop= self.Story.ifPop
             if(ifPop){
                 self.pop.active = true
