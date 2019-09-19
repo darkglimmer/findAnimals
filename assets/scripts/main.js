@@ -30,30 +30,38 @@ cc.Class({
 
     onLoad () {
         let self = this;
+        let change2prop = ['FGLeft', 'FGRight', 'BGImage', 'otherImg'];
         cc.loader.loadRes("images/character/ztNormal", cc.SpriteFrame, function (err, spriteFrame) {
             self.FGLeft.spriteFrame = spriteFrame;
         });
         this.node.on('onclick', function (event) {
             event.stopPropagation();
             const change = self.Story.changeImg;
+            
             if(change){
-                let url = 'zt'
-                switch (change[0]){
-                    case 'normal': {
-                        url += 'Normal';
-                        break;
-                    }
-                    case 'smile': {
-                        url += 'Smile';
-                        break;
-                    }
+                for(let i in change){
+                    this.changeFGImg('zt', change[0], change2prop[i]);
                 }
-                cc.loader.loadRes(`images/character/${url}`, cc.SpriteFrame, function (err, spriteFrame) {
-                    self.FGLeft.spriteFrame = spriteFrame;
-                });
             }else{
                 console.log('change is undefined');
             }
+        }, this);
+    },
+
+    changeFGImg: function(imgName, change, prop){
+        switch (change){
+            case 'normal': {
+                imgName += 'Normal';
+                break;
+            }
+            case 'smile': {
+                imgName += 'Smile';
+                break;
+            }
+        }
+        let self = this;
+        cc.loader.loadRes(`images/character/${imgName}`, cc.SpriteFrame, function (err, spriteFrame) {
+            self[`${prop}`].spriteFrame = spriteFrame;
         });
     }
 });
