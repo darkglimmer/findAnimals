@@ -25,7 +25,7 @@ cc.Class({
 
     onLoad () {
         let self = this;
-        cc.loader.loadRes("images/zt1", cc.SpriteFrame, function (err, spriteFrame) {
+        cc.loader.loadRes("images/character/ztNormal", cc.SpriteFrame, function (err, spriteFrame) {
             self.FGLeft.spriteFrame = spriteFrame;
         });
         this.node.on('onclick', function (event) {
@@ -35,15 +35,15 @@ cc.Class({
                 let url = 'zt'
                 switch (change[0]){
                     case 'normal': {
-                        url += '1';
+                        url += 'Normal';
                         break;
                     }
                     case 'smile': {
-                        url += '2';
+                        url += 'Smile';
                         break;
                     }
                 }
-                cc.loader.loadRes(`images/${url}`, cc.SpriteFrame, function (err, spriteFrame) {
+                cc.loader.loadRes(`images/character/${url}`, cc.SpriteFrame, function (err, spriteFrame) {
                     self.FGLeft.spriteFrame = spriteFrame;
                 });
             }else{
