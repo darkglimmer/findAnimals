@@ -7,7 +7,7 @@ cc.Class({
     properties: {
         plotNum: 0,
         richTextInfo: cc.RichText,
-        changeImg: [],
+        change: [],
         ifPop: [],
         readme:{
             default: null,
@@ -35,7 +35,7 @@ cc.Class({
     // update (dt) {},
 
     onClick: function() {
-        this.changeImg = plot.imgControl[this.plotNum];
+        this.change = plot.control[this.plotNum];
         this.ifPop = plot.popControl[this.plotNum];
         if(this.readme.active === false){
             this.node.dispatchEvent(new cc.Event.EventCustom('onclick', true));
@@ -44,6 +44,9 @@ cc.Class({
     },
     
     nextText: function() {
+        if(this.change && this.change[4]){
+            return ;
+        }
         let textArr = plot.story[this.plotNum++].split('@');
         
         if(this.leftActive === true ){
