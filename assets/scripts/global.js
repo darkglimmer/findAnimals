@@ -9,7 +9,9 @@ var collection = {
     "yyy": true,
 };
 
+
 module.exports={
     process: process,
-    collection: collection
+    collection: collection,
+    animalTest: '',
 }

@@ -1,4 +1,6 @@
+//加载组件作为type
 var Story = require('story');
+var global = require('global')
 cc.Class({
     extends: cc.Component,
 
@@ -29,6 +31,9 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        if(global.process == 15){
+            this.changeScene('test');
+        }
         let self = this;
         let change2prop = ['FGLeft', 'FGRight', 'BGImage', 'otherImg'];
         this.node.on('onclick', function (event) {

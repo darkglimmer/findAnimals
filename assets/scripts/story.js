@@ -1,5 +1,6 @@
 
 var plot = require("plot");
+var global = require("global")
 
 cc.Class({
     extends: cc.Component,
@@ -35,8 +36,8 @@ cc.Class({
     // update (dt) {},
 
     onClick: function() {
-        this.change = plot.control[this.plotNum];
-        this.ifPop = plot.popControl[this.plotNum];
+        this.change = plot.control[global.process];
+        this.ifPop = plot.popControl[global.process];
         if(this.readme.active === false){
             this.node.dispatchEvent(new cc.Event.EventCustom('onclick', true));
             this.nextText();
@@ -47,7 +48,7 @@ cc.Class({
         if(this.change && this.change[4]){
             return ;
         }
-        let textArr = plot.story[this.plotNum++].split('@');
+        let textArr = plot.story[global.process++].split('@');
         
         if(this.leftActive === true ){
             this.changeName(this.LNameLabel, this.RNameLabel, textArr[0]);

@@ -1,4 +1,4 @@
-
+var global = require("global");
 cc.Class({
     extends: cc.Component,
 
@@ -16,8 +16,8 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.detectModeBtn.node.on('click', this.detectMode, this);
-        this.normalModeBtn.node.on('click', this.normalMode, this);
+        this.detectModeBtn.node.on(cc.Node.EventType.MOUSE_DOWN, this.detectMode, this);
+        this.normalModeBtn.node.on(cc.Node.EventType.MOUSE_DOWN, this.normalMode, this);
     },
 
     start () {
@@ -25,11 +25,13 @@ cc.Class({
     },
 
     detectMode: function(){
+        global.process = 0;
         cc.director.loadScene("main");
     },
 
     normalMode: function(){
-        // cc.director.loadScene("main");
+        global.process = 15;
+        cc.director.loadScene("main");
     }
     // update (dt) {},
 });

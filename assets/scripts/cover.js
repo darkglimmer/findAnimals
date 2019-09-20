@@ -12,7 +12,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.startBtn.node.on('click', this.callback, this);
+        this.startBtn.node.on(cc.Node.EventType.MOUSE_DOWN, this.callback, this);
         
     },
 

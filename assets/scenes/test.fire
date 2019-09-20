@@ -17,10 +17,13 @@
         "__id__": 2
       },
       {
-        "__id__": 24
+        "__id__": 23
       },
       {
-        "__id__": 28
+        "__id__": 27
+      },
+      {
+        "__id__": 51
       }
     ],
     "_active": true,
@@ -81,10 +84,10 @@
     "_level": 0,
     "_components": [
       {
-        "__id__": 22
+        "__id__": 49
       },
       {
-        "__id__": 23
+        "__id__": 50
       }
     ],
     "_prefab": null,
@@ -168,7 +171,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 0
+      "z": 554.2562584220408
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -261,6 +264,9 @@
       },
       {
         "__id__": 21
+      },
+      {
+        "__id__": 22
       }
     ],
     "_prefab": null,
@@ -334,7 +340,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 670.08,
+      "width": 676.68,
       "height": 65.52
     },
     "_anchorPoint": {
@@ -365,7 +371,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c0etmMpkBB/K+Wged6cGBM"
+    "_id": "55nEvOJgBN/awmCtcHJXSs"
   },
   {
     "__type__": "cc.Label",
@@ -386,10 +392,8 @@
     "_fontSize": 30,
     "_lineHeight": 52,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 0,
@@ -397,7 +401,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "84TgDVaPxJ7qnMWvIa5gMn"
+    "_id": "6cn6Y5ITpKfLzx/TVZckWv"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -456,7 +460,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "18pG9hyGZNyrr+hoIiLDXq"
+    "_id": "9bPbhuQSdA+Zgo/H5/axqI"
   },
   {
     "__type__": "cc.Label",
@@ -477,10 +481,8 @@
     "_fontSize": 30,
     "_lineHeight": 52,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 0,
@@ -488,7 +490,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "c9tBVGTr1N35GcVxA8U+lI"
+    "_id": "35tU00qolJ7Y3K608BKK8w"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -547,7 +549,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "8fjFiakXxEv61bAdFmuZWE"
+    "_id": "d1qSycw4xGN6MNPyysdqwq"
   },
   {
     "__type__": "cc.Label",
@@ -568,10 +570,8 @@
     "_fontSize": 30,
     "_lineHeight": 52,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 0,
@@ -579,7 +579,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "5dM3zwG+1IypT67jL5lBei"
+    "_id": "09ClBXnCZOJpBiMvJkWA11"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -638,7 +638,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "74Swlg5gtOwbumBSjrPBQK"
+    "_id": "79lHLDWLBPNLEb2/QFHpzR"
   },
   {
     "__type__": "cc.Label",
@@ -659,10 +659,8 @@
     "_fontSize": 30,
     "_lineHeight": 52,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 0,
@@ -670,7 +668,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d2ktHCTBZOTYJsDiZf1sUy"
+    "_id": "d2MT/0YbJLG7qz1OfcowEB"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -698,7 +696,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 695.98,
+      "width": 671.7,
       "height": 65.52
     },
     "_anchorPoint": {
@@ -729,7 +727,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "admKrEop5PdYonYgSweRZH"
+    "_id": "f5LqbwMaBHtJgrLyXHhL2u"
   },
   {
     "__type__": "cc.Label",
@@ -745,15 +743,13 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "在此过程中，每成功闯过一关可加1/3星，闯关失败不",
-    "_N$string": "在此过程中，每成功闯过一关可加1/3星，闯关失败不",
+    "_string": "在此过程中，每成功闯过一关可加1/3星，闯关失败",
+    "_N$string": "在此过程中，每成功闯过一关可加1/3星，闯关失败",
     "_fontSize": 30,
     "_lineHeight": 52,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 0,
@@ -761,7 +757,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "4aKVHwU09Ob46KvOzaE59A"
+    "_id": "3fz9cZ00xE0qCAlxh8bEMl"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -789,7 +785,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 630,
+      "width": 660,
       "height": 65.52
     },
     "_anchorPoint": {
@@ -820,7 +816,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "b21IKNrmtHsK5ENo9u0TGc"
+    "_id": "33m5DOjvZIpL1U/WoQ5m1g"
   },
   {
     "__type__": "cc.Label",
@@ -836,15 +832,13 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "得星，星星越多最终评定的侦探等级就越高哦！",
-    "_N$string": "得星，星星越多最终评定的侦探等级就越高哦！",
+    "_string": "不得星，星星越多最终评定的侦探等级就越高哦！",
+    "_N$string": "不得星，星星越多最终评定的侦探等级就越高哦！",
     "_fontSize": 30,
     "_lineHeight": 52,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 0,
@@ -852,7 +846,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "e8/uU0UkZERoWWlnwaeAcw"
+    "_id": "df3Gl8vFFGxqGcd5TvtVE6"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -911,7 +905,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "8cJ5XSZvhNYq84Rm0ivBlR"
+    "_id": "80AN2Xh3FIYYnXIxY8McNb"
   },
   {
     "__type__": "cc.Label",
@@ -932,10 +926,8 @@
     "_fontSize": 24,
     "_lineHeight": 52,
     "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
-    "_isSystemFontUsed": false,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_batchAsBitmap": false,
     "_N$horizontalAlign": 0,
@@ -943,7 +935,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "de08XWoERA17WKFiyJMLbQ"
+    "_id": "35Ij4ovqVDk6EdfXeIrSbc"
   },
   {
     "__type__": "cc.RichText",
@@ -958,9 +950,7 @@
     "_N$string": "学习过后，让我们开始完成第一个任务吧：解救5只动物。未解救的动物头像是黑色的，已解救的动物头像会被点亮，而解救失败的动物头像框会破碎。只有当你通过某一动物所有关卡才能将该动物成功解救，在此过程中，每成功闯过一关可加1/3星，闯关失败不得星，星星越多最终评定的侦探等级就越高哦！\n\n<size=24><color=#aaaaaa>另外，你可以在任意时刻点击屏幕上的图标来查看侦探手册哦！</color></size>",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 30,
-    "_N$font": {
-      "__uuid__": "94900fe6-a8ee-4a01-8d6d-8dfdcaaa7038"
-    },
+    "_N$font": null,
     "_N$maxWidth": 700,
     "_N$lineHeight": 52,
     "_N$imageAtlas": null,
@@ -975,39 +965,32 @@
       "__id__": 5
     },
     "_enabled": true,
-    "_defaultClip": null,
-    "_clips": [],
-    "playOnLoad": false,
+    "_defaultClip": {
+      "__uuid__": "fa1c5ab5-9ae0-452d-bf83-c848feaf3721"
+    },
+    "_clips": [
+      {
+        "__uuid__": "fa1c5ab5-9ae0-452d-bf83-c848feaf3721"
+      },
+      {
+        "__uuid__": "4009fce9-bf16-4bd1-a759-d40963b8ec89"
+      }
+    ],
+    "playOnLoad": true,
     "_id": "d4eN4ebjZIpY0+o5KKvC5y"
   },
   {
-    "__type__": "cc.Canvas",
+    "__type__": "d45543VRWNM84wTIITDz683",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 2
+      "__id__": 5
     },
     "_enabled": true,
-    "_designResolution": {
-      "__type__": "cc.Size",
-      "width": 960,
-      "height": 640
+    "selectAnimal": {
+      "__id__": 23
     },
-    "_fitWidth": false,
-    "_fitHeight": true,
-    "_id": "8f0Ggxw75C3qrsE/WUdLf3"
-  },
-  {
-    "__type__": "4bf4fnbn5lLj492FXIuSu5S",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": true,
-    "SelectAnimal": null,
-    "SelectQuestion": null,
-    "_id": "a5o9h0rbVJU6vzKqevVed3"
+    "_id": "3dnjSHmUlPYrcCUw/7HFm4"
   },
   {
     "__type__": "cc.Node",
@@ -1018,19 +1001,19 @@
     },
     "_children": [
       {
-        "__id__": 25
+        "__id__": 24
       },
       {
         "__id__": 37
       },
       {
-        "__id__": 39
-      },
-      {
-        "__id__": 41
+        "__id__": 40
       },
       {
         "__id__": 43
+      },
+      {
+        "__id__": 46
       }
     ],
     "_active": false,
@@ -1084,17 +1067,17 @@
     "_name": "Animal",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 24
+      "__id__": 23
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 26
+        "__id__": 25
       },
       {
-        "__id__": 27
+        "__id__": 26
       }
     ],
     "_prefab": null,
@@ -1147,7 +1130,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 25
+      "__id__": 24
     },
     "_enabled": true,
     "_materials": [
@@ -1179,11 +1162,15 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 25
+      "__id__": 24
     },
     "_enabled": true,
     "selectQuiz": {
-      "__id__": 28
+      "__id__": 27
+    },
+    "animal": "cat",
+    "selectAnimals": {
+      "__id__": 23
     },
     "_id": "10sQw+wfdJX6av+YrurDuH"
   },
@@ -1196,21 +1183,25 @@
     },
     "_children": [
       {
-        "__id__": 29
+        "__id__": 28
       },
       {
-        "__id__": 31
+        "__id__": 30
       },
       {
-        "__id__": 33
+        "__id__": 32
       },
       {
-        "__id__": 35
+        "__id__": 34
       }
     ],
     "_active": false,
     "_level": 1,
-    "_components": [],
+    "_components": [
+      {
+        "__id__": 36
+      }
+    ],
     "_prefab": null,
     "_opacity": 255,
     "_color": {
@@ -1259,14 +1250,14 @@
     "_name": "Question",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 28
+      "__id__": 27
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 30
+        "__id__": 29
       }
     ],
     "_prefab": null,
@@ -1319,7 +1310,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 29
+      "__id__": 28
     },
     "_enabled": true,
     "_materials": [
@@ -1351,14 +1342,14 @@
     "_name": "Question",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 28
+      "__id__": 27
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 32
+        "__id__": 31
       }
     ],
     "_prefab": null,
@@ -1411,7 +1402,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 31
+      "__id__": 30
     },
     "_enabled": true,
     "_materials": [
@@ -1443,14 +1434,14 @@
     "_name": "Question",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 28
+      "__id__": 27
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 34
+        "__id__": 33
       }
     ],
     "_prefab": null,
@@ -1503,7 +1494,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 33
+      "__id__": 32
     },
     "_enabled": true,
     "_materials": [
@@ -1535,14 +1526,14 @@
     "_name": "caughtAnimal",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 28
+      "__id__": 27
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 36
+        "__id__": 35
       }
     ],
     "_prefab": null,
@@ -1595,7 +1586,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 35
+      "__id__": 34
     },
     "_enabled": true,
     "_materials": [
@@ -1623,11 +1614,30 @@
     "_id": "46q/M/GsdJooDcBdqKL43u"
   },
   {
+    "__type__": "364cb6ZRDNOCoVdOSbohC+9",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 27
+    },
+    "_enabled": true,
+    "quiz1": {
+      "__id__": 28
+    },
+    "quiz2": {
+      "__id__": 30
+    },
+    "quiz3": {
+      "__id__": 32
+    },
+    "_id": "27dabBxApDaa3fDrxsbIzq"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Animal",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 24
+      "__id__": 23
     },
     "_children": [],
     "_active": true,
@@ -1635,6 +1645,9 @@
     "_components": [
       {
         "__id__": 38
+      },
+      {
+        "__id__": 39
       }
     ],
     "_prefab": null,
@@ -1715,18 +1728,38 @@
     "_id": "0apf7NPddL86/5TyKYa8cW"
   },
   {
+    "__type__": "9b270qNNwRLIY+y98JiDqT+",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 37
+    },
+    "_enabled": true,
+    "selectQuiz": {
+      "__id__": 27
+    },
+    "animal": "dog",
+    "selectAnimals": {
+      "__id__": 23
+    },
+    "_id": "8bmlzXXTpFbKlFKeJPxG9/"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Animal",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 24
+      "__id__": 23
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 40
+        "__id__": 41
+      },
+      {
+        "__id__": 42
       }
     ],
     "_prefab": null,
@@ -1779,7 +1812,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 39
+      "__id__": 40
     },
     "_enabled": true,
     "_materials": [
@@ -1807,18 +1840,38 @@
     "_id": "89iqWjVtFGKZmjfuxfiK4g"
   },
   {
+    "__type__": "9b270qNNwRLIY+y98JiDqT+",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 40
+    },
+    "_enabled": true,
+    "selectQuiz": {
+      "__id__": 27
+    },
+    "animal": "horse",
+    "selectAnimals": {
+      "__id__": 23
+    },
+    "_id": "f6o2GPAthJX6nSjRjesR8t"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Animal",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 24
+      "__id__": 23
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 42
+        "__id__": 44
+      },
+      {
+        "__id__": 45
       }
     ],
     "_prefab": null,
@@ -1871,7 +1924,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 41
+      "__id__": 43
     },
     "_enabled": true,
     "_materials": [
@@ -1899,18 +1952,38 @@
     "_id": "e3Osj3k4ZAVpGCjGDMJzeA"
   },
   {
+    "__type__": "9b270qNNwRLIY+y98JiDqT+",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 43
+    },
+    "_enabled": true,
+    "selectQuiz": {
+      "__id__": 27
+    },
+    "animal": "bird",
+    "selectAnimals": {
+      "__id__": 23
+    },
+    "_id": "d8YHIpg+1BTbuqNZAZIHlS"
+  },
+  {
     "__type__": "cc.Node",
     "_name": "Animal",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 24
+      "__id__": 23
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 44
+        "__id__": 47
+      },
+      {
+        "__id__": 48
       }
     ],
     "_prefab": null,
@@ -1963,7 +2036,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 46
     },
     "_enabled": true,
     "_materials": [
@@ -1989,5 +2062,105 @@
     "_isTrimmedMode": true,
     "_atlas": null,
     "_id": "6bVZ+LgGtKgq/y/bo8nyiR"
+  },
+  {
+    "__type__": "9b270qNNwRLIY+y98JiDqT+",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 46
+    },
+    "_enabled": true,
+    "selectQuiz": {
+      "__id__": 27
+    },
+    "animal": "pig",
+    "selectAnimals": {
+      "__id__": 23
+    },
+    "_id": "914VVkew5EAJHwSCXyBkBJ"
+  },
+  {
+    "__type__": "cc.Canvas",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_designResolution": {
+      "__type__": "cc.Size",
+      "width": 960,
+      "height": 640
+    },
+    "_fitWidth": false,
+    "_fitHeight": true,
+    "_id": "8f0Ggxw75C3qrsE/WUdLf3"
+  },
+  {
+    "__type__": "4bf4fnbn5lLj492FXIuSu5S",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "SelectAnimal": null,
+    "SelectQuestion": null,
+    "_id": "a5o9h0rbVJU6vzKqevVed3"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "testContent",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 1,
+    "_components": [],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "_id": "04YQW52KJJI4a20RsZSZO2"
   }
 ]
