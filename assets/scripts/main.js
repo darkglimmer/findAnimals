@@ -54,6 +54,7 @@ cc.Class({
                 console.log('change is undefined');
             }
         }, this);
+        
     },
 
     changeFGImg: function(imgName, change, prop){
