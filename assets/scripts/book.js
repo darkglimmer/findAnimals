@@ -10,6 +10,8 @@ cc.Class({
         selectAnimals: cc.Node,
         bookMark: cc.Node,
         sideBar: cc.Node,
+        content: cc.Node,
+        line: cc.Prefab,
     },
 
     onLoad () {
@@ -90,7 +92,7 @@ cc.Class({
     controlActive: function(page){
         this.welcome.active = (page == 1);
         this.selectAnimals.active = (page == 2);
-        this.bookMark.active = this.sideBar.active = (page >= 3);
+        this.bookMark.active = this.sideBar.active = this.content.active = (page >= 3);
     },
 
     clickAnimal: function(){
