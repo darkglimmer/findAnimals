@@ -16,7 +16,7 @@ cc.Class({
         score: 2,
         FGRight:{
             default: null,
-            type: cc.Node
+            type: cc.Sprite
         },
         BGImage:{
             default: null,
@@ -25,7 +25,8 @@ cc.Class({
         Story:{
             default: null,
             type: Story
-        }
+        },
+        
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -36,6 +37,7 @@ cc.Class({
         }
         let self = this;
         let change2prop = ['FGLeft', 'FGRight', 'BGImage', 'otherImg'];
+        let prefix = ['zt', 'ncz', 'bg', 'img']
         this.node.on('onclick', function (event) {
             event.stopPropagation();
             const change = self.Story.change;
@@ -45,7 +47,7 @@ cc.Class({
                     if(i == 4){
                         this.changeScene(change[4])
                     }else{
-                        this.changeFGImg('zt', change[i], change2prop[i]);
+                        this.changeFGImg(prefix[i], change[i], change2prop[i]);
                     }
                 }
             }else{
@@ -55,16 +57,7 @@ cc.Class({
     },
 
     changeFGImg: function(imgName, change, prop){
-        switch (change){
-            case 'normal': {
-                imgName += 'Normal';
-                break;
-            }
-            case 'smile': {
-                imgName += 'Smile';
-                break;
-            }
-        }
+        imgName += change;
         let self = this;
         cc.loader.loadRes(`images/character/${imgName}`, cc.SpriteFrame, function (err, spriteFrame) {
             self[`${prop}`].spriteFrame = spriteFrame;

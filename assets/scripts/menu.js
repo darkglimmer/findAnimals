@@ -34,9 +34,9 @@ cc.Class({
         this.readme.active = true;
         this.BtnClose.node.active = true
         if (this.readme.active) {
-            this.mask.on('touchstart', emptyFunc, this);
+            this.mask.on('touchstart', ()=>{}, this);
         } else {
-            this.mask.off('touchstart', emptyFunc, this);
+            this.mask.off('touchstart', ()=>{}, this);
         }
     },
 
@@ -44,9 +44,9 @@ cc.Class({
         this.readme.active = false;
         this.BtnClose.node.active = false;
         if (this.readme.active) {
-            this.mask.on('touchstart', emptyFunc, this);
+            this.mask.on('touchstart', ()=>{}, this);
         } else {
-            this.mask.off('touchstart', emptyFunc, this);
+            this.mask.off('touchstart', ()=>{}, this);
         }
     }
 });

@@ -2,8 +2,18 @@
 
 //控制图片和场景切换，数组中依次为：0左立绘，1右立绘，2背景图，3其他图片, 4场景
 var control = {
-    3: ['smile'],
-    5: ['normal'],
+    2: ['Crazy'],
+    3: ['Confused'],
+    4: ['Normal'],
+    5: ['Smile'],
+    6: [,'Worried'],
+    7: ['Normal'],
+    8: [,'Normal'],
+    9: [,'Crazy'],
+    10: [,'Angry'],
+    12: [,'Confused'],
+    13: ['Question'],
+    14: ['Realize'],
     15: [,,,,'test']
 }
 var popControl = {
