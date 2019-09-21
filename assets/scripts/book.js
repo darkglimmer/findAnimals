@@ -8,7 +8,8 @@ cc.Class({
         rightArrow: cc.Node,
         welcome: cc.Node,
         selectAnimals: cc.Node,
-        bookMark: cc.Node
+        bookMark: cc.Node,
+        sideBar: cc.Node,
     },
 
     onLoad () {
@@ -89,14 +90,13 @@ cc.Class({
     controlActive: function(page){
         this.welcome.active = (page == 1);
         this.selectAnimals.active = (page == 2);
-        this.bookMark.active = (page >= 3);
+        this.bookMark.active = this.sideBar.active = (page >= 3);
     },
 
     clickAnimal: function(){
         let animals = this.selectAnimals.children;
         for(let i in animals){
             animals[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
-                console.log('?')
                 global.bookPage = global.bookContent.findIndex((element)=>{
                     return element == animals[i].name + '-0-0';
                 })
