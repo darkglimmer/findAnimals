@@ -85,6 +85,8 @@ cc.Class({
             }else{
                 //主要内容
                 this.controlActive(global.bookPage);
+                this.clickBookMark();
+                this.clickSideBar();
             }
         }
     },
@@ -105,6 +107,30 @@ cc.Class({
                 this.updatePage();
             }, this)
         } 
+    },
+
+    clickBookMark: function(){
+        let marks = this.bookMark.children;
+        for(let i in marks){
+            marks[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
+                global.bookPage = global.bookContent.findIndex((element)=>{
+                    return element == marks[i].name + '-0-0';
+                })
+                this.updatePage();
+            }, this)
+        }
+    },
+
+    clickSideBar: function(){
+        let sides = this.sideBar.children;
+        for(let i in sides){
+            sides[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
+                // global.bookPage = global.bookContent.findIndex((element)=>{
+                //     return element == marks[i].name + '-0-0';
+                // })
+                // this.updatePage();
+            }, this)
+        }
     }
 
 

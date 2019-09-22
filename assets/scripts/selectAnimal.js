@@ -8,8 +8,6 @@ cc.Class({
         selectAnimals: cc.Node,
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
     onLoad () {
         this.node.on(cc.Node.EventType.MOUSE_DOWN, this.intoSelectQuiz, this);
     },

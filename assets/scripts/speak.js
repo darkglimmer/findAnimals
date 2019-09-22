@@ -1,11 +1,9 @@
 
-
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        SelectAnimal: cc.Node,
-        SelectQuestion: cc.Node,
+        wordLabel: cc.Label
     },
 
     // LIFE-CYCLE CALLBACKS:

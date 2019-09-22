@@ -33,11 +33,18 @@ for(let i in animals){
     }
 }
 
+//测试分数 score1：解救动物；score2: 指出小偷
+var score1 = 0;
+var score2 = 5;
+
+
 module.exports={
     process,
     collection,
     firstOpen,
     firstClose,
     bookPage,
-    bookContent
+    bookContent,
+    score1,
+    score2
 }
