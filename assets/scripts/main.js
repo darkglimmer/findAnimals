@@ -13,7 +13,6 @@ cc.Class({
             default: null,
             type: cc.Prefab
         },
-        score: 2,
         FGRight:{
             default: null,
             type: cc.Sprite
@@ -26,12 +25,16 @@ cc.Class({
             default: null,
             type: Story
         },
-        
+        button:{
+            default: null,
+            type: cc.Node
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        this.button.active = false;
         if(global.process == 15){
             this.changeScene('test');
         }
@@ -41,7 +44,9 @@ cc.Class({
         this.node.on('onclick', function (event) {
             event.stopPropagation();
             const change = self.Story.change;
-            
+            if(global.process == 14){
+                self.button.active = true;
+            }
             if(change){
                 for(let i in change){
                     if(i == 4){

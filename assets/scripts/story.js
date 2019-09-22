@@ -38,10 +38,8 @@ cc.Class({
     onClick: function() {
         this.change = plot.control[global.process];
         this.ifPop = plot.popControl[global.process];
-        if(this.readme.active === false){
-            this.node.dispatchEvent(new cc.Event.EventCustom('onclick', true));
-            this.nextText();
-        }
+        this.node.dispatchEvent(new cc.Event.EventCustom('onclick', true));
+        this.nextText();
     },
     
     nextText: function() {
