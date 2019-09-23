@@ -11,7 +11,10 @@ cc.Class({
         bookMark: cc.Node,
         sideBar: cc.Node,
         content: cc.Node,
-        line: cc.Prefab,
+        // line: cc.Prefab,
+        // title: cc.Prefab,
+        title: cc.Node,
+
     },
 
     onLoad () {
@@ -74,19 +77,26 @@ cc.Class({
     },
 
     updatePage: function(){
-        console.log(global.bookPage);
-        if(global.bookPage == 1){
-            this.controlActive(global.bookPage);
+        let page = global.bookPage;
+        console.log(page);
+        
+        if(page == 1){
+            this.controlActive(page);
         }else{
             this.welcome.active = false;
-            if(global.bookPage == 2){
-                this.controlActive(global.bookPage);
+            if(page == 2){
+                this.controlActive(page);
                 this.clickAnimal();
             }else{
                 //主要内容
-                this.controlActive(global.bookPage);
+                this.controlActive(page);
+                //给书签和侧边栏注册事件
                 this.clickBookMark();
                 this.clickSideBar();
+                //页面content
+                let titleLabel = this.title.children[0];
+                // console.log(page,global.wordContent[page-3].slangs, global.bookContent[page].split('-'))
+                // titleLabel.getComponent(cc.Label).string = global.wordContent[page-3].slangs[global.bookContent[page].split('-')[1]].title;
             }
         }
     },
@@ -131,7 +141,9 @@ cc.Class({
                 // this.updatePage();
             }, this)
         }
-    }
+    },
+
+    
 
 
     // update (dt) {},

@@ -9,10 +9,10 @@ var questiones = {
             write: ['He was a cat in the _______',
             'Yet a cat _______ look at a king, and sometimes a historian can challenge an economist.',
             'It\'s quite difficult to get a man who can _____ the cat.'],
-            answer: ['pan', 'may', 'bell']
+            answer: ['pan', 'may', 'bell'],
         },{
             content: '<size=24>【听音连线】小猫饿的走不动了，快帮猫猫们找到自己的食物吧！</size>',
-            answer: []            
+            answer: ['Let the cat out of the bag', 'a cat may look at a king', 'bell the cat'],
         }
     ],
     dog: [
