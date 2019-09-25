@@ -12,7 +12,9 @@ cc.Class({
         letter:cc.Node,
         gift:cc.Node,
         code:cc.Node,
-        tip:cc.Node
+        tip:cc.Node,
+        explain:cc.Node,
+        result: cc.Node
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -30,6 +32,7 @@ cc.Class({
         this.contiBt.active = false
         this.expBt.active = false
         this.text.active = false
+        this.result.active = false
         if(global.end){
             this.envelop.active = true
             // this.hand.active = true
@@ -87,5 +90,15 @@ cc.Class({
     showCode(){
         this.gift.active = false
         this.code.active = true
+    },
+    showExplain(){
+        this.contiBt.active = false
+        this.expBt.active = false
+        this.text.active = false
+        this.explain.active = true
+    },
+    showResult(){
+        this.explain.active = false
+        this.result.active = true
     }
 });

@@ -7,6 +7,10 @@ cc.Class({
             type: cc.AudioClip,
             default: null
         },
+        buttonAudio: {
+            default: null,
+            type: cc.AudioClip,
+        }
     },
 
     onLoad () {
@@ -15,8 +19,10 @@ cc.Class({
             let button = this.node.getComponent(cc.Button);
             let audioID = cc.audioEngine.playMusic(this.audio, false);
             this.node.on(cc.Node.EventType.MOUSE_DOWN, function(){
+                let buttonAudioID = cc.audioEngine.playMusic(this.buttonAudio, false);
                 //切换音乐状态
                 let state = cc.audioEngine.getState(audioID);
+
                 console.log(state);
                 if(state == 1){
                     cc.audioEngine.stopMusic(audioID);

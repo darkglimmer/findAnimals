@@ -12,8 +12,7 @@ cc.Class({
 
     onLoad () {
         // console.log(global.animal);
-        // let animal = global.animal;
-        let animal = 'cat';
+        let animal = global.animal;
         let self = this;
         cc.loader.loadRes(`images/test/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
             self.border.spriteFrame = spriteFrame;

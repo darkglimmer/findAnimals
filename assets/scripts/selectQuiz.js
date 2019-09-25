@@ -12,15 +12,14 @@ cc.Class({
 
     onLoad () {
         // console.log(global.animal);
-        // let animal = global.animal;
-        let animal = 'cat';
+        let animal = global.animal;
         let self = this;
-        cc.loader.loadRes(`images/test/${animal}foot`, cc.SpriteFrame, function (err, spriteFrame) {
+        cc.loader.loadRes(`images/test/${animal}/${animal}start`, cc.SpriteFrame, function (err, spriteFrame) {
             self.startFoot.getComponent(cc.Sprite).spriteFrame = spriteFrame;
         });
-        // cc.loader.loadRes(`images/test/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
-        //     self.background.spriteFrame = spriteFrame;
-        // });
+        cc.loader.loadRes(`images/test/${animal}/${animal}cover`, cc.SpriteFrame, function (err, spriteFrame) {
+            self.background.spriteFrame = spriteFrame;
+        });
         this.startFoot.on(cc.Node.EventType.MOUSE_DOWN, function(){
             this.testContent.active = true;
             this.node.active = false;

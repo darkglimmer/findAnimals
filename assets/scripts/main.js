@@ -1,6 +1,6 @@
 //加载组件作为type
 var Story = require('story');
-var global = require('global')
+var global = require('global');
 cc.Class({
     extends: cc.Component,
 
@@ -36,7 +36,7 @@ cc.Class({
     onLoad () {
         this.button.active = false;
         if(global.process == 15){
-            this.changeScene('test');
+            // cc.director.loadScene("test");
         }
         let self = this;
         let change2prop = ['FGLeft', 'FGRight', 'BGImage', 'otherImg'];
@@ -50,7 +50,7 @@ cc.Class({
             if(change){
                 for(let i in change){
                     if(i == 4){
-                        this.changeScene(change[4])
+                        // cc.director.loadScene(change[4]);
                     }else{
                         this.changeFGImg(prefix[i], change[i], change2prop[i]);
                     }
@@ -71,8 +71,5 @@ cc.Class({
     },
 
     changeScene: function(scene){
-        if(scene){
-            cc.director.loadScene(scene);
-        }
     }
 });
