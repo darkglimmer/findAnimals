@@ -8,6 +8,8 @@ var end = 0
 var collection = {
 };
 
+var score = 5
+
 //侦探手册
 var firstOpen = true;
 var firstClose = true;
@@ -52,6 +54,7 @@ module.exports={
     firstClose,
     bookPage,
     bookContent,
+    score,
     score1,
     score2,
     animal,

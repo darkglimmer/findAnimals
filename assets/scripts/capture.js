@@ -1,33 +1,42 @@
+var global = require('global')
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        star1: {
-            default: null,
-            type: cc.Prefab
+        star: {
+            default: [],
+            type: cc.Node
         },
-        star2: {
-            default: null,
-            type: cc.Prefab
+        figure:{
+            default: [],
+            type: cc.Node
         },
-        star3: {
-            default: null,
-            type: cc.Prefab
-        },
-        score: 15,
         input:{
             default:[],
-            type:cc.EditBox
-        }
+            type:cc.Node
+        },
+        arr: [],
+        prefab:{
+            default:[],
+            type: cc.Prefab
+        },
+        new:cc.Node,
+        result:{
+            default:[],
+            type:cc.Node
+        },
+        e: 0
     },
     
     onLoad(){
-        this.spawnNewStar();
+        this.arr = ["a cat in the pan","dog watch","an early bird","a willing horse","make a pig's ear"]
+        // this.spawnNewStar();
+        this.showStar()
     },
 
     spawnNewStar () {
-        for(var i = this.score; i > 0; i = i-3){
+        for(var i = global.score; i > 0; i = i-3){
             if( i >= 3){
                 var newStar = cc.instantiate(this.star1);
             }else if(i == 2){
@@ -51,13 +60,57 @@ cc.Class({
     },
 
     getNewStarPosition: function(i) {
-        var positionX = (-i) * 20;
+        var positionX = (i-5) * 50;
         var positionY = 235;
         return cc.v2(positionX, positionY);
     },
 
+    getResultPosition: function(i){
+        var positionX = 208;
+        var positionY = 90 - i*75;
+        return cc.v2(positionX, positionY);
+    },
+
+    showStar(){
+        for(var i = 0; i < global.score; i++){
+            this.star[i].active = true
+        }
+        for(var i = global.score; i < 5; i++){
+            this.star[i].active = false
+        }
+    },
+
     save(){
-        let loginname = this.input[0].string
-        console.log(loginname)
+        var a = 0
+        for(var i = 0; i < 5; i++){
+            var b = this.arr.indexOf(this.input[i].getComponent(cc.EditBox).string)
+            if(b != -1){
+                this.result[this.e] = cc.instantiate(this.prefab[b]);
+                this.node.addChild(this.result[this.e]);
+                this.result[this.e].setPosition(this.getResultPosition(i));
+                this.arr.splice(b,1)
+                this.prefab.splice(b,1)
+                this.input[i].active = false
+                this.e++
+            }
+            else{
+                this.input[i].getComponent(cc.EditBox).string = ""
+                a++;
+            }
+        }
+        if(global.score <= 0){
+            cc.director.loadScene("ending");
+        }
+        if(this.arr.length == 0){
+            this.new.active = false
+            for(var i = 0; i < 5; i++){
+                this.result[i].active = false
+                this.figure[i].active = true
+            }
+        }  
+        if(this.arr.length != 0){
+            global.score--;
+        }   
+        this.showStar()
     }
 });
