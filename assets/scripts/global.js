@@ -2,11 +2,10 @@
 
 // 进度
 var process = 0;
+var end = 0
 
 // 收藏夹
 var collection = {
-    "xxx": true,
-    "yyy": true,
 };
 
 var score = 5
@@ -23,17 +22,30 @@ var bookContent = [
 
 let animals = ['cat', 'dog', 'horse', 'bird', 'pig'];
 let page = 3;
-let word = 0;
 let content = 0;
 for(let i in animals){
-    for(let word = 0; word < 7; word++){
-        let name = animals[i] + '-' + word + '-'+ content++; 
-        bookContent[page++] = name;
-        name = animals[i] + '-' + word + '-' + content++;
-        bookContent[page++] = name;
-        content %= 2;
+    for(let word = 0; word < 6; word++){
+        if(word == 0){
+            let name = animals[i] + '-' + word + '-'+ content; 
+            bookContent[page++] = name;
+        } else {
+            let name = animals[i] + '-' + word + '-'+ content++; 
+            bookContent[page++] = name;
+            name = animals[i] + '-' + word + '-' + content++;
+            bookContent[page++] = name;
+            content %= 2;
+        }
     }
 }
+bookContent[page] = 'Collection'
+// console.log(bookContent);
+
+//测试分数 score1：解救动物；score2: 指出小偷
+var score1 = 0;
+var score2 = 5;
+
+//test场景
+var animal;
 
 module.exports={
     process,
@@ -42,5 +54,8 @@ module.exports={
     firstClose,
     bookPage,
     bookContent,
-    score
+    score,
+    score1,
+    score2,
+    animal,
 }
