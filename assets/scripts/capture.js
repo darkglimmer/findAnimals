@@ -26,7 +26,13 @@ cc.Class({
             default:[],
             type:cc.Node
         },
-        e: 0
+        e: 0,
+        redCircle:{
+            default: [],
+            type: cc.Node
+        },
+        popUp:cc.Node,
+        mask:cc.Node
     },
     
     onLoad(){
@@ -112,5 +118,19 @@ cc.Class({
             global.score--;
         }   
         this.showStar()
+    },
+    correct(){
+        if(global.id == 3){
+            console.log(global.score)
+            cc.director.loadScene("ending")
+        }else{
+            global.score = 0
+            cc.director.loadScene("ending")
+        }
+    },
+    cancel(){
+        this.redCircle[global.id].active = false;
+        this.popUp.active = false
+        this.mask.active = false
     }
 });

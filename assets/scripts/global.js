@@ -2,7 +2,7 @@
 
 // 进度
 var process = 0;
-var end = 0
+var id = 0
 
 // 收藏夹
 var collection = {
