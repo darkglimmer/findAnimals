@@ -138,7 +138,7 @@ cc.Class({
             if(word == 0){
                 //word==0 中外对比 title不出现 compare出现
                 this.controlActive(page, false);
-                this.compare.getComponent(cc.Label).string = wordContent[animal2page[animal]].compare
+                this.compare.children[1].getComponent(cc.Label).string = wordContent[animal2page[animal]].compare
                 
             }else{
                 slang = wordContent[animal2page[animal]].slangs[word-1];
@@ -273,9 +273,6 @@ cc.Class({
         this.updateStar(img);
         console.log(global.collection)
     }
-
-    
-
 
     // update (dt) {},
 });
@@ -490,7 +487,7 @@ var wordContent = [
             meaning: '盲目购买',
             example: [
                 'My brother bought a pig in a poke. He bought some property in Florida over the phone.\n我兄弟在电话上就冲动地买下了佛罗里达沿海的那块地。',
-                'The used car he bought not long ago has broken down.He always seems to buy a pig in a poke and never learns from his mistakes. \n不久前他买的一部旧车现在已经坏了，看来他总是不看清楚就买东西，从不吸取教训。'
+                'The used car he bought not long ago has broken down.He always seems to buy a pig in a poke.\n不久前他买的一部旧车现在已经坏了，看来他总是不看清楚就买东西。'
             ],
             similar:'buy sth blindly',
         },
