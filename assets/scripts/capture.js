@@ -1,33 +1,36 @@
+var global = require('global')
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        star1: {
-            default: null,
-            type: cc.Prefab
+        star: {
+            default: [],
+            type: cc.Node
         },
-        star2: {
-            default: null,
-            type: cc.Prefab
+        figure:{
+            default: [],
+            type: cc.Node
         },
-        star3: {
-            default: null,
-            type: cc.Prefab
-        },
-        score: 15,
         input:{
             default:[],
-            type:cc.EditBox
+            type:cc.Node
+        },
+        arr: [],
+        prefab:{
+            default:[],
+            type: cc.Prefab
         }
     },
     
     onLoad(){
-        this.spawnNewStar();
+        this.arr = ["turn cat in the pan","dog watch","an early bird","a willing horse","make a pig's ear"]
+        // this.spawnNewStar();
+        this.showStar()
     },
 
     spawnNewStar () {
-        for(var i = this.score; i > 0; i = i-3){
+        for(var i = global.score; i > 0; i = i-3){
             if( i >= 3){
                 var newStar = cc.instantiate(this.star1);
             }else if(i == 2){
@@ -51,13 +54,52 @@ cc.Class({
     },
 
     getNewStarPosition: function(i) {
-        var positionX = (-i) * 20;
+        var positionX = (i-5) * 50;
         var positionY = 235;
         return cc.v2(positionX, positionY);
     },
 
+    getResultPosition: function(i){
+        var positionX = 130;
+        var positionY = i - 30 - i*47;
+        return cc.v2(positionX, positionY);
+    },
+
+    showStar(){
+        for(var i = 0; i < global.score; i++){
+            this.star[i].active = true
+        }
+        for(var i = global.score; i < 5; i++){
+            this.star[i].active = false
+        }
+    },
+
     save(){
-        let loginname = this.input[0].string
-        console.log(loginname)
+        var a = 0;
+        for(var i = 0; i < 5; i++){
+            var b = this.arr.indexOf(this.input[i].getComponent(cc.EditBox).string)
+            if(b != -1){
+                var result = cc.instantiate(this.prefab[b]);
+                this.node.addChild(result);
+                result.setPosition(this.getResultPosition(i));
+                this.arr.splice(b,1)
+                this.prefab.splice(b,1)
+                this.input[i].active = false
+            }
+            else{
+                this.input[i].getComponent(cc.EditBox).string = ""
+                a++;
+                global.score--;
+            }
+        }
+        if(global.score <= 0){
+            cc.director.loadScene("ending");
+        }
+        if(this.arr.length == 0){
+            for(var i = 0; i < 5; i++){
+                this.figure[i].active = true
+            }
+        }        
+        this.showStar()
     }
 });

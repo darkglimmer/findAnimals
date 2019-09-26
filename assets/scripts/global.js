@@ -9,6 +9,8 @@ var collection = {
     "yyy": true,
 };
 
+var score = 5
+
 //侦探手册
 var firstOpen = true;
 var firstClose = true;
@@ -39,5 +41,6 @@ module.exports={
     firstOpen,
     firstClose,
     bookPage,
-    bookContent
+    bookContent,
+    score
 }

@@ -16,10 +16,8 @@ var control = {
     14: ['Realize'],
     15: [,,,,'test']
 }
-var popControl = {
-    2: "为什么呢？",
-    4: "他去哪了"
-}
+var popControl = {4: 1,10: 2,12: 3}
+
 module.exports={
     story:[
         "甄探@Hello，我是<color=#495A80>甄探</color>，是一名初出茅庐的见习侦探",//0;背景为侦探事务所内部；侦探打招呼，笑容

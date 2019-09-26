@@ -17,18 +17,13 @@ cc.Class({
         mask: {
             default: null,
             type: cc.Node
-        },
+        }
     },
 
     onLoad () {
         this.readme.active = false
         this.BtnClose.node.active = false
     },
-
-    start () {
-
-    },
-
 
     showReadme: function (event) {
         this.readme.active = true;

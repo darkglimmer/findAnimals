@@ -4,7 +4,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        richTextInfo: cc.RichText,
         pop:{
             default: null,
             type: cc.Node
@@ -13,28 +12,39 @@ cc.Class({
             default: null,
             type: Story
         },
-        popImage:{
+        closeBt:{
             default: null,
-            type: cc.Sprite
+            type: cc.Node
         },
+        mask:{
+            default:null,
+            type: cc.Node
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
     onLoad () {
         var self = this
-        this.pop.active = false
         this.node.on('onclick', function (event) {
-            // event.stopPropagation();
             const ifPop= self.Story.ifPop
-            if(ifPop){
+            if(ifPop == 1){
                 self.pop.active = true
-                self.richTextInfo.string = ifPop
-                // cc.loader.loadRes(`images/${url}`, cc.SpriteFrame, function (err, spriteFrame) {
-                //     self.FGLeft.spriteFrame = spriteFrame;
+            }else if(ifPop == 2){
+                // self.closeBt.active = true;
+                // self.mask.active = true
+            }else if(ifPop == 3){
+                // cc.loader.loadRes('images/note', cc.SpriteFrame, function (err, spriteFrame) {
+                //     sprite.spriteFrame = spriteFrame;
                 // });
-            }else{
+            }
+            else{
                 self.pop.active = false
             }
         })
+    },
+
+    closePop(){
+        this.pop.active = false;
+        this.closeBt.active = false
     }
 });
