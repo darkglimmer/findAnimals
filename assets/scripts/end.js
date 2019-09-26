@@ -20,7 +20,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        if(global.end){
+        if(global.score){
             this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
             this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予xx侦探的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
         }else{
