@@ -105,7 +105,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 160.11,
+      "width": 136.77,
       "height": 63
     },
     "_anchorPoint": {
@@ -167,7 +167,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 160.11,
+      "width": 136.77,
       "height": 63
     },
     "_anchorPoint": {
@@ -177,7 +177,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -80.055,
+      "x": -68.385,
       "y": -31.5,
       "z": 0
     },
@@ -214,8 +214,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "turn cat in the pan",
-    "_N$string": "turn cat in the pan",
+    "_string": "a cat in the pan",
+    "_N$string": "a cat in the pan",
     "_fontSize": 20,
     "_lineHeight": 50,
     "_enableWrapText": true,
@@ -236,9 +236,9 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "bca3ddb0-bb7e-4fe7-bb36-a14161ae88f2"
     },
-    "fileId": "e2DJLLVFdOoqNz+qPk4b4x",
+    "fileId": "7f5/KvHLhEh4WkW572IAup",
     "sync": false
   },
   {
@@ -251,7 +251,7 @@
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "turn cat in the pan",
+    "_N$string": "a cat in the pan",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -267,7 +267,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "bca3ddb0-bb7e-4fe7-bb36-a14161ae88f2"
     },
     "fileId": "f0/Ft3hZxKgqQYC85IzPSR",
     "sync": false
@@ -310,7 +310,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "bca3ddb0-bb7e-4fe7-bb36-a14161ae88f2"
     },
     "fileId": "b4NwxMeeZKhqh3ZJ4t75tT",
     "sync": false

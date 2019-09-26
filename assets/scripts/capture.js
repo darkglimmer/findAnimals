@@ -20,11 +20,17 @@ cc.Class({
         prefab:{
             default:[],
             type: cc.Prefab
-        }
+        },
+        new:cc.Node,
+        result:{
+            default:[],
+            type:cc.Node
+        },
+        e: 0
     },
     
     onLoad(){
-        this.arr = ["turn cat in the pan","dog watch","an early bird","a willing horse","make a pig's ear"]
+        this.arr = ["a cat in the pan","dog watch","an early bird","a willing horse","make a pig's ear"]
         // this.spawnNewStar();
         this.showStar()
     },
@@ -60,8 +66,8 @@ cc.Class({
     },
 
     getResultPosition: function(i){
-        var positionX = 130;
-        var positionY = i - 30 - i*47;
+        var positionX = 208;
+        var positionY = 90 - i*75;
         return cc.v2(positionX, positionY);
     },
 
@@ -75,31 +81,36 @@ cc.Class({
     },
 
     save(){
-        var a = 0;
+        var a = 0
         for(var i = 0; i < 5; i++){
             var b = this.arr.indexOf(this.input[i].getComponent(cc.EditBox).string)
             if(b != -1){
-                var result = cc.instantiate(this.prefab[b]);
-                this.node.addChild(result);
-                result.setPosition(this.getResultPosition(i));
+                this.result[this.e] = cc.instantiate(this.prefab[b]);
+                this.node.addChild(this.result[this.e]);
+                this.result[this.e].setPosition(this.getResultPosition(i));
                 this.arr.splice(b,1)
                 this.prefab.splice(b,1)
                 this.input[i].active = false
+                this.e++
             }
             else{
                 this.input[i].getComponent(cc.EditBox).string = ""
                 a++;
-                global.score--;
             }
         }
         if(global.score <= 0){
             cc.director.loadScene("ending");
         }
         if(this.arr.length == 0){
+            this.new.active = false
             for(var i = 0; i < 5; i++){
+                this.result[i].active = false
                 this.figure[i].active = true
             }
-        }        
+        }  
+        if(this.arr.length != 0){
+            global.score--;
+        }   
         this.showStar()
     }
 });
