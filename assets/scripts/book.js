@@ -70,7 +70,7 @@ cc.Class({
     },
     
     ifPageLegal: function(page){
-        if(page < 0){
+        if(page < 0 || page > 58){
             return false;   
         }
         return true;

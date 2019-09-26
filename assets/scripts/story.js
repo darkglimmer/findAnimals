@@ -6,7 +6,6 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        plotNum: 0,
         richTextInfo: cc.RichText,
         change: [],
         ifPop: [],

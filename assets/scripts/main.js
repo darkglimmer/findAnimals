@@ -43,7 +43,7 @@ cc.Class({
 
     onLoad () {
         this.button.active = false;
-        if(global.process == 15){
+        if(global.process == 18){
             // cc.director.loadScene("test");
         }
         let self = this;
@@ -53,7 +53,7 @@ cc.Class({
             event.stopPropagation();
             const change = self.Story.change;
             const ifPop = self.Story.ifPop
-            if(global.process == 14){
+            if(global.process == 17){
                 self.button.active = true;
                 self.tipAnim()
             }
@@ -61,6 +61,10 @@ cc.Class({
                 for(let i in change){
                     if(i == 4){
                         // cc.director.loadScene(change[4]);
+                    }else if(i == 2){
+                        cc.loader.loadRes(`images/background/${change[i]}`, cc.SpriteFrame, function (err, spriteFrame) {
+                            self.BGImage.spriteFrame = spriteFrame;
+                        });
                     }else{
                         this.changeFGImg(prefix[i], change[i], change2prop[i]);
                     }
