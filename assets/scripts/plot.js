@@ -16,7 +16,7 @@ var control = {
     14: ['Realize'],
     15: [,,,,'test']
 }
-var popControl = {4: 1,10: 2,12: 3}
+var popControl = {4 : 1,10 : 2,12 : 3}
 
 module.exports={
     story:[
