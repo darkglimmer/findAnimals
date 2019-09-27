@@ -4,7 +4,7 @@ var questiones = {
         {
             content: '<size=24>嘘！猫猫们正在睡觉，选出正确的词猫猫可以继续睡觉，选择错误猫猫会惊醒大叫引来坏人哦！</size><br/><size=22> _________, but for you to tell your boss that he is cruel seems hard. </size>',
             answer: '3',
-            explain: '【题目·选词填空】\n____________,but for you to tell your boss that he is cruel seems hard.\nBell the cat     Let the cat out of the bag    A cat may look at a king\n【答案】\nA cat may look at a king\【解析】\n图片中两个人在天平两端一边高，从语境和图片可以判断，此处应选“a cat on a hot tin roof”人人平等；原句意思为：虽然人人平等。但是你还是很难告诉你的老板他太残酷了。',
+            explain: '【题目·选词填空】\n____________,but for you to tell your boss that he is cruel seems hard.\nBell the cat     Let the cat out of the bag    A cat may look at a king\n【答案】\nA cat may look at a king\【解析】\n图片中两个人在天平两端一边高，从语境和图片可以判断，此处应选“a cat on a hot tin roof”人人平等；\n原句意思为：虽然人人平等。但是你还是很难告诉你的老板他太残酷了。',
         },{
             content: '<size=24>小猫被关在了笼子里，补全俚语可以将猫猫解开哦！</size>',
             write: ['1. She\'s like a cat on a ______ tin roof, waiting for the test result.',
@@ -42,7 +42,7 @@ var questiones = {
         {
             content: '<size=24>快看！前面有三条路，选择正确的路能够更快解救到马儿哦！</size><br/><size=22>Robert is ____________ and I know he\'ll try his best to do all the work we give him.</size>',
             answer: '1',
-            explain: '【题目·选词填空】\nRobert is ___________ and I know he\'ll try his best to do all the work we give him. \na willing horse   the wooden horse of Trojan   high horse\n【答案】\na willing horse\n【解析】\n图片中的人在非常认真的工作，从语境和图片可以判断，此处应选“a willing horse”；原句意思为：罗伯特是个积极工作的人，我知道他一定能尽其所能完成好我们给他的工作。',
+            explain: '【题目·选词填空】\nRobert is ___________ and I know he\'ll try his best to do all the work we give him. \na willing horse   the wooden horse of Trojan   high horse\n【答案】\na willing horse\n【解析】\n图片中的人在非常认真的工作，从语境和图片可以判断，此处应选“a willing horse”；\n原句意思为：罗伯特是个积极工作的人，我知道他一定能尽其所能完成好我们给他的工作。',
         },{
             content: '<size=24>走了这么久总算看到马儿了，咦！马儿身上怎么背着这么重的包袱，快帮他们取下来吧，在横线上补全俚语可以帮助马儿减轻包袱哦！</size>',
             write: ['______ horse  骄傲自大',

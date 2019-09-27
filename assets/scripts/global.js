@@ -3,6 +3,7 @@
 // 进度
 var process = 0;
 var id = 0
+var quiz = 0
 
 // 收藏夹
 var collection = {
