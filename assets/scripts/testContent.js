@@ -6,6 +6,8 @@ let animal = global.animal;
 let quizContent;
 
 let option3 = [];
+//是否答对
+let answer = [false, false, false];
 
 cc.Class({
     extends: cc.Component,
@@ -20,11 +22,12 @@ cc.Class({
         setNum: 0,
         selectQuestion: cc.Node,
         popUp: cc.Node,
+        tipPopUp: cc.Node,
         editBoxArr: {
             default: [],
             type: cc.EditBox
         },
-        selectAnimals: cc.Node
+        selectAnimals: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -42,7 +45,7 @@ cc.Class({
         this.setNum = Math.floor(Math.random()+1);
         console.log('题目',this.setNum);
 
-        let quizNum = 3;
+        let quizNum = 1;
         quizContent = this.setNum == 0 ? quiz1.questiones[`${animal}`] : quiz2.questiones[`${animal}`];
         // console.log(quizContent)
         this[`updateQuiz${quizNum}`]();
@@ -257,34 +260,69 @@ cc.Class({
         okBtn.clickEvents.push(clickEventHandler);
     },
 
-    hidePopUp(evnet, customEventData){
+    //tipPopUp中的文字和事件
+    tipPopUpEvent: function(isCorrect, quizNum){
+        let tipText;
+        if(isCorrect){
+            tipText = '恭喜你答对啦';
+            answer[quizNum] = true;
+            //取消按钮不出现
+            this.tipPopUp.children[1].children[2].active = false;
+        }else{
+            tipText = '很遗憾，答错啦！你可以查看侦探手册后再来作答，或者直接进入下一关，不会再回来了哟~';
+            this.tipPopUp.children[1].children[2].active = true;
+        }
+        this.tipPopUp.children[1].children[0].getComponent(cc.Label).string = tipText;
+
+        let tipEventHandler = new cc.Component.EventHandler();
+        tipEventHandler.target = this.node;
+        tipEventHandler.component = "testContent";
+        tipEventHandler.handler = "nextQuiz";
+        tipEventHandler.customEventData = {quizNum};
+        
+        let nextBtn = this.tipPopUp.children[1].children[1].getComponent(cc.Button);
+        nextBtn.clickEvents.push(tipEventHandler);
+    },
+
+    nextQuiz(event, customEventData){
+        this.tipPopUp.active = false;
+        const {quizNum} = customEventData;
+        console.log('?', quizNum);
+        if(quizNum == 0){
+            this.updateQuiz2();
+        }else if(quizNum == 1){
+            this.updateQuiz3();
+        }else{
+            if(answer[0] && answer[1] && answer[2]){
+                global.saveAnimal[animal] = 1;
+            }else{
+                global.saveAnimal[animal] = -1;
+            }
+            this.node.active = false;
+            this.selectAnimals.active = true;
+        }
+    },
+
+    hidePopUp(event, customEventData){
         this.popUp.active = false;
+        //确定按钮后的事件
         if(customEventData){
+            this.tipPopUp.active = true;
             let {quizNum, option} = customEventData;
             console.log(quizNum, option, quizContent);
-            if(quizNum == 0){
-                if(option == quizContent[quizNum].answer){
-                    this.updateQuiz2();
-                }else{
-                    console.log('wrong answer1');
-                }
-            }else if(quizNum == 1){
-                if(option.toString() == quizContent[quizNum].answer.toString()){
-                    this.updateQuiz3();
-                }else{
-                    console.log('wrong2', option.toString(), quizContent[quizNum].answer.toString());
-                }
-                
+            if(option.toString() == quizContent[quizNum].answer.toString()){
+                //回答正确
+                this.tipPopUpEvent(true, quizNum);
             }else{
-                if(option.toString() == quizContent[quizNum].answer.toString()){
-                    this.node.active = false;
-                    this.selectAnimals.active = true;
-                }else{
-                    console.log('wrong3', option.toString(), quizContent[quizNum].answer.toString());
-                }
+                //回答错误
+                this.tipPopUpEvent(false, quizNum);
             }
         }
     },
+    
+    hideTipPopUp(event, customEventData){
+        this.tipPopUp.active = false;
+    }
     
 
     // update (dt) {},
