@@ -43,8 +43,8 @@ cc.Class({
 
     onLoad () {
         this.button.active = false;
-        if(global.process == 18){
-            // cc.director.loadScene("test");
+        if(global.process == 19){
+            cc.director.loadScene("test");
         }
         let self = this;
         let change2prop = ['FGLeft', 'FGRight', 'BGImage', 'otherImg'];
@@ -60,11 +60,11 @@ cc.Class({
             if(change){
                 for(let i in change){
                     if(i == 4){
-                        // cc.director.loadScene(change[4]);
+                        cc.director.loadScene(change[4]);
                     }else if(i == 2){
-                        cc.loader.loadRes(`images/background/${change[i]}`, cc.SpriteFrame, function (err, spriteFrame) {
-                            self.BGImage.spriteFrame = spriteFrame;
-                        });
+                        // cc.loader.loadRes(`images/background/${change[i]}`, cc.SpriteFrame, function (err, spriteFrame) {
+                        //     self.BGImage.spriteFrame = spriteFrame;
+                        // });
                     }else{
                         this.changeFGImg(prefix[i], change[i], change2prop[i]);
                     }
