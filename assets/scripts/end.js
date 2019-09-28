@@ -14,7 +14,13 @@ cc.Class({
         code:cc.Node,
         tip:cc.Node,
         explain:cc.Node,
-        result: cc.Node
+        result: cc.Node,
+        animalStar: cc.Node,
+        captureStar: cc.Node,
+        endStar: cc.Node,
+        star1: cc.Prefab,
+        star2:cc.Prefab,
+        star3:cc.Prefab
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -65,6 +71,7 @@ cc.Class({
     showLetter(){
         this.letter.active = true
         this.envelop.active = false
+        this.spawnNewStar()
     },
     showGift(){
         this.letter.active = false
@@ -100,5 +107,74 @@ cc.Class({
     showResult(){
         this.explain.active = false
         this.result.active = true
+    },
+
+    spawnNewStar () {
+        for(var i = global.animalScore; i > 0; i = i-3){
+            if( i >= 3){
+                var newStar = cc.instantiate(this.star1);
+            }else if(i == 2){
+                var newStar = cc.instantiate(this.star2);
+                this.animalStar.addChild(newStar);
+                // 为星星设置一个随机位置
+                newStar.setPosition(this.getNewStarPosition(i));
+                break;
+            }else{
+                var newStar = cc.instantiate(this.star3);
+                this.animalStar.addChild(newStar);
+                // 为星星设置一个随机位置
+                newStar.setPosition(this.getNewStarPosition(i));
+                break;
+            }
+            // 将新增的节点添加到 Canvas 节点下面
+            this.animalStar.addChild(newStar);
+            // 为星星设置一个随机位置
+            newStar.setPosition(this.getNewStarPosition(i));
+        }
+        for(var i = global.score; i > 0; i--){
+            var newStar = cc.instantiate(this.star1);
+            // 将新增的节点添加到 Canvas 节点下面
+            this.captureStar.addChild(newStar);
+            // 为星星设置一个随机位置
+            newStar.setPosition(this.getCaptureStarPosition(i));
+        }
+        var endScore = Math.floor((global.score * 3 + global.animalScore) / 2)
+        for(var i = endScore; i > 0; i = i-3){
+            if( i >= 3){
+                var newStar = cc.instantiate(this.star1);
+            }else if(i == 2){
+                var newStar = cc.instantiate(this.star2);
+                this.animalStar.addChild(newStar);
+                // 为星星设置一个随机位置
+                newStar.setPosition(this.getEndStarPosition(i));
+                break;
+            }else{
+                var newStar = cc.instantiate(this.star3);
+                this.animalStar.addChild(newStar);
+                // 为星星设置一个随机位置
+                newStar.setPosition(this.getEndStarPosition(i));
+                break;
+            }
+            // 将新增的节点添加到 Canvas 节点下面
+            this.animalStar.addChild(newStar);
+            // 为星星设置一个随机位置
+            newStar.setPosition(this.getEndStarPosition(i));
+        }
+    },
+
+    getNewStarPosition: function(i) {
+        var positionX = 220-i*15;
+        var positionY = 15;
+        return cc.v2(positionX, positionY);
+    },
+    getCaptureStarPosition: function(i) {
+        var positionX = 280-i*50;
+        var positionY = 20;
+        return cc.v2(positionX,positionY);
+    },
+    getEndStarPosition: function(i) {
+        var positionX = 160-i*16;
+        var positionY = -90;
+        return cc.v2(positionX,positionY);
     }
 });
