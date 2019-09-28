@@ -47,11 +47,11 @@ var animalScore = 0;
 
 // 0：未拯救；1：拯救成功，-1：拯救失败
 var saveAnimal = {
-    'cat': 1,
-    'dog': 1,
-    'horse': 1,
-    'bird': 1,
-    'pig': -1
+    'cat': 0,
+    'dog': 0,
+    'horse': 0,
+    'bird': 0,
+    'pig': 0
 }
 
 //test场景

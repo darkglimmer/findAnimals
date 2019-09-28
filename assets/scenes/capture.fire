@@ -23,31 +23,31 @@
         "__id__": 67
       },
       {
-        "__id__": 92
+        "__id__": 94
       },
       {
-        "__id__": 117
+        "__id__": 121
       },
       {
-        "__id__": 140
+        "__id__": 146
       },
       {
-        "__id__": 160
+        "__id__": 168
       },
       {
         "__id__": 65
       },
       {
-        "__id__": 88
+        "__id__": 90
       },
       {
-        "__id__": 115
+        "__id__": 119
       },
       {
-        "__id__": 138
+        "__id__": 144
       },
       {
-        "__id__": 157
+        "__id__": 165
       },
       {
         "__id__": 62
@@ -120,7 +120,7 @@
         "__id__": 18
       },
       {
-        "__id__": 230
+        "__id__": 238
       }
     ],
     "_prefab": null,
@@ -865,30 +865,30 @@
         "__id__": 67
       },
       {
-        "__id__": 92
+        "__id__": 94
       },
       {
-        "__id__": 117
+        "__id__": 121
       },
       {
-        "__id__": 140
+        "__id__": 146
       }
     ],
     "input": [
       {
-        "__id__": 159
+        "__id__": 167
       },
       {
-        "__id__": 181
+        "__id__": 189
       },
       {
-        "__id__": 191
+        "__id__": 199
       },
       {
-        "__id__": 201
+        "__id__": 209
       },
       {
-        "__id__": 211
+        "__id__": 219
       }
     ],
     "arr": null,
@@ -910,7 +910,7 @@
       }
     ],
     "new": {
-      "__id__": 160
+      "__id__": 168
     },
     "result": [
       null,
@@ -925,16 +925,16 @@
         "__id__": 65
       },
       {
-        "__id__": 88
+        "__id__": 90
       },
       {
-        "__id__": 115
+        "__id__": 119
       },
       {
-        "__id__": 138
+        "__id__": 144
       },
       {
-        "__id__": 157
+        "__id__": 165
       }
     ],
     "popUp": {
@@ -3092,13 +3092,13 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 86
+        "__id__": 88
       },
       {
-        "__id__": 87
+        "__id__": 89
       },
       {
-        "__id__": 90
+        "__id__": 92
       }
     ],
     "_prefab": null,
@@ -3175,13 +3175,16 @@
       },
       {
         "__id__": 83
+      },
+      {
+        "__id__": 85
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 85
+        "__id__": 87
       }
     ],
     "_prefab": null,
@@ -3196,7 +3199,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 220,
-      "height": 165.2
+      "height": 185.2
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -3237,7 +3240,7 @@
       "__id__": 68
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -3255,7 +3258,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 210,
+      "width": 116,
       "height": 25.2
     },
     "_anchorPoint": {
@@ -3265,8 +3268,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -110,
-      "y": 57.400000000000006,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -3286,7 +3289,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "8cTryD505KkZYmQXprbxM6"
+    "_id": "9crnFPOnJLtYErVkSgxaAN"
   },
   {
     "__type__": "cc.Label",
@@ -3302,8 +3305,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "在农场担任副厂长的工作。与农场",
-    "_N$string": "在农场担任副厂长的工作。与农场",
+    "_string": "农场副场长（男） ",
+    "_N$string": "农场副场长（男） ",
     "_fontSize": 14,
     "_lineHeight": 20,
     "_enableWrapText": true,
@@ -3316,7 +3319,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "f6NW5XdbhLEbnyqMbP2Pt9"
+    "_id": "095eXy3o1CxrAsQJ79AP/4"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -3326,7 +3329,7 @@
       "__id__": 68
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -3354,8 +3357,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -110,
-      "y": 37.400000000000006,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -3375,7 +3378,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "2cm0yKIxBKsqm6EApgT6IN"
+    "_id": "b3exXLMJJNJ4b+Wj0AOUt9"
   },
   {
     "__type__": "cc.Label",
@@ -3391,8 +3394,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "主是好友，一起合资创办了农场，",
-    "_N$string": "主是好友，一起合资创办了农场，",
+    "_string": "在农场担任副厂长的工作。与农场",
+    "_N$string": "在农场担任副厂长的工作。与农场",
     "_fontSize": 14,
     "_lineHeight": 20,
     "_enableWrapText": true,
@@ -3405,7 +3408,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "3e7TaeqPZA9K+pDRuXxUcW"
+    "_id": "9cvYcLGAtDIaJVyRejgdJK"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -3415,7 +3418,7 @@
       "__id__": 68
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -3443,8 +3446,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -110,
-      "y": 17.400000000000006,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -3464,7 +3467,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "6cuabQS3BDxrAgEwm1FVZQ"
+    "_id": "219o6hkQBMs51i6p0YwZgz"
   },
   {
     "__type__": "cc.Label",
@@ -3480,8 +3483,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "在创办农场与经营农场上费了很多",
-    "_N$string": "在创办农场与经营农场上费了很多",
+    "_string": "主是好友，一起合资创办了农场，",
+    "_N$string": "主是好友，一起合资创办了农场，",
     "_fontSize": 14,
     "_lineHeight": 20,
     "_enableWrapText": true,
@@ -3494,7 +3497,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "9djRFRAM9K0JY4IJz5dbG8"
+    "_id": "15fAsugY1EIaDUsU2JAMMG"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -3504,100 +3507,11 @@
       "__id__": 68
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
         "__id__": 76
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 196,
-      "height": 25.2
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -110,
-      "y": -2.5999999999999943,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "showInEditor": false,
-    "_id": "a2jFKnSr5H9qhG8Q7S1zml"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 75
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": true,
-    "_string": "心思。平时两个人看起来和和睦",
-    "_N$string": "心思。平时两个人看起来和和睦",
-    "_fontSize": 14,
-    "_lineHeight": 20,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "b7+JYvdhlC151AnM8IvX5N"
-  },
-  {
-    "__type__": "cc.PrivateNode",
-    "_name": "RICHTEXT_CHILD",
-    "_objFlags": 1024,
-    "_parent": {
-      "__id__": 68
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 78
       }
     ],
     "_prefab": null,
@@ -3621,8 +3535,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -110,
-      "y": -22.599999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -3642,7 +3556,96 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c2To7xjYZJRqfuldndVlg2"
+    "_id": "37EDzIV41OVLp/JjrURqRj"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 75
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "在创办农场与经营农场上费了很多",
+    "_N$string": "在创办农场与经营农场上费了很多",
+    "_fontSize": 14,
+    "_lineHeight": 20,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "91hrbAYOFGCKG4lOQfAYGe"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 68
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 78
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 196,
+      "height": 25.2
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "390wOWpxBPZaNhYIgadiKR"
   },
   {
     "__type__": "cc.Label",
@@ -3658,8 +3661,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "睦，实际上两个人由于农场的财产",
-    "_N$string": "睦，实际上两个人由于农场的财产",
+    "_string": "心思。平时两个人看起来和和睦",
+    "_N$string": "心思。平时两个人看起来和和睦",
     "_fontSize": 14,
     "_lineHeight": 20,
     "_enableWrapText": true,
@@ -3672,7 +3675,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "4c/RR0Pp9HDJofeCXgjn6l"
+    "_id": "bd+GAEnihD/7/tIeeTayRt"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -3682,7 +3685,7 @@
       "__id__": 68
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -3710,8 +3713,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -110,
-      "y": -42.599999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -3731,7 +3734,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "91sAcEXwVF1KtTtSV+LZF5"
+    "_id": "b5uyVAFGhGrZ9yDg35vbUD"
   },
   {
     "__type__": "cc.Label",
@@ -3747,8 +3750,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "分配的问题有诸多矛盾。副厂长曾",
-    "_N$string": "分配的问题有诸多矛盾。副厂长曾",
+    "_string": "睦，实际上两个人由于农场的财产",
+    "_N$string": "睦，实际上两个人由于农场的财产",
     "_fontSize": 14,
     "_lineHeight": 20,
     "_enableWrapText": true,
@@ -3761,7 +3764,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "debCafa7hOu6cy0XBU48Q3"
+    "_id": "ae700bqwhFjJirXacAv9of"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -3771,7 +3774,7 @@
       "__id__": 68
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -3799,8 +3802,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -110,
-      "y": -62.599999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -3820,7 +3823,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "209uxDb9REt7TT44zex40Y"
+    "_id": "56XqSfL0BG8a3z8JsoT2Hm"
   },
   {
     "__type__": "cc.Label",
@@ -3828,6 +3831,95 @@
     "_objFlags": 0,
     "node": {
       "__id__": 81
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "分配的问题有诸多矛盾。副厂长曾",
+    "_N$string": "分配的问题有诸多矛盾。副厂长曾",
+    "_fontSize": 14,
+    "_lineHeight": 20,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "eaQFUqDglDJqW+45xBXlFN"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 68
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 84
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 210,
+      "height": 25.2
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "e7sHjU6SlMMrTVx1gLYMrD"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 83
     },
     "_enabled": true,
     "_materials": [
@@ -3850,7 +3942,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "e0LCNIbB5LFqfmCphYINun"
+    "_id": "42t6l3snZMYpEla0svHQf+"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -3860,11 +3952,11 @@
       "__id__": 68
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 84
+        "__id__": 86
       }
     ],
     "_prefab": null,
@@ -3888,8 +3980,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -110,
-      "y": -82.6,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -3909,14 +4001,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "f75yem6wdB4LgRQJC8NQjy"
+    "_id": "22XNiWUPRKkY7XqrcUcPzo"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 83
+      "__id__": 85
     },
     "_enabled": true,
     "_materials": [
@@ -3939,7 +4031,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "3c2nhZWrxF3JVrS/Z0B6AF"
+    "_id": "c83CFPE81F1aEUyyN3x2dI"
   },
   {
     "__type__": "cc.RichText",
@@ -3951,7 +4043,7 @@
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "在农场担任副厂长的工作。与农场主是好友，一起合资创办了农场，在创办农场与经营农场上费了很多心思。平时两个人看起来和和睦睦，实际上两个人由于农场的财产分配的问题有诸多矛盾。副厂长曾经想过要背叛农场主，但始终未能狠下心去伤害老友。",
+    "_N$string": "农场副场长（男） \n在农场担任副厂长的工作。与农场主是好友，一起合资创办了农场，在创办农场与经营农场上费了很多心思。平时两个人看起来和和睦睦，实际上两个人由于农场的财产分配的问题有诸多矛盾。副厂长曾经想过要背叛农场主，但始终未能狠下心去伤害老友。",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 14,
     "_N$font": null,
@@ -4009,7 +4101,7 @@
       "__id__": 62
     },
     "redCircle": {
-      "__id__": 88
+      "__id__": 90
     },
     "_id": "729UMiZtFDY5gF9+6R8JDI"
   },
@@ -4025,7 +4117,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 89
+        "__id__": 91
       }
     ],
     "_prefab": null,
@@ -4076,7 +4168,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 88
+      "__id__": 90
     },
     "_enabled": true,
     "_materials": [
@@ -4115,7 +4207,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 91
+        "__id__": 93
       }
     ],
     "_N$interactable": true,
@@ -4194,20 +4286,20 @@
     },
     "_children": [
       {
-        "__id__": 93
+        "__id__": 95
       }
     ],
     "_active": false,
     "_level": 1,
     "_components": [
       {
-        "__id__": 111
+        "__id__": 115
       },
       {
-        "__id__": 112
+        "__id__": 116
       },
       {
-        "__id__": 114
+        "__id__": 118
       }
     ],
     "_prefab": null,
@@ -4258,12 +4350,9 @@
     "_name": "intro3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 92
+      "__id__": 94
     },
     "_children": [
-      {
-        "__id__": 94
-      },
       {
         "__id__": 96
       },
@@ -4284,13 +4373,19 @@
       },
       {
         "__id__": 108
+      },
+      {
+        "__id__": 110
+      },
+      {
+        "__id__": 112
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 110
+        "__id__": 114
       }
     ],
     "_prefab": null,
@@ -4305,7 +4400,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 250,
-      "height": 181.72
+      "height": 203.72
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4343,99 +4438,10 @@
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 93
+      "__id__": 95
     },
     "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 95
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 238,
-      "height": 27.72
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -125,
-      "y": 63.14,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "showInEditor": false,
-    "_id": "3czWKLDW9JkorH9kRVQbVB"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 94
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": true,
-    "_string": "一个年轻的小伙子，一个月前才来到农",
-    "_N$string": "一个年轻的小伙子，一个月前才来到农",
-    "_fontSize": 14,
-    "_lineHeight": 22,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "7cKR3y/9tMPIyhDhlJE61B"
-  },
-  {
-    "__type__": "cc.PrivateNode",
-    "_name": "RICHTEXT_CHILD",
-    "_objFlags": 1024,
-    "_parent": {
-      "__id__": 93
-    },
-    "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -4453,7 +4459,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 238,
+      "width": 84,
       "height": 27.72
     },
     "_anchorPoint": {
@@ -4463,8 +4469,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": 41.14,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -4484,7 +4490,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "56rPaQs29F5LhFW3Du/dn8"
+    "_id": "b3Z16DT6pCyYtauOFBZWZp"
   },
   {
     "__type__": "cc.Label",
@@ -4500,8 +4506,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "场工作，工作积极，但有些吹毛求疵。",
-    "_N$string": "场工作，工作积极，但有些吹毛求疵。",
+    "_string": "送货员（男）",
+    "_N$string": "送货员（男）",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -4514,17 +4520,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d6+G6pCXpMPaqkfwebHQeU"
+    "_id": "aenqfoK6JPR6wUukuv8nsz"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 93
+      "__id__": 95
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -4552,8 +4558,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": 19.14,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -4573,7 +4579,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "05pKupju5Iepph9a8YQ4zE"
+    "_id": "a7N4RT3dlFDqoV0XpA6nkN"
   },
   {
     "__type__": "cc.Label",
@@ -4589,8 +4595,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "他胆子很小，有些怕大型的动物，每次",
-    "_N$string": "他胆子很小，有些怕大型的动物，每次",
+    "_string": "一个年轻的小伙子，一个月前才来到农",
+    "_N$string": "一个年轻的小伙子，一个月前才来到农",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -4603,17 +4609,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "72Lm/y94JOW6I4Hm6y+89a"
+    "_id": "c93a12KzZMqYGGrq0bU7ep"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 93
+      "__id__": 95
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -4641,8 +4647,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": -2.8599999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -4662,7 +4668,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "f0NiN9l5NFJ6nhe/pCDOGo"
+    "_id": "41v3rcBfpNIJ7RIizGBGCo"
   },
   {
     "__type__": "cc.Label",
@@ -4678,8 +4684,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "送货都战战兢兢的。虽然害怕，但他仍",
-    "_N$string": "送货都战战兢兢的。虽然害怕，但他仍",
+    "_string": "场工作，工作积极，但有些吹毛求疵。",
+    "_N$string": "场工作，工作积极，但有些吹毛求疵。",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -4692,17 +4698,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "220Al1Ed5H+qJPJy/yRtMB"
+    "_id": "96ttEkTtxM4ZGqF34i33hv"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 93
+      "__id__": 95
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -4730,8 +4736,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": -24.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -4751,7 +4757,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "7bHUiM6NROs4Zcv89qmZeG"
+    "_id": "d2qqlfxURNq6s6celB30+g"
   },
   {
     "__type__": "cc.Label",
@@ -4767,8 +4773,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "努力的做好自己的本职工作，每天都很",
-    "_N$string": "努力的做好自己的本职工作，每天都很",
+    "_string": "他胆子很小，有些怕大型的动物，每次",
+    "_N$string": "他胆子很小，有些怕大型的动物，每次",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -4781,17 +4787,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "50HrEMgDREFLEYAA4gdC2v"
+    "_id": "eeXntCF0JJs4nEEutwnXj0"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 93
+      "__id__": 95
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -4819,8 +4825,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": -46.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -4840,7 +4846,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "634SH07XZI+akAgLCW8W/n"
+    "_id": "45Dpe4J9ZGq76rUNsn/ND/"
   },
   {
     "__type__": "cc.Label",
@@ -4856,8 +4862,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "早起来送货，目的就是为了帮助家里分",
-    "_N$string": "早起来送货，目的就是为了帮助家里分",
+    "_string": "送货都战战兢兢的。虽然害怕，但他仍",
+    "_N$string": "送货都战战兢兢的。虽然害怕，但他仍",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -4870,17 +4876,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "ccUFkEDZpIDYcqHArX3sez"
+    "_id": "09mHKx0ghItIQ/GOaBha7R"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 93
+      "__id__": 95
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -4908,8 +4914,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": -68.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -4929,7 +4935,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "b3kNzpweJLH7uslg9fzyhb"
+    "_id": "336wUawvxHFr4Gv1qPsGLo"
   },
   {
     "__type__": "cc.Label",
@@ -4937,6 +4943,184 @@
     "_objFlags": 0,
     "node": {
       "__id__": 106
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "努力的做好自己的本职工作，每天都很",
+    "_N$string": "努力的做好自己的本职工作，每天都很",
+    "_fontSize": 14,
+    "_lineHeight": 22,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "a399j1tj5Bwr3GE5lv6Kzw"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 95
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 109
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 238,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "5fo+psVmFN7q/1Hd3PDDDo"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 108
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "早起来送货，目的就是为了帮助家里分",
+    "_N$string": "早起来送货，目的就是为了帮助家里分",
+    "_fontSize": 14,
+    "_lineHeight": 22,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "9enPb7BfxNCK7ctq39V9l4"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 95
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 111
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 238,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "d5pfJzteNEPoMmQQvVS8Z2"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 110
     },
     "_enabled": true,
     "_materials": [
@@ -4959,21 +5143,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "ae3K+2efxKUbKb9LIFXDh2"
+    "_id": "b4eAnWg/RDfqd6j7qJk0nC"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 93
+      "__id__": 95
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 109
+        "__id__": 113
       }
     ],
     "_prefab": null,
@@ -4997,8 +5181,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -125,
-      "y": -90.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -5018,14 +5202,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c5p8APqolJep5Dg0Gkb9KD"
+    "_id": "6bkc8IOTtHT7NovekdthOM"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 108
+      "__id__": 112
     },
     "_enabled": true,
     "_materials": [
@@ -5048,19 +5232,19 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "eaDpQECy5C/5E9sw35M/BX"
+    "_id": "a6CZtgJY9HLp6T4vbPudRi"
   },
   {
     "__type__": "cc.RichText",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 93
+      "__id__": 95
     },
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "一个年轻的小伙子，一个月前才来到农场工作，工作积极，但有些吹毛求疵。他胆子很小，有些怕大型的动物，每次送货都战战兢兢的。虽然害怕，但他仍努力的做好自己的本职工作，每天都很早起来送货，目的就是为了帮助家里分担经济上的负担。但近期因为送货数量不达标，经常被农场主扣钱。",
+    "_N$string": "送货员（男）\n一个年轻的小伙子，一个月前才来到农场工作，工作积极，但有些吹毛求疵。他胆子很小，有些怕大型的动物，每次送货都战战兢兢的。虽然害怕，但他仍努力的做好自己的本职工作，每天都很早起来送货，目的就是为了帮助家里分担经济上的负担。但近期因为送货数量不达标，经常被农场主扣钱。",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 14,
     "_N$font": null,
@@ -5075,7 +5259,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 92
+      "__id__": 94
     },
     "_enabled": true,
     "_materials": [
@@ -5107,14 +5291,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 92
+      "__id__": 94
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 113
+        "__id__": 117
       }
     ],
     "_N$interactable": true,
@@ -5170,14 +5354,14 @@
     "hoverSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 92
+      "__id__": 94
     },
     "_id": "9fQOMwvSNEi440+gq8a2Q6"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 92
+      "__id__": 94
     },
     "component": "",
     "_componentId": "0f3a2RZth1E/ryxAhd7cwTe",
@@ -5189,7 +5373,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 92
+      "__id__": 94
     },
     "_enabled": true,
     "cid": 2,
@@ -5200,7 +5384,7 @@
       "__id__": 62
     },
     "redCircle": {
-      "__id__": 115
+      "__id__": 119
     },
     "_id": "4fTT2oPnpGvZRyTmIV433X"
   },
@@ -5216,7 +5400,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 116
+        "__id__": 120
       }
     ],
     "_prefab": null,
@@ -5267,7 +5451,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 115
+      "__id__": 119
     },
     "_enabled": true,
     "_materials": [
@@ -5303,20 +5487,20 @@
     },
     "_children": [
       {
-        "__id__": 118
+        "__id__": 122
       }
     ],
     "_active": false,
     "_level": 1,
     "_components": [
       {
-        "__id__": 134
+        "__id__": 140
       },
       {
-        "__id__": 135
+        "__id__": 141
       },
       {
-        "__id__": 137
+        "__id__": 143
       }
     ],
     "_prefab": null,
@@ -5367,15 +5551,9 @@
     "_name": "intro4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 117
+      "__id__": 121
     },
     "_children": [
-      {
-        "__id__": 119
-      },
-      {
-        "__id__": 121
-      },
       {
         "__id__": 123
       },
@@ -5390,13 +5568,22 @@
       },
       {
         "__id__": 131
+      },
+      {
+        "__id__": 133
+      },
+      {
+        "__id__": 135
+      },
+      {
+        "__id__": 137
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 133
+        "__id__": 139
       }
     ],
     "_prefab": null,
@@ -5411,7 +5598,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 159.72
+      "height": 181.72
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -5449,188 +5636,10 @@
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 118
+      "__id__": 122
     },
     "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 120
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 294,
-      "height": 27.72
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -150,
-      "y": 52.14,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "showInEditor": false,
-    "_id": "48MSqooVVN7bf7+w+aonJ3"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 119
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": true,
-    "_string": "在农场担任动物饲养员工作，案发当日上夜班。",
-    "_N$string": "在农场担任动物饲养员工作，案发当日上夜班。",
-    "_fontSize": 14,
-    "_lineHeight": 22,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "adUloNNMVHWY2rdIWLHOZ3"
-  },
-  {
-    "__type__": "cc.PrivateNode",
-    "_name": "RICHTEXT_CHILD",
-    "_objFlags": 1024,
-    "_parent": {
-      "__id__": 118
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 122
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 294,
-      "height": 27.72
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -150,
-      "y": 30.14,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "showInEditor": false,
-    "_id": "a5pS34t+BC/5NB/1GObxwT"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 121
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": true,
-    "_string": "本是一个企业高管，后来由于背叛了企业，被企",
-    "_N$string": "本是一个企业高管，后来由于背叛了企业，被企",
-    "_fontSize": 14,
-    "_lineHeight": 22,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "97hqfATT1MQqLrOmo82Vod"
-  },
-  {
-    "__type__": "cc.PrivateNode",
-    "_name": "RICHTEXT_CHILD",
-    "_objFlags": 1024,
-    "_parent": {
-      "__id__": 118
-    },
-    "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -5648,7 +5657,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 294,
+      "width": 154,
       "height": 27.72
     },
     "_anchorPoint": {
@@ -5658,8 +5667,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": 8.14,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -5679,7 +5688,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "616VTVh+1DEIlUEGk2BtC6"
+    "_id": "bdhX4AZgNG271Jmdfl1U3p"
   },
   {
     "__type__": "cc.Label",
@@ -5695,8 +5704,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "业驱逐，沦落到农场。失落的他决定洗心革面，",
-    "_N$string": "业驱逐，沦落到农场。失落的他决定洗心革面，",
+    "_string": "动物饲养员（男、夜班）",
+    "_N$string": "动物饲养员（男、夜班）",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -5709,17 +5718,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "02Aps3xGFEVbt6oD8MdRvW"
+    "_id": "178I8Eo4lFeLbPDC59rSs4"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 118
+      "__id__": 122
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -5747,8 +5756,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -13.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -5768,7 +5777,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "72tj+omn9MRZFWT44AXwzi"
+    "_id": "26hd5MbQpCV4L4iTU7FaL2"
   },
   {
     "__type__": "cc.Label",
@@ -5784,8 +5793,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "积极工作，每天总是起的很早给动物喂食，但是",
-    "_N$string": "积极工作，每天总是起的很早给动物喂食，但是",
+    "_string": "在农场担任动物饲养员工作，案发当日上夜班。",
+    "_N$string": "在农场担任动物饲养员工作，案发当日上夜班。",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -5798,17 +5807,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "54tlTTx81AkaqrMs2kPF13"
+    "_id": "36fjPx3HNAAJK6PJK3FNKu"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 118
+      "__id__": 122
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -5836,8 +5845,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -35.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -5857,7 +5866,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c8YaKmbINDtabretoq7Bok"
+    "_id": "dcE3x7AWZPO7X1CiaC4uxl"
   },
   {
     "__type__": "cc.Label",
@@ -5873,8 +5882,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "某一次不小心把喂食的食品搞错了，导致数只动",
-    "_N$string": "某一次不小心把喂食的食品搞错了，导致数只动",
+    "_string": "本是一个企业高管，后来由于背叛了企业，被企",
+    "_N$string": "本是一个企业高管，后来由于背叛了企业，被企",
     "_fontSize": 14,
     "_lineHeight": 22,
     "_enableWrapText": true,
@@ -5887,17 +5896,17 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d00YBW9SJFgp2IShxYBq0P"
+    "_id": "3cnXPMLOVDwJkuEM91BBDr"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 118
+      "__id__": 122
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
@@ -5925,8 +5934,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -57.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -5946,7 +5955,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "dejMWZ50dMFKaMcTs29zzA"
+    "_id": "366A5Mg1NCR5C/Wm8ZNXn0"
   },
   {
     "__type__": "cc.Label",
@@ -5954,6 +5963,273 @@
     "_objFlags": 0,
     "node": {
       "__id__": 129
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "业驱逐，沦落到农场。失落的他决定洗心革面，",
+    "_N$string": "业驱逐，沦落到农场。失落的他决定洗心革面，",
+    "_fontSize": 14,
+    "_lineHeight": 22,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "606mlnAlROso7E4W1zc7kU"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 122
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 132
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 294,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "e1lIWI/8RMvJLF/SRLQPhJ"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 131
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "积极工作，每天总是起的很早给动物喂食，但是",
+    "_N$string": "积极工作，每天总是起的很早给动物喂食，但是",
+    "_fontSize": 14,
+    "_lineHeight": 22,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "1bH6ctd4lLBqoOtT27hoit"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 122
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 134
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 294,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "7eJCUN0i1OnbCf+sX+QKIR"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 133
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "某一次不小心把喂食的食品搞错了，导致数只动",
+    "_N$string": "某一次不小心把喂食的食品搞错了，导致数只动",
+    "_fontSize": 14,
+    "_lineHeight": 22,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "95nWQsi7NPSqisvwkS3Xyr"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 122
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 136
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 294,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "83hsa+ZMRJZIoWos92FLxt"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 135
     },
     "_enabled": true,
     "_materials": [
@@ -5976,21 +6252,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "1bMCqGLKpAV5b7MtX55LbD"
+    "_id": "77lqggX3NFGaTYdNb97GCz"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 118
+      "__id__": 122
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 132
+        "__id__": 138
       }
     ],
     "_prefab": null,
@@ -6014,8 +6290,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -79.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -6035,14 +6311,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "4aAwuA6XVF0Js9GiijKR8I"
+    "_id": "57+AmD+ehN04MCvfrQqQQw"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 131
+      "__id__": 137
     },
     "_enabled": true,
     "_materials": [
@@ -6065,19 +6341,19 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "e7fXBkx9tOhZ6CZJk9YRo/"
+    "_id": "85xKBtbmhCLJxB/vIBnrV1"
   },
   {
     "__type__": "cc.RichText",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 118
+      "__id__": 122
     },
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "在农场担任动物饲养员工作，案发当日上夜班。本是一个企业高管，后来由于背叛了企业，被企业驱逐，沦落到农场。失落的他决定洗心革面，积极工作，每天总是起的很早给动物喂食，但是某一次不小心把喂食的食品搞错了，导致数只动物的死亡，之后便一直被农场主斥责辱骂，对此他怀恨在心。",
+    "_N$string": "动物饲养员（男、夜班）\n在农场担任动物饲养员工作，案发当日上夜班。本是一个企业高管，后来由于背叛了企业，被企业驱逐，沦落到农场。失落的他决定洗心革面，积极工作，每天总是起的很早给动物喂食，但是某一次不小心把喂食的食品搞错了，导致数只动物的死亡，之后便一直被农场主斥责辱骂，对此他怀恨在心。",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 14,
     "_N$font": null,
@@ -6092,7 +6368,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 117
+      "__id__": 121
     },
     "_enabled": true,
     "_materials": [
@@ -6124,14 +6400,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 117
+      "__id__": 121
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 136
+        "__id__": 142
       }
     ],
     "_N$interactable": true,
@@ -6187,14 +6463,14 @@
     "hoverSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 117
+      "__id__": 121
     },
     "_id": "32AcoViQhEWpgvk+TViHYZ"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 117
+      "__id__": 121
     },
     "component": "",
     "_componentId": "0f3a2RZth1E/ryxAhd7cwTe",
@@ -6206,7 +6482,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 117
+      "__id__": 121
     },
     "_enabled": true,
     "cid": 3,
@@ -6217,7 +6493,7 @@
       "__id__": 62
     },
     "redCircle": {
-      "__id__": 138
+      "__id__": 144
     },
     "_id": "751GoZ7rVMhpWDc9bIdaZ9"
   },
@@ -6233,7 +6509,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 139
+        "__id__": 145
       }
     ],
     "_prefab": null,
@@ -6284,7 +6560,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 138
+      "__id__": 144
     },
     "_enabled": true,
     "_materials": [
@@ -6320,20 +6596,20 @@
     },
     "_children": [
       {
-        "__id__": 141
+        "__id__": 147
       }
     ],
     "_active": false,
     "_level": 1,
     "_components": [
       {
-        "__id__": 153
+        "__id__": 161
       },
       {
-        "__id__": 154
+        "__id__": 162
       },
       {
-        "__id__": 156
+        "__id__": 164
       }
     ],
     "_prefab": null,
@@ -6384,30 +6660,33 @@
     "_name": "intro5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 140
+      "__id__": 146
     },
     "_children": [
-      {
-        "__id__": 142
-      },
-      {
-        "__id__": 144
-      },
-      {
-        "__id__": 146
-      },
       {
         "__id__": 148
       },
       {
         "__id__": 150
+      },
+      {
+        "__id__": 152
+      },
+      {
+        "__id__": 154
+      },
+      {
+        "__id__": 156
+      },
+      {
+        "__id__": 158
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 152
+        "__id__": 160
       }
     ],
     "_prefab": null,
@@ -6422,7 +6701,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 300,
-      "height": 115.72
+      "height": 137.72
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -6460,14 +6739,103 @@
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 141
+      "__id__": 147
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 143
+        "__id__": 149
+      }
+    ],
+    "_prefab": null,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 158,
+      "height": 27.72
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
+    "_eulerAngles": {
+      "__type__": "cc.Vec3",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_is3DNode": false,
+    "groupIndex": 0,
+    "showInEditor": false,
+    "_id": "f0rdVvNhpGz4lF/SVI5iZ+"
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 148
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_useOriginalSize": true,
+    "_string": "财务管理员 （女、夜班）",
+    "_N$string": "财务管理员 （女、夜班）",
+    "_fontSize": 14,
+    "_lineHeight": 22,
+    "_enableWrapText": true,
+    "_N$file": null,
+    "_isSystemFontUsed": true,
+    "_spacingX": 0,
+    "_batchAsBitmap": false,
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0,
+    "_N$cacheMode": 0,
+    "_id": "3bDY9BAS9FXqpgSH7vK6ks"
+  },
+  {
+    "__type__": "cc.PrivateNode",
+    "_name": "RICHTEXT_CHILD",
+    "_objFlags": 1024,
+    "_parent": {
+      "__id__": 147
+    },
+    "_children": [],
+    "_active": true,
+    "_level": 3,
+    "_components": [
+      {
+        "__id__": 151
       }
     ],
     "_prefab": null,
@@ -6491,8 +6859,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": 30.14,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -6512,14 +6880,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "73HOe/QTlP1qZZk5XGpw/k"
+    "_id": "5e9EFQsl5JE6bgpodepQ5z"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 142
+      "__id__": 150
     },
     "_enabled": true,
     "_materials": [
@@ -6542,21 +6910,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "fdtYHzwdBOIJqRC1S9IA7P"
+    "_id": "65Z4T1vHBN0o6SKV79mbAt"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 141
+      "__id__": 147
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 145
+        "__id__": 153
       }
     ],
     "_prefab": null,
@@ -6580,8 +6948,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": 8.14,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -6601,14 +6969,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "8bIhM6gp9L2YP8KqGx8FJ0"
+    "_id": "f6Bg8ATX9BwYpQNdaFZnfZ"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 144
+      "__id__": 152
     },
     "_enabled": true,
     "_materials": [
@@ -6631,21 +6999,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "87I02lkFJDxoN/O12XMdZY"
+    "_id": "b66SUR43FJSoahbct/k0wy"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 141
+      "__id__": 147
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 147
+        "__id__": 155
       }
     ],
     "_prefab": null,
@@ -6669,8 +7037,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -13.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -6690,14 +7058,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "72BgZRdOpHSp7yYGRiqyYE"
+    "_id": "ffbEGVriFPC6cl2z/3WDhV"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 146
+      "__id__": 154
     },
     "_enabled": true,
     "_materials": [
@@ -6720,21 +7088,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "206Cj+sIdMkLSuGhP5B5f5"
+    "_id": "faPMmFM1BO6Jwzu5tlOwL2"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 141
+      "__id__": 147
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 149
+        "__id__": 157
       }
     ],
     "_prefab": null,
@@ -6758,8 +7126,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -35.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -6779,14 +7147,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "7eiccM0ChKbL+yaqdiKOhc"
+    "_id": "e5WjQK0NxO76fclSBOHbqE"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 148
+      "__id__": 156
     },
     "_enabled": true,
     "_materials": [
@@ -6809,21 +7177,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "93jkfn2vxD/75hThxYD5Th"
+    "_id": "b7R5cedfVJA6O+tABVhbTj"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 141
+      "__id__": 147
     },
     "_children": [],
-    "_active": false,
+    "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 151
+        "__id__": 159
       }
     ],
     "_prefab": null,
@@ -6847,8 +7215,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -150,
-      "y": -57.86,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -6868,14 +7236,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "36OIyi/qFDbY5cc0UwgiSF"
+    "_id": "87M0cvRMhFUJgD0sWWzAyR"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 150
+      "__id__": 158
     },
     "_enabled": true,
     "_materials": [
@@ -6898,19 +7266,19 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "aclEwFQvNIaotSstt0B+zB"
+    "_id": "8c0yPI45tLro3nULtfgQOO"
   },
   {
     "__type__": "cc.RichText",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 141
+      "__id__": 147
     },
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "在农场担任财务管理员工作，案发当日因为刚被农场主斥责过账目对不上而被强行留下来上夜班整理账目。据身边的人说是一个工作认真积极的人，但是自尊心很强，非常讨厌被人指责，因此对农场主有诸多不满。",
+    "_N$string": "财务管理员 （女、夜班）\n在农场担任财务管理员工作，案发当日因为刚被农场主斥责过账目对不上而被强行留下来上夜班整理账目。据身边的人说是一个工作认真积极的人，但是自尊心很强，非常讨厌被人指责，因此对农场主有诸多不满。",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 14,
     "_N$font": null,
@@ -6925,7 +7293,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 140
+      "__id__": 146
     },
     "_enabled": true,
     "_materials": [
@@ -6957,14 +7325,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 140
+      "__id__": 146
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 155
+        "__id__": 163
       }
     ],
     "_N$interactable": true,
@@ -7020,14 +7388,14 @@
     "hoverSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 140
+      "__id__": 146
     },
     "_id": "05Oe2uqitJjqYVXor0kz34"
   },
   {
     "__type__": "cc.ClickEvent",
     "target": {
-      "__id__": 140
+      "__id__": 146
     },
     "component": "",
     "_componentId": "0f3a2RZth1E/ryxAhd7cwTe",
@@ -7039,7 +7407,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 140
+      "__id__": 146
     },
     "_enabled": true,
     "cid": 4,
@@ -7050,7 +7418,7 @@
       "__id__": 62
     },
     "redCircle": {
-      "__id__": 157
+      "__id__": 165
     },
     "_id": "ecPc0eCWtFPI1cp5eMNwAj"
   },
@@ -7066,7 +7434,7 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 158
+        "__id__": 166
       }
     ],
     "_prefab": null,
@@ -7117,7 +7485,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 157
+      "__id__": 165
     },
     "_enabled": true,
     "_materials": [
@@ -7149,24 +7517,24 @@
     "_name": "editbox1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [
       {
-        "__id__": 221
+        "__id__": 229
       },
       {
-        "__id__": 223
+        "__id__": 231
       },
       {
-        "__id__": 226
+        "__id__": 234
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 229
+        "__id__": 237
       }
     ],
     "_prefab": null,
@@ -7223,28 +7591,28 @@
     },
     "_children": [
       {
-        "__id__": 161
+        "__id__": 169
       },
       {
-        "__id__": 163
-      },
-      {
-        "__id__": 173
-      },
-      {
-        "__id__": 159
+        "__id__": 171
       },
       {
         "__id__": 181
       },
       {
-        "__id__": 191
+        "__id__": 167
       },
       {
-        "__id__": 201
+        "__id__": 189
       },
       {
-        "__id__": 211
+        "__id__": 199
+      },
+      {
+        "__id__": 209
+      },
+      {
+        "__id__": 219
       }
     ],
     "_active": true,
@@ -7298,14 +7666,14 @@
     "_name": "zt1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 162
+        "__id__": 170
       }
     ],
     "_prefab": null,
@@ -7356,7 +7724,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 161
+      "__id__": 169
     },
     "_enabled": true,
     "_materials": [
@@ -7388,27 +7756,27 @@
     "_name": "richtext",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [
       {
-        "__id__": 164
+        "__id__": 172
       },
       {
-        "__id__": 166
+        "__id__": 174
       },
       {
-        "__id__": 168
+        "__id__": 176
       },
       {
-        "__id__": 170
+        "__id__": 178
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 172
+        "__id__": 180
       }
     ],
     "_prefab": null,
@@ -7461,14 +7829,14 @@
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 163
+      "__id__": 171
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 165
+        "__id__": 173
       }
     ],
     "_prefab": null,
@@ -7513,14 +7881,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "56QjCeITpCurQveCo98Sjg"
+    "_id": "2freH7/2VJKL6vKNkm4SvC"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 164
+      "__id__": 172
     },
     "_enabled": true,
     "_materials": [
@@ -7545,21 +7913,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "56jtQPFTFHNqL/SevrRZp9"
+    "_id": "cdpXEH3vVI4psLtyu1UVOr"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 163
+      "__id__": 171
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 167
+        "__id__": 175
       }
     ],
     "_prefab": null,
@@ -7604,14 +7972,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "230lJKS01M3K1xt05eK0y1"
+    "_id": "0fc86j8JZGyYUSejmjB0KH"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 166
+      "__id__": 174
     },
     "_enabled": true,
     "_materials": [
@@ -7636,21 +8004,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d2Uv7gGPFLu6zQIIL3oIzj"
+    "_id": "3f4k0Y+ahIyb1TjBvb7ymW"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 163
+      "__id__": 171
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 169
+        "__id__": 177
       }
     ],
     "_prefab": null,
@@ -7695,14 +8063,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "902XMjNGFF4qa3r5oGgdd+"
+    "_id": "37A/GK+v9PbYzXUqQSzkFH"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 168
+      "__id__": 176
     },
     "_enabled": true,
     "_materials": [
@@ -7727,21 +8095,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "cdKtJ2aYJMQosSFZGcRvkY"
+    "_id": "18OFL9nttC64GbmcVCLaHy"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 163
+      "__id__": 171
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 171
+        "__id__": 179
       }
     ],
     "_prefab": null,
@@ -7786,14 +8154,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "9cjAZVxhFBm4Px7sHXxymQ"
+    "_id": "0d5MNvBjhIzZwY2dK90INy"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 170
+      "__id__": 178
     },
     "_enabled": true,
     "_materials": [
@@ -7818,14 +8186,14 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "31bymE+0BCJ45W2SmOlV5J"
+    "_id": "74R8Y+zjZOcopspqPgJT/m"
   },
   {
     "__type__": "cc.RichText",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 163
+      "__id__": 171
     },
     "_enabled": true,
     "_fontFamily": "Arial",
@@ -7847,18 +8215,18 @@
     "_name": "button",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [
       {
-        "__id__": 174
+        "__id__": 182
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 179
+        "__id__": 187
       }
     ],
     "_prefab": null,
@@ -7911,21 +8279,21 @@
     "_name": "Background",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 173
+      "__id__": 181
     },
     "_children": [
       {
-        "__id__": 175
+        "__id__": 183
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 177
+        "__id__": 185
       },
       {
-        "__id__": 178
+        "__id__": 186
       }
     ],
     "_prefab": null,
@@ -7978,14 +8346,14 @@
     "_name": "Label",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 174
+      "__id__": 182
     },
     "_children": [],
     "_active": true,
     "_level": 3,
     "_components": [
       {
-        "__id__": 176
+        "__id__": 184
       }
     ],
     "_prefab": null,
@@ -8038,7 +8406,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 175
+      "__id__": 183
     },
     "_enabled": true,
     "_materials": [
@@ -8070,7 +8438,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 174
+      "__id__": 182
     },
     "_enabled": true,
     "_materials": [
@@ -8102,7 +8470,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 174
+      "__id__": 182
     },
     "_enabled": true,
     "alignMode": 0,
@@ -8129,14 +8497,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 173
+      "__id__": 181
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 180
+        "__id__": 188
       }
     ],
     "_N$interactable": true,
@@ -8204,7 +8572,7 @@
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
     },
     "_N$target": {
-      "__id__": 174
+      "__id__": 182
     },
     "_id": "70zitL/0dONriqz0DmqEYR"
   },
@@ -8223,24 +8591,24 @@
     "_name": "editbox2",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [
       {
-        "__id__": 182
+        "__id__": 190
       },
       {
-        "__id__": 184
+        "__id__": 192
       },
       {
-        "__id__": 187
+        "__id__": 195
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 190
+        "__id__": 198
       }
     ],
     "_prefab": null,
@@ -8293,14 +8661,14 @@
     "_name": "input",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 181
+      "__id__": 189
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 183
+        "__id__": 191
       }
     ],
     "_prefab": null,
@@ -8351,7 +8719,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 182
+      "__id__": 190
     },
     "_enabled": true,
     "_materials": [
@@ -8383,17 +8751,17 @@
     "_name": "TEXT_LABEL",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 181
+      "__id__": 189
     },
     "_children": [],
     "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 185
+        "__id__": 193
       },
       {
-        "__id__": 186
+        "__id__": 194
       }
     ],
     "_prefab": null,
@@ -8446,7 +8814,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 184
+      "__id__": 192
     },
     "_enabled": true,
     "_materials": [],
@@ -8472,7 +8840,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 184
+      "__id__": 192
     },
     "_enabled": true,
     "alignMode": 0,
@@ -8499,17 +8867,17 @@
     "_name": "BACKGROUND_SPRITE",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 181
+      "__id__": 189
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 188
+        "__id__": 196
       },
       {
-        "__id__": 189
+        "__id__": 197
       }
     ],
     "_prefab": null,
@@ -8562,7 +8930,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 187
+      "__id__": 195
     },
     "_enabled": true,
     "_materials": [
@@ -8594,7 +8962,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 187
+      "__id__": 195
     },
     "_enabled": true,
     "alignMode": 0,
@@ -8621,7 +8989,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 181
+      "__id__": 189
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -8634,11 +9002,11 @@
     "editingDidEnded": [],
     "editingReturn": [],
     "_N$textLabel": {
-      "__id__": 185
+      "__id__": 193
     },
     "_N$placeholderLabel": null,
     "_N$background": {
-      "__id__": 188
+      "__id__": 196
     },
     "_N$inputFlag": 5,
     "_N$inputMode": 6,
@@ -8650,24 +9018,24 @@
     "_name": "editbox3",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [
       {
-        "__id__": 192
+        "__id__": 200
       },
       {
-        "__id__": 194
+        "__id__": 202
       },
       {
-        "__id__": 197
+        "__id__": 205
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 200
+        "__id__": 208
       }
     ],
     "_prefab": null,
@@ -8720,14 +9088,14 @@
     "_name": "input",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 191
+      "__id__": 199
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 193
+        "__id__": 201
       }
     ],
     "_prefab": null,
@@ -8778,7 +9146,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 192
+      "__id__": 200
     },
     "_enabled": true,
     "_materials": [
@@ -8810,17 +9178,17 @@
     "_name": "TEXT_LABEL",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 191
+      "__id__": 199
     },
     "_children": [],
     "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 195
+        "__id__": 203
       },
       {
-        "__id__": 196
+        "__id__": 204
       }
     ],
     "_prefab": null,
@@ -8873,7 +9241,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 194
+      "__id__": 202
     },
     "_enabled": true,
     "_materials": [],
@@ -8899,7 +9267,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 194
+      "__id__": 202
     },
     "_enabled": true,
     "alignMode": 0,
@@ -8926,17 +9294,17 @@
     "_name": "BACKGROUND_SPRITE",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 191
+      "__id__": 199
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 198
+        "__id__": 206
       },
       {
-        "__id__": 199
+        "__id__": 207
       }
     ],
     "_prefab": null,
@@ -8989,7 +9357,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 197
+      "__id__": 205
     },
     "_enabled": true,
     "_materials": [
@@ -9021,7 +9389,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 197
+      "__id__": 205
     },
     "_enabled": true,
     "alignMode": 0,
@@ -9048,7 +9416,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 191
+      "__id__": 199
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -9061,11 +9429,11 @@
     "editingDidEnded": [],
     "editingReturn": [],
     "_N$textLabel": {
-      "__id__": 195
+      "__id__": 203
     },
     "_N$placeholderLabel": null,
     "_N$background": {
-      "__id__": 198
+      "__id__": 206
     },
     "_N$inputFlag": 5,
     "_N$inputMode": 6,
@@ -9077,24 +9445,24 @@
     "_name": "editbox4",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [
       {
-        "__id__": 202
+        "__id__": 210
       },
       {
-        "__id__": 204
+        "__id__": 212
       },
       {
-        "__id__": 207
+        "__id__": 215
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 210
+        "__id__": 218
       }
     ],
     "_prefab": null,
@@ -9147,14 +9515,14 @@
     "_name": "input",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 201
+      "__id__": 209
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 203
+        "__id__": 211
       }
     ],
     "_prefab": null,
@@ -9205,7 +9573,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 202
+      "__id__": 210
     },
     "_enabled": true,
     "_materials": [
@@ -9237,17 +9605,17 @@
     "_name": "TEXT_LABEL",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 201
+      "__id__": 209
     },
     "_children": [],
     "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 205
+        "__id__": 213
       },
       {
-        "__id__": 206
+        "__id__": 214
       }
     ],
     "_prefab": null,
@@ -9300,7 +9668,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 204
+      "__id__": 212
     },
     "_enabled": true,
     "_materials": [],
@@ -9326,7 +9694,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 204
+      "__id__": 212
     },
     "_enabled": true,
     "alignMode": 0,
@@ -9353,17 +9721,17 @@
     "_name": "BACKGROUND_SPRITE",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 201
+      "__id__": 209
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 208
+        "__id__": 216
       },
       {
-        "__id__": 209
+        "__id__": 217
       }
     ],
     "_prefab": null,
@@ -9416,7 +9784,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 207
+      "__id__": 215
     },
     "_enabled": true,
     "_materials": [
@@ -9448,7 +9816,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 207
+      "__id__": 215
     },
     "_enabled": true,
     "alignMode": 0,
@@ -9475,7 +9843,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 201
+      "__id__": 209
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -9488,11 +9856,11 @@
     "editingDidEnded": [],
     "editingReturn": [],
     "_N$textLabel": {
-      "__id__": 205
+      "__id__": 213
     },
     "_N$placeholderLabel": null,
     "_N$background": {
-      "__id__": 208
+      "__id__": 216
     },
     "_N$inputFlag": 5,
     "_N$inputMode": 6,
@@ -9504,24 +9872,24 @@
     "_name": "editbox5",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 160
+      "__id__": 168
     },
     "_children": [
       {
-        "__id__": 212
+        "__id__": 220
       },
       {
-        "__id__": 214
+        "__id__": 222
       },
       {
-        "__id__": 217
+        "__id__": 225
       }
     ],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 220
+        "__id__": 228
       }
     ],
     "_prefab": null,
@@ -9574,14 +9942,14 @@
     "_name": "input",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 211
+      "__id__": 219
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 213
+        "__id__": 221
       }
     ],
     "_prefab": null,
@@ -9632,7 +10000,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 212
+      "__id__": 220
     },
     "_enabled": true,
     "_materials": [
@@ -9664,17 +10032,17 @@
     "_name": "TEXT_LABEL",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 211
+      "__id__": 219
     },
     "_children": [],
     "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 215
+        "__id__": 223
       },
       {
-        "__id__": 216
+        "__id__": 224
       }
     ],
     "_prefab": null,
@@ -9727,7 +10095,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 214
+      "__id__": 222
     },
     "_enabled": true,
     "_materials": [],
@@ -9753,7 +10121,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 214
+      "__id__": 222
     },
     "_enabled": true,
     "alignMode": 0,
@@ -9780,17 +10148,17 @@
     "_name": "BACKGROUND_SPRITE",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 211
+      "__id__": 219
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 218
+        "__id__": 226
       },
       {
-        "__id__": 219
+        "__id__": 227
       }
     ],
     "_prefab": null,
@@ -9843,7 +10211,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 217
+      "__id__": 225
     },
     "_enabled": true,
     "_materials": [
@@ -9875,7 +10243,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 217
+      "__id__": 225
     },
     "_enabled": true,
     "alignMode": 0,
@@ -9902,7 +10270,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 211
+      "__id__": 219
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -9915,11 +10283,11 @@
     "editingDidEnded": [],
     "editingReturn": [],
     "_N$textLabel": {
-      "__id__": 215
+      "__id__": 223
     },
     "_N$placeholderLabel": null,
     "_N$background": {
-      "__id__": 218
+      "__id__": 226
     },
     "_N$inputFlag": 5,
     "_N$inputMode": 6,
@@ -9931,14 +10299,14 @@
     "_name": "input",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 159
+      "__id__": 167
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 222
+        "__id__": 230
       }
     ],
     "_prefab": null,
@@ -9989,7 +10357,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 221
+      "__id__": 229
     },
     "_enabled": true,
     "_materials": [
@@ -10021,17 +10389,17 @@
     "_name": "TEXT_LABEL",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 159
+      "__id__": 167
     },
     "_children": [],
     "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 224
+        "__id__": 232
       },
       {
-        "__id__": 225
+        "__id__": 233
       }
     ],
     "_prefab": null,
@@ -10084,7 +10452,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 223
+      "__id__": 231
     },
     "_enabled": true,
     "_materials": [
@@ -10114,7 +10482,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 223
+      "__id__": 231
     },
     "_enabled": true,
     "alignMode": 0,
@@ -10141,17 +10509,17 @@
     "_name": "BACKGROUND_SPRITE",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 159
+      "__id__": 167
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 227
+        "__id__": 235
       },
       {
-        "__id__": 228
+        "__id__": 236
       }
     ],
     "_prefab": null,
@@ -10204,7 +10572,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 226
+      "__id__": 234
     },
     "_enabled": true,
     "_materials": [
@@ -10236,7 +10604,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 226
+      "__id__": 234
     },
     "_enabled": true,
     "alignMode": 0,
@@ -10263,7 +10631,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 159
+      "__id__": 167
     },
     "_enabled": true,
     "_useOriginalSize": false,
@@ -10276,11 +10644,11 @@
     "editingDidEnded": [],
     "editingReturn": [],
     "_N$textLabel": {
-      "__id__": 224
+      "__id__": 232
     },
     "_N$placeholderLabel": null,
     "_N$background": {
-      "__id__": 227
+      "__id__": 235
     },
     "_N$inputFlag": 5,
     "_N$inputMode": 6,

@@ -106,6 +106,9 @@
       },
       {
         "__id__": 6
+      },
+      {
+        "__id__": 129
       }
     ],
     "_prefab": null,
@@ -593,7 +596,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "b6IZsX21dP+5jZAgpxSZ9t"
+    "_id": "5dX5Qh3gxNdrAGBaqbPcdF"
   },
   {
     "__type__": "cc.Label",
@@ -625,7 +628,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "ddE8rUnwJFDLW2jxwp9Yth"
+    "_id": "cbojdnQbVP3LbiB2SSuEWk"
   },
   {
     "__type__": "cc.RichText",
@@ -959,7 +962,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "aee/Y8wdFEsZot3ZYWsM3A"
+    "_id": "68Rmy6ukRH9oV3kzK3DzJ0"
   },
   {
     "__type__": "cc.Label",
@@ -991,7 +994,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "9akYshPRRIt4tY1eypIyiO"
+    "_id": "25NMuiBGtDc6CtAH5Gpghb"
   },
   {
     "__type__": "cc.RichText",
@@ -2766,7 +2769,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "582SVMrKpMaYmDeAqfcb9f"
+    "_id": "27ja5skvNAZKwxuvsEB7hh"
   },
   {
     "__type__": "cc.Label",
@@ -2796,7 +2799,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "e1gfjDz85GJ7neXB3jKx1r"
+    "_id": "edxTE7JHZCz5BQHgQFf21p"
   },
   {
     "__type__": "cc.RichText",
@@ -5921,5 +5924,37 @@
     "_componentId": "ceb42NIp1RHZ4CTnrZbBdoZ",
     "handler": "continue",
     "customEventData": ""
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "f1c7eec8-0a39-437a-95d6-ff18cc8a8597"
+    },
+    "_type": 0,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "04hPfllZNMfZI4av3kmbgt"
   }
 ]

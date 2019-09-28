@@ -41,7 +41,7 @@ cc.Class({
         this.expBt.active = false
         this.text.active = false
         this.result.active = false
-        if(global.end){
+        if(global.score > 0){
             this.envelop.active = true
             // this.hand.active = true
             this.handAnim()

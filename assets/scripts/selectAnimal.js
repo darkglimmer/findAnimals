@@ -30,7 +30,7 @@ cc.Class({
         }
         let allSave = true;
         for(let i in global.saveAnimal){
-            if(i == 0){
+            if(global.saveAnimal[i] == 0){
                 allSave = false;
                 break;
             }
