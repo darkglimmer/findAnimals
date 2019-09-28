@@ -7,7 +7,6 @@ let quizContent;
 
 let option3 = [];
 //是否答对
-let answer = [false, false, false];
 let firstRight = [true, true, true];
 let firstLoad = true;
 let dragPosition;
@@ -369,12 +368,12 @@ cc.Class({
         let tipText;
         if(isCorrect){
             tipText = '恭喜你答对啦';
-            answer[quizNum] = true;
             //取消按钮不出现
             this.tipPopUp.children[1].children[2].active = false;
         }else{
             tipText = '很遗憾，答错啦！你可以查看侦探手册后再来作答，或者直接进入下一关，不会再回来了哟~';
             this.tipPopUp.children[1].children[2].active = true;
+            global.testResult[animal][quizNum] = false;
         }
         this.tipPopUp.children[1].children[0].getComponent(cc.Label).string = tipText;
 
@@ -398,6 +397,7 @@ cc.Class({
         }else if(quizNum == 1){
             this.updateQuiz3();
         }else{
+            const answer = global.testResult[animal];
             if(answer[0] && answer[1] && answer[2]){
                 global.saveAnimal[animal] = 1;
             }else{
