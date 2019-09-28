@@ -321,7 +321,6 @@ cc.Class({
                 }
             }
             
-            mouseDown = false;
             if(!rightPlace){
                 node.x = oldPosition.x;
                 node.y = oldPosition.y;
@@ -338,8 +337,10 @@ cc.Class({
             // if(mouseDown){
             //     changePosition();
             // }
+            mouseDown = false;
         });
         node.on(cc.Node.EventType.MOUSE_UP, (event)=>{
+            mouseDown = false;
             changePosition();
             if(option3[0] && option3[1] && option3[2]){
                 this.popUpEvent(2, option3);
