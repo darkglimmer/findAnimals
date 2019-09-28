@@ -461,7 +461,7 @@ var wordContent = [
             similar:'meaningless；make no sense；insignificance',
         },
         {
-            title: 'eat like a bird',
+            title: 'Eat like a bird',
             meaning: '吃得很少；饭量小；胃口小',
             example: [
                 'You\'re eating like a bird, I wish you would eat just a little more.\n你吃的太少了，我希望你能尽量多吃一点。',
@@ -474,7 +474,7 @@ var wordContent = [
         animal: 'pig',
         compare: '在中国古代猪象征吉祥、圆满、财富，人们多称赞猪的憨厚、宽容、豁达，如今它往往是蠢笨、懒惰、贪婪、丑陋的代名词，与西方文化体系中猪的形象大致相同。猪在人类的文化生活中被使用时，带有深厚的贬义色彩。',
         slangs: [{
-            title: 'make a pig\'s ear',
+            title: 'Make a pig\'s ear',
             meaning: '把某事弄糟糕',
             example: [
                 'He made a pig\'s ear of things on the evening.\n那天晚上，他干了一件错事。',

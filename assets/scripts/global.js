@@ -45,6 +45,15 @@ bookContent[page] = 'Collection'
 var score1 = 0;
 var score2 = 5;
 
+// 0：未拯救；1：拯救成功，-1：拯救失败
+var saveAnimal = {
+    'cat': 0,
+    'dog': 0,
+    'horse': 0,
+    'bird': 0,
+    'pig': 0
+}
+
 //test场景
 var animal;
 
@@ -59,4 +68,5 @@ module.exports={
     score1,
     score2,
     animal,
+    saveAnimal,
 }

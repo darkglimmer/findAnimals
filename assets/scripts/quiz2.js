@@ -15,6 +15,7 @@ var questiones = {
         },{
             content: '<size=24>小猫们饿的走不动了，不愿意和你走，快帮小猫们找到自己想吃的食物补充体力吧！(点击小喇叭听录音，并将猫粮移动到对应的小猫上哦)</size>',
             answer: ['6','4','5'],
+            sound:['A cat in the pan','A cat on a hot tin roof','Let the cat out of the bag'],
             explain: '【答案】\na cat in the pan 叛徒\na cat on a hot tin roof 十分焦虑\nlet the cat out of the bag 泄露秘密；真相大白',
         }
     ],
@@ -34,6 +35,7 @@ var questiones = {
         },{
             content:'<size=24>可恶的小偷，竟然放出来蝙蝠阻止我解救狗狗，移动正确的武器来消灭围攻的蝙蝠吧（点击小喇叭听录音，并将相应的武器移到蝙蝠上）</size>',
             answer: ['4', '6', '5'],
+            sound:['Every dog has its day','Rain cats and dogs','Work like a dog'],
             explain: '【答案】\nevery dog has its day 时来运转\nrain cats and dogs 倾盆大雨\nwork like a dog 努力工作',
         }
     ],
@@ -53,6 +55,7 @@ var questiones = {
         },{
             content: '<size=24>马儿们已经被关了太多天，饿的走不动了，快来帮助马儿们吃到他们想吃的草吧！选择错了马儿可不会跟你走哦~（点击小喇叭听录音，并将对应的草移向马儿）</size>',
             answer: ['5', '6', '4'],
+            sound:['High horse','A willing horse','Beat a dead horse'],
             explain: '【答案】\nhigh horse 骄傲；自大；趾高气扬\na willing horse 积极工作的人\nbeat a dead horse 白费劲；徒劳',
         }
     ],
@@ -72,6 +75,7 @@ var questiones = {
         },{
             content: '<size=24>鸟儿们好像都昏迷了，但是好像昏迷的原因不同，倾听他们的声音并选择合适的药水为他们治疗吧！（点击小喇叭听录音，并将药水移向对应的鸟儿吧）</size>',
             answer: ['5', '6', '4'],
+            sound:['A bird in the bush','An early bird','A little bird told me'],
             explain: '【答案】\na bird in the bush 未到手的东西；未定局的事\nan early bird 起得很早\na little bird told me 有人跟我说',
         }
     ],
@@ -91,6 +95,7 @@ var questiones = {
         },{
             content: '<size=24>小猪们被锁住了,快将锁与钥匙配对,释放小猪吧!（点击小喇叭听录音，并将钥匙移向相应的锁哦）</size>',
             answer: ['4','6','5'],
+            sound:['Make a pig\'s ear','Pigs might fly','Pig out'],
             explain: '【答案】\nmake a pig\'s ear 把某事弄糟糕\npigs might fly 无稽之谈；奇迹可能会发生\npig out 狼吞虎咽；大吃特吃',
         }
     ]

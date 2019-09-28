@@ -15,6 +15,7 @@ var questiones = {
         },{
             content: '<size=20>小猫们饿的走不动了，不愿意和你走，快帮小猫们找到自己想吃的食物补充体力吧！(点击小喇叭听录音，并将猫粮移动到对应的小猫上哦)</size>',
             answer: ['5','6','4'],
+            sound:['A cat may look at a king','Bell the cat','Let the cat out of the bag'],
             explain:'【答案】\na cat may look at a king 人人平等；最低级的人也有权利\nbell the cat 挺身而出；主动冒险；为他人利益冒险\nlet the cat out of the bag 泄露秘密；真相大白/n' 
         }
     ],
@@ -34,6 +35,7 @@ var questiones = {
         },{
             content:'<size=20>可恶的小偷，竟然放出来蝙蝠阻止我解救狗狗，移动正确的武器来消灭围攻的蝙蝠吧（点击小喇叭听录音，并将相应的武器移到蝙蝠上）</size>',
             answer: ['4', '6', '5'],
+            sound:['Rain cats and dogs','Every dog has it\'s day','Dog watch'],
             explain:'【答案】\nrain cats and dogs 倾盆大雨\nevery dog has it’s day 时来运转\ndog watch 夜班\n'
         }
     ],
@@ -53,6 +55,7 @@ var questiones = {
         },{
             content: '<size=20>马儿们已经被关了太多天，饿的走不动了，快来帮助马儿们吃到他们想吃的草吧！选择错了马儿可不会跟你走哦~（点击小喇叭听录音，并将对应的草移向马儿）</size>',
             answer: ['6', '4', '5'],
+            sound:['High horse','Beat a dead horse','Hold one\'s horse'],
             explain:'【答案】\nhigh horse 骄傲；自大；趾高气扬\nbeat a dead horse 白费劲；徒劳；白费口舌\nhold one’s horse 忍耐；控制自己的感情\n'
         }
     ],
@@ -72,6 +75,7 @@ var questiones = {
         },{
             content: '<size=20>鸟儿们好像都昏迷了，但是好像昏迷的原因不同，倾听他们的声音并选择合适的药水为他们治疗吧！（点击小喇叭听录音，并将药水移向对应的鸟儿吧）</size>',
             answer: ['5', '6', '4'],
+            sound:['For the birds','Eat like a bird','A bird in the bush'],
             explain:'【答案】\nfor the birds 荒唐；毫无意义\neat like a bird 吃的很少\na bird in the bush 未到手的东西；未定局的事\n'
         }
     ],
@@ -91,6 +95,7 @@ var questiones = {
         },{
             content: '<size=20>小猪们被锁住了,快将锁与钥匙配对,释放小猪吧!（点击小喇叭听录音，并将钥匙移向相应的锁哦）(三个锁的音效分别为: pig out   pigs might fly  make a pig\'s ear)</size>',
             answer: ['4','6','5'],
+            sound:['Pig out','Pigs might fly','Make a pig\'s ear'],
             explain:'【答案】\npig out 狼吞虎咽；大吃特吃\npigs might fly 无稽之谈；奇迹可能会发生\nmake a pig\'s ear 把某事弄糟糕\n'
         }
     ]
