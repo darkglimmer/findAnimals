@@ -4,6 +4,7 @@
 var process = 0;
 var id = 0
 var quiz = 0
+var animalScore = 14
 
 // 收藏夹
 var collection = {
@@ -69,4 +70,7 @@ module.exports={
     score2,
     animal,
     saveAnimal,
+    animalScore,
+    quiz,
+    id
 }
