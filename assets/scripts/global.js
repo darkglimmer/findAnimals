@@ -54,6 +54,14 @@ var saveAnimal = {
     'pig': 0
 }
 
+var testResult = {
+    'cat': [true, true, true],
+    'dog': [true, true, true],
+    'horse': [true, true, true],
+    'bird': [true, true, true],
+    'pig': [true, true, true]
+}
+
 //test场景
 var animal;
 

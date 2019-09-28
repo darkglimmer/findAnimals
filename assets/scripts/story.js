@@ -47,7 +47,7 @@ cc.Class({
         }
         let textArr = plot.story[global.process++].split('@');
         
-        if(this.leftActive === true ){
+        if(this.leftActive === true){
             this.changeName(this.LNameLabel, this.RNameLabel, textArr[0]);
         } else {
             this.changeName(this.RNameLabel, this.LNameLabel, textArr[0]);
@@ -62,14 +62,18 @@ cc.Class({
             return;
         }
         if(label.string !== str){
-            if(str === "甄探" ^ this.leftActive){
-                this.leftActive = !this.leftActive;
-                this.LName.active = !this.LName.active;
-                this.RName.active = !this.RName.active;
-                newLabel.string = str;
-            } else {
-                label.string = str;
-            }
+            // if(str === "甄探" ^ this.leftActive){
+            //     this.leftActive = !this.leftActive;
+            //     this.LName.active = !this.LName.active;
+            //     this.RName.active = !this.RName.active;
+            //     newLabel.string = str;
+            // } else {
+            //     label.string = str;
+            // }
+            this.leftActive = !this.leftActive;
+            this.LName.active = !this.LName.active;
+            this.RName.active = !this.RName.active;
+            newLabel.string = str;
         }
     }
     

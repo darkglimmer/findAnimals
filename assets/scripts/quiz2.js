@@ -50,7 +50,7 @@ var questiones = {
             write: ['______ horse  骄傲自大',
             'beat a ______ horse  白费劲，徒劳',
             '______ one’s horse  忍耐，控制自己的感情'],
-            answer: ['high', 'hold', 'dead'],
+            answer: ['high', 'dead', 'hold'],
             explain: '【题目·补全俚语】\n______ horse  骄傲自大\n______ one’s horse   忍耐，控制自己的感情\nbeat a ______ horse   白费劲，徒劳\n【答案】\n1）high  2）hold  3）dead\n【解析】\n1）high horse 暗藏的危险\n2）hold one’s horse 忍耐；控制自己的感情\n3）beat a dead horse白费劲；徒劳',
         },{
             content: '<size=24>马儿们已经被关了太多天，饿的走不动了，快来帮助马儿们吃到他们想吃的草吧！选择错了马儿可不会跟你走哦~（点击小喇叭听录音，并将对应的草移向马儿）</size>',

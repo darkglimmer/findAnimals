@@ -19,7 +19,7 @@ cc.Class({
             let button = this.node.getComponent(cc.Button);
             let audioID = cc.audioEngine.playMusic(this.audio, false);
             this.node.on(cc.Node.EventType.MOUSE_DOWN, function(){
-                let buttonAudioID = cc.audioEngine.playMusic(this.buttonAudio, false);
+                // let buttonAudioID = cc.audioEngine.playMusic(this.buttonAudio, false);
                 //切换音乐状态
                 let state = cc.audioEngine.getState(audioID);
 
@@ -40,8 +40,6 @@ cc.Class({
                 }
                 cc.loader.loadRes("images/UI/" + musicImg, cc.SpriteFrame, function (err, spriteFrame) {
                     button.normalSprite = spriteFrame;
-                });
-                cc.loader.loadRes("images/UI/" + musicImg, cc.SpriteFrame, function (err, spriteFrame) {
                     button.pressedSprite = spriteFrame;
                 });
                 cc.loader.loadRes("images/UI/" + musicImg + "Hover", cc.SpriteFrame, function (err, spriteFrame) {
