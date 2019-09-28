@@ -1,6 +1,7 @@
 let global = require('global');
 let quiz = require('quiz')
 let quiz2 = require('quiz2');
+let plot = require('plot');
 
 cc.Class({
     extends: cc.Component,
@@ -36,6 +37,22 @@ cc.Class({
                 this.explain.getComponent(cc.Label).string = quiz2.questiones.pig[this.qid - 12].explain
             }
         }
+    },
+
+    loadScene(){
+        let saveNum = 0;
+        for(let i in global.saveAnimal){
+            saveNum += global.saveAnimal[i];
+        }
+        if(saveNum == 5){
+            //全救回；
+        }else{
+            //没能救回
+            plot.story[21] = '农场主@呜呜呜，我的动物们还是没能都找到'
+            plot.story[22] = '甄探@别着急，我们可以从小偷入手，一旦找到了小偷动物们肯定也能找回的'
+        }
+        global.process = 21;
+        cc.director.loadScene('main');
     }
 
     

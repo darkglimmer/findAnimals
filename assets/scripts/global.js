@@ -43,16 +43,15 @@ bookContent[page] = 'Collection'
 // console.log(bookContent);
 
 //测试分数 score1：解救动物；score2: 指出小偷
-var score1 = 0;
-var score2 = 5;
+var animalScore = 0;
 
 // 0：未拯救；1：拯救成功，-1：拯救失败
 var saveAnimal = {
-    'cat': 0,
-    'dog': 0,
-    'horse': 0,
-    'bird': 0,
-    'pig': 0
+    'cat': 1,
+    'dog': 1,
+    'horse': 1,
+    'bird': 1,
+    'pig': -1
 }
 
 //test场景
@@ -66,8 +65,6 @@ module.exports={
     bookPage,
     bookContent,
     score,
-    score1,
-    score2,
     animal,
     saveAnimal,
     animalScore,

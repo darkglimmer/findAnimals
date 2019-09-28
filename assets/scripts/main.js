@@ -1,6 +1,7 @@
 //加载组件作为type
 var Story = require('story');
 var global = require('global');
+var plot = require('plot');
 cc.Class({
     extends: cc.Component,
 
@@ -9,17 +10,13 @@ cc.Class({
             default: null,
             type: cc.Sprite
         },
-        star: {
-            default: null,
-            type: cc.Prefab
-        },
         FGRight:{
             default: null,
             type: cc.Sprite
         },
         BGImage:{
             default: null,
-            type: cc.Node
+            type: cc.Sprite
         },
         Story:{
             default: null,
@@ -37,65 +34,87 @@ cc.Class({
         note:cc.Node,
         handTip:cc.Node,
         maskTip: cc.Node,
+        material: cc.Material,
+        time: 0,
+        list: cc.Node,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.button.active = false;
-        if(global.process == 19){
+        if(global.process == 20){
             cc.director.loadScene("test");
+        }else if(global.process == 21){
+            let self = this;
+            cc.loader.loadRes(`images/background/farm`, cc.SpriteFrame, function (err, spriteFrame) {
+                self.BGImage.spriteFrame = spriteFrame;
+            });
+            this.updateImg();
         }
+        
+
+        this.node.on('onclick', function (event) {
+            event.stopPropagation();
+            this.updateImg();
+        }, this);
+        
+    },
+
+    updateImg(){
         let self = this;
         let change2prop = ['FGLeft', 'FGRight', 'BGImage', 'otherImg'];
         let prefix = ['zt', 'ncz', 'bg', 'img']
-        this.node.on('onclick', function (event) {
-            event.stopPropagation();
-            const change = self.Story.change;
-            const ifPop = self.Story.ifPop
-            if(global.process == 17){
-                self.button.active = true;
-                self.tipAnim()
-            }
-            if(change){
-                for(let i in change){
-                    if(i == 4){
-                        cc.director.loadScene(change[4]);
-                    }else if(i == 2){
-                        // cc.loader.loadRes(`images/background/${change[i]}`, cc.SpriteFrame, function (err, spriteFrame) {
-                        //     self.BGImage.spriteFrame = spriteFrame;
-                        // });
-                    }else{
-                        this.changeFGImg(prefix[i], change[i], change2prop[i]);
-                    }
+        // const change = self.Story.change;
+        const change = plot.control[global.process];
+        const ifPop = self.Story.ifPop
+        if(global.process == 19){
+            self.button.active = true;
+            self.tipAnim()
+        }
+        if(change){
+            console.log(global.process, change);
+            for(let i in change){
+                if(i == 4){
+                    cc.director.loadScene(change[4]);
+                }else if(i == 2){
+                    this.material = this.BGImage.getMaterial(0);
+                    this.schedule(this.upd, 0,  cc.macro.REPEAT_FOREVER, 0);
+                }else{
+                    this.changeFGImg(prefix[i], change[i], change2prop[i]);
                 }
-            }else{
-                console.log('change is undefined');
             }
+        }else{
+            console.log('change is undefined');
+        }
 
-            if(ifPop == 1){
-                this.mask.active = true
-                this.envelop.active = true
-                this.envelop.on(cc.Node.EventType.MOUSE_DOWN, function(){
-                    this.showMessage();
-                }, this);
+        if(ifPop == 1){
+            this.mask.active = true
+            this.envelop.active = true
+            this.envelop.on(cc.Node.EventType.MOUSE_DOWN, function(){
+                this.showMessage();
+            }, this);
 
-                this.handAnim()
-            }else if(ifPop == 2){
-                this.mask.active = true
-                this.task.active = true
-                this.task.on(cc.Node.EventType.MOUSE_DOWN, function(){
-                    this.closeTask();
-                }, this)
-            }else if(ifPop == 3){
-                this.note.active = true
-                this.mask.active = true
-                this.note.on(cc.Node.EventType.MOUSE_DOWN, function(){
-                    this.closeNote();
-                }, this)
-            }
-        }, this);
-        
+            this.handAnim()
+        }else if(ifPop == 2){
+            this.mask.active = true
+            this.task.active = true
+            this.task.on(cc.Node.EventType.MOUSE_DOWN, function(){
+                this.closeTask();
+            }, this)
+        }else if(ifPop == 3){
+            this.note.active = true
+            this.mask.active = true
+            this.note.on(cc.Node.EventType.MOUSE_DOWN, function(){
+                this.closeNote();
+            }, this)
+        }else if(ifPop == 4){
+            this.mask.active = true;
+            this.list.active = true;
+            this.list.on(cc.Node.EventType.MOUSE_DOWN, function(){
+                this.closeList();
+            }, this);
+        }
     },
 
     handAnim() {
@@ -139,9 +158,6 @@ cc.Class({
         });
     },
 
-    changeScene: function(scene){
-    },
-
     showMessage(){
         this.envelop.active = false
         this.message.active = true
@@ -153,18 +169,33 @@ cc.Class({
     cancelLetter(){
         this.mask.active = false
         this.message.active = false
-        this.Story.nextText()
+        this.Story.onClick()
     },
 
     closeTask(){
         this.mask.active = false
         this.task.active = false
-        this.Story.nextText()
+        this.Story.onClick()
     },
 
     closeNote(){
         this.note.active = false
         this.mask.active = false
-        this.Story.nextText()
+        this.Story.onClick()
+    },
+
+    closeList(){
+        this.list.active = false
+        this.mask.active = false
+        cc.director.loadScene('capture');
+    },
+
+    upd(){
+        this.time += 0.01;
+        this.material.effect.setProperty('time', this.time);
+        if(this.time > 1.2){
+            this.unschedule(this.upd);
+            
+        }
     }
 });

@@ -1,3 +1,4 @@
+var global = require('global');
 cc.Class({
     extends: cc.Component,
 
@@ -38,6 +39,10 @@ cc.Class({
     closeReadme: function (event) {
         this.readme.active = false;
         this.BtnClose.node.active = false;
+        if(global.firstClose){
+            cc.director.loadScene("test");
+            global.firstClose = false;
+        }
         if (this.readme.active) {
             this.mask.on('touchstart', ()=>{}, this);
         } else {

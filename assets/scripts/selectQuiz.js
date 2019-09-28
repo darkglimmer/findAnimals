@@ -12,11 +12,25 @@ cc.Class({
 
     onLoad () {
         // console.log(global.animal);
+        this.updateAnimal();
+    },
+    
+    onEnable(){
+        this.updateAnimal();
+    },
+
+    updateAnimal(){
         let animal = global.animal;
+        console.log(animal);
         let self = this;
         cc.loader.loadRes(`images/test/${animal}/${animal}start`, cc.SpriteFrame, function (err, spriteFrame) {
-            self.startFoot.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            self.startFoot.getComponent(cc.Button).normalSprite = spriteFrame;
+            self.startFoot.getComponent(cc.Button).pressedSprite = spriteFrame;
         });
+        cc.loader.loadRes(`images/test/${animal}/${animal}starthover`, cc.SpriteFrame, function (err, spriteFrame) {
+            self.startFoot.getComponent(cc.Button).hoverSprite = spriteFrame;
+        });
+
         cc.loader.loadRes(`images/test/${animal}/${animal}cover`, cc.SpriteFrame, function (err, spriteFrame) {
             self.background.spriteFrame = spriteFrame;
         });
@@ -24,11 +38,6 @@ cc.Class({
             this.testContent.active = true;
             this.node.active = false;
         }, this)
-        
-    },
-
-    start () {
-
     },
 
     // update (dt) {},
