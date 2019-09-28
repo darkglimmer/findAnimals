@@ -20,15 +20,17 @@ cc.Class({
         endStar: cc.Node,
         star1: cc.Prefab,
         star2:cc.Prefab,
-        star3:cc.Prefab
+        star3:cc.Prefab,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
+        var detective = ["新手侦探","入门侦探","初级侦探","中级侦探","高级侦探"]
+        var endScore = Math.floor(((global.score * 3 + global.animalScore) / 2) / 3)
         if(global.score){
             this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
-            this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予xx侦探的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
+            this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予" + detective[endScore] + "的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
         }else{
             this.text.getComponent(cc.RichText).string = "很遗憾，你没能成功抓到小偷，看来你的侦探之路还很漫长呢！"
             this.letterText.getComponent(cc.RichText).string = "    看来徒儿的道行还不够深啊！通过这次探案，你知道知识有多么重要了吧！为了帮助你成为更优秀的侦探，师父送你一个礼物吧！"
