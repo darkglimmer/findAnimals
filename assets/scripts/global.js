@@ -62,6 +62,19 @@ var testResult = {
     'pig': [true, true, true]
 }
 
+var testResultArr = []
+for(var i = 0; i < 3; i++){
+    testResultArr = testResultArr.concat(testResult.cat[i] ? 1 : 0)
+}for(var i = 0; i < 3; i++){
+    testResultArr = testResultArr.concat(testResult.dog[i] ? 1 : 0)
+}for(var i = 0; i < 3; i++){
+    testResultArr = testResultArr.concat(testResult.horse[i] ? 1 : 0)
+}for(var i = 0; i < 3; i++){
+    testResultArr = testResultArr.concat(testResult.bird[i] ? 1 : 0)
+}for(var i = 0; i < 3; i++){
+    testResultArr = testResultArr.concat(testResult.pig[i] ? 1 : 0)
+}
+
 //test场景
 var animal;
 
@@ -77,5 +90,7 @@ module.exports={
     saveAnimal,
     animalScore,
     quiz,
-    id
+    id,
+    testResult,
+    testResultArr
 }
