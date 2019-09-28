@@ -8,7 +8,28 @@ cc.Class({
 
     properties: {
         qid: 0,
-        explain: cc.Node
+        explain: cc.Node,
+        check: {
+            default: [],
+            type: cc.Node
+        }
+    },
+
+    onLoad(){
+        console.log(global.testResult)
+        // var arr = []
+        // for(var i = 0; i < 3; i++){
+        //     arr.concat(global.testResult.cat[i])
+        // }for(var i = 0; i < 3; i++){
+        //     arr.concat(global.testResult.dog[i])
+        // }for(var i = 0; i < 3; i++){
+        //     arr.concat(global.testResult.horse[i])
+        // }for(var i = 0; i < 3; i++){
+        //     arr.concat(global.testResult.bird[i])
+        // }for(var i = 0; i < 3; i++){
+        //     arr.concat(global.testResult.pig[i])
+        // }
+        // console.log(arr)
     },
 
     showExplain(){
