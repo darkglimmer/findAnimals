@@ -9,17 +9,25 @@ cc.Class({
     },
 
     onLoad () {
-        const {animal} = this;
         this.node.on(cc.Node.EventType.MOUSE_DOWN, this.intoSelectQuiz, this);
-        if(global.saveAnimal[animal]){
-            // cc.loader.loadRes(`images/animal/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
-            //     this.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
-            // });
-        }
     },
 
-    start () {
-
+    onEnable(){
+        const {animal} = this;
+        let self = this;
+        if(global.saveAnimal[animal] == 1){
+            //成功
+            cc.loader.loadRes(`images/animals/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
+                self.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                // console.log(err);
+            });
+        }else if (global.saveAnimal[animal] == -1){
+            //失败
+            cc.loader.loadRes(`images/animals/${animal}Failed`, cc.SpriteFrame, function (err, spriteFrame) {
+                self.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
+                // console.log(err);
+            });
+        }
     },
 
     intoSelectQuiz: function(){

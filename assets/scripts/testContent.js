@@ -8,6 +8,9 @@ let quizContent;
 let option3 = [];
 //是否答对
 let answer = [false, false, false];
+let firstRight = [true, true, true];
+let firstLoad = true;
+let dragPosition;
 
 cc.Class({
     extends: cc.Component,
@@ -28,27 +31,65 @@ cc.Class({
             type: cc.EditBox
         },
         selectAnimals: cc.Node,
+        dragNode: {
+            default: [],
+            type: cc.Node
+        },
+        soundsArr: {
+            default: [],
+            type: cc.AudioClip
+        },
+        soundsNode: {
+            default: [],
+            type: cc.Node
+        },
+        star1: cc.Prefab,
+        star2: cc.Prefab,
+        star3: cc.Prefab   
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        // animal = global.animal;
-        animal = 'cat';
+        //第几套
+        this.setNum = Math.floor(Math.random()+1);
+        console.log('题目',this.setNum);
+        
+        const {dragNode} = this;
+        dragPosition = [dragNode[0].position, dragNode[1].position, dragNode[2].position];
+        this.updateContent();
+    },
+
+    onEnable(){
+        if(!firstLoad){
+            this.updateContent();
+            //清空题2、题3
+            for(let i in this.editBoxArr){
+                this.editBoxArr[i].string = '';
+            }
+            for(let i in dragPosition){
+                this.dragNode[i].x = dragPosition[i].x;
+                this.dragNode[i].y = dragPosition[i].y;
+            }
+            option3 = [];
+        }
+    },
+    
+    start(){
+        firstLoad = false;
+    },
+
+    updateContent(){
+        animal = global.animal;
+        // animal = 'cat';
         console.log(animal);
-        this.selectQuestion.active = false;
+        // this.selectQuestion.active = false;
         let self = this;
         cc.loader.loadRes(`images/test/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
             self.border.spriteFrame = spriteFrame;
         });
-        //第几套
-        this.setNum = Math.floor(Math.random()+1);
-        console.log('题目',this.setNum);
-
-        let quizNum = 1;
         quizContent = this.setNum == 0 ? quiz1.questiones[`${animal}`] : quiz2.questiones[`${animal}`];
-        // console.log(quizContent)
-        this[`updateQuiz${quizNum}`]();
+        this.updateQuiz1();
     },
 
     controlActive: function(quizNum){
@@ -57,8 +98,43 @@ cc.Class({
         this.quiz3.active = (quizNum == 3);
     },
 
+    spawnNewStar () {
+        console.log(global.animalScore)
+        this.star.removeAllChildren();
+        for(var i = global.animalScore; i > 0; i = i-3){
+            console.log(i);
+            if( i >= 3){
+                var newStar = cc.instantiate(this.star1);
+            }else if(i == 2){
+                var newStar = cc.instantiate(this.star2);
+                this.star.addChild(newStar);
+                // 为星星设置一个随机位置
+                newStar.setPosition(this.getNewStarPosition(i));
+                console.log(newStar.position);
+                break;
+            }else{
+                var newStar = cc.instantiate(this.star3);
+                this.star.addChild(newStar);
+                // 为星星设置一个随机位置
+                newStar.setPosition(this.getNewStarPosition(i));
+                console.log(newStar.position);
+                break;
+            }
+            // 将新增的节点添加到 Canvas 节点下面
+            this.star.addChild(newStar);
+            // 为星星设置一个随机位置
+            newStar.setPosition(this.getNewStarPosition(i));
+            console.log(newStar.position);
+        }
+    },
+
+    getNewStarPosition: function(i) {
+        var positionX = -50 + Math.floor(-i/3)*50
+        var positionY = -10;
+        return cc.v2(positionX, positionY);
+    },
+
     updateQuiz1: function(){
-        console.log('updatequiz1');
         this.controlActive(1);
         //题目内容
         this.quiz1.children[0].getComponent(cc.RichText).string = quizContent[0].content;
@@ -70,20 +146,30 @@ cc.Class({
         });
         //三个选项图
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(this.setNum) + 1}/quiz1/1`, cc.SpriteFrame, function (err, spriteFrame) {
-            self.quiz1.children[2].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            self.quiz1.children[2].getComponent(cc.Button).normalSprite = spriteFrame;
+            self.quiz1.children[2].getComponent(cc.Button).pressedSprite = spriteFrame;
+        });
+        cc.loader.loadRes(`images/test/${animal}/set${parseInt(this.setNum) + 1}/quiz1/1hover`, cc.SpriteFrame, function (err, spriteFrame) {
+            self.quiz1.children[2].getComponent(cc.Button).hoverSprite = spriteFrame;
         });
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(this.setNum) + 1}/quiz1/2`, cc.SpriteFrame, function (err, spriteFrame) {
-            self.quiz1.children[3].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            self.quiz1.children[3].getComponent(cc.Button).normalSprite = spriteFrame;
+            self.quiz1.children[3].getComponent(cc.Button).pressedSprite = spriteFrame;
+        });
+        cc.loader.loadRes(`images/test/${animal}/set${parseInt(this.setNum) + 1}/quiz1/2hover`, cc.SpriteFrame, function (err, spriteFrame) {
+            self.quiz1.children[3].getComponent(cc.Button).hoverSprite = spriteFrame;
         });
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(this.setNum) + 1}/quiz1/3`, cc.SpriteFrame, function (err, spriteFrame) {
-            self.quiz1.children[4].getComponent(cc.Sprite).spriteFrame = spriteFrame;
+            self.quiz1.children[4].getComponent(cc.Button).normalSprite = spriteFrame;
+            self.quiz1.children[4].getComponent(cc.Button).pressedSprite = spriteFrame;
+        });
+        cc.loader.loadRes(`images/test/${animal}/set${parseInt(this.setNum) + 1}/quiz1/3hover`, cc.SpriteFrame, function (err, spriteFrame) {
+            self.quiz1.children[4].getComponent(cc.Button).hoverSprite = spriteFrame;
         });
         for(let i = 2; i <= 4; i++){
             this.quiz1.children[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
-                console.log(i);
-                this.popUpEvent(0, i-1, quizContent);
+                this.popUpEvent(0, i-1);
             }, this);
-            
         }
         
     },
@@ -141,19 +227,42 @@ cc.Class({
             });            
         });
         //题目图4-6；拖拽
-        let dargNode = this.quiz3.children[2].children;
+        const {dragNode} = this;
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/4`, cc.SpriteFrame, function (err, spriteFrame) {
-            dargNode[0].getComponent(cc.Sprite).spriteFrame = spriteFrame
+            dragNode[0].getComponent(cc.Button).normalSprite = spriteFrame;
+            dragNode[0].getComponent(cc.Button).pressedSprite = spriteFrame
+        });
+        cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/4hover`, cc.SpriteFrame, function (err, spriteFrame) {
+            dragNode[0].getComponent(cc.Button).hoverSprite = spriteFrame;
         });
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/5`, cc.SpriteFrame, function (err, spriteFrame) {
-            dargNode[1].getComponent(cc.Sprite).spriteFrame = spriteFrame
+            dragNode[1].getComponent(cc.Button).normalSprite = spriteFrame;
+            dragNode[1].getComponent(cc.Button).pressedSprite = spriteFrame
+        });
+        cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/5hover`, cc.SpriteFrame, function (err, spriteFrame) {
+            dragNode[1].getComponent(cc.Button).hoverSprite = spriteFrame;
         });
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/6`, cc.SpriteFrame, function (err, spriteFrame) {
-            dargNode[2].getComponent(cc.Sprite).spriteFrame = spriteFrame
+            dragNode[2].getComponent(cc.Button).normalSprite = spriteFrame;
+            dragNode[2].getComponent(cc.Button).pressedSprite = spriteFrame
         });
-        this.quiz3Drag(dargNode[0], dargNode[0].position, '4');
-        this.quiz3Drag(dargNode[1], dargNode[1].position, '5');
-        this.quiz3Drag(dargNode[2], dargNode[2].position, '6');
+        cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/6hover`, cc.SpriteFrame, function (err, spriteFrame) {
+            dragNode[2].getComponent(cc.Button).hoverSprite = spriteFrame;
+        });
+        this.quiz3Drag(dragNode[0], dragPosition[0], '4');
+        this.quiz3Drag(dragNode[1], dragPosition[1], '5');
+        this.quiz3Drag(dragNode[2], dragPosition[2], '6');
+        //喇叭声音资源改变
+        for(let i = 0; i < 3; i++){
+            cc.loader.loadRes(`sounds/${animal}/${quizContent[2].sound[i]}`, cc.AudioClip, function (err, audioClip) {
+                // console.log(audioClip);
+                self.soundsArr[i] = audioClip;
+            });
+            this.soundsNode[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
+                cc.audioEngine.playMusic(this.soundsArr[i], false);
+            }, this);
+        }
+
     },
 
     quiz2Btn: function(){
@@ -169,8 +278,9 @@ cc.Class({
         let spritePosition = [];
         for(let i = 0 ; i < 3; i++){
             let spriteNode = this.quiz3.children[1].children[i];
-            let spriteRect = new cc.Rect(spriteNode.x-spriteNode.width/2, spriteNode.y-spriteNode.height/2, spriteNode.width, spriteNode.height);
+            let spriteRect = new cc.Rect(spriteNode.x-80, spriteNode.y-80, 130, 130);
             spritePosition[i] = spriteRect;
+            console.log(spriteRect);
         }
         let mouseDown = false;
         //当用户点击的时候记录鼠标点击状态
@@ -245,7 +355,6 @@ cc.Class({
                 console.log(option3);
             }
         });
-        
     },
 
     popUpEvent: function(quizNum, option){
@@ -255,13 +364,15 @@ cc.Class({
         clickEventHandler.component = "testContent";
         clickEventHandler.handler = "hidePopUp";
         clickEventHandler.customEventData = {quizNum, option};
-        
+        console.log('in popupevent', quizNum);
+
         let okBtn = this.popUp.children[1].children[1].getComponent(cc.Button);
-        okBtn.clickEvents.push(clickEventHandler);
+        okBtn.clickEvents = [clickEventHandler];
     },
 
     //tipPopUp中的文字和事件
     tipPopUpEvent: function(isCorrect, quizNum){
+        console.log('in tippopupevent', quizNum);
         let tipText;
         if(isCorrect){
             tipText = '恭喜你答对啦';
@@ -281,13 +392,14 @@ cc.Class({
         tipEventHandler.customEventData = {quizNum};
         
         let nextBtn = this.tipPopUp.children[1].children[1].getComponent(cc.Button);
-        nextBtn.clickEvents.push(tipEventHandler);
+        // console.log(nextBtn.clickEvents);
+        nextBtn.clickEvents = [tipEventHandler];
     },
 
     nextQuiz(event, customEventData){
         this.tipPopUp.active = false;
         const {quizNum} = customEventData;
-        console.log('?', quizNum);
+        console.log('in nextQuiz', quizNum);
         if(quizNum == 0){
             this.updateQuiz2();
         }else if(quizNum == 1){
@@ -309,13 +421,18 @@ cc.Class({
         if(customEventData){
             this.tipPopUp.active = true;
             let {quizNum, option} = customEventData;
-            console.log(quizNum, option, quizContent);
+            console.log('in hidepopup', quizNum, option, quizContent);
             if(option.toString() == quizContent[quizNum].answer.toString()){
                 //回答正确
                 this.tipPopUpEvent(true, quizNum);
+                if(firstRight[quizNum]){
+                    global.animalScore++;
+                    this.spawnNewStar();
+                }
             }else{
                 //回答错误
                 this.tipPopUpEvent(false, quizNum);
+                firstRight[quizNum] = false;
             }
         }
     },
