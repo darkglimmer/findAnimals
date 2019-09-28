@@ -81,9 +81,8 @@ cc.Class({
 
     updateContent(){
         animal = global.animal;
-        // animal = 'cat';
+        // animal = 'dog';
         console.log(animal);
-        // this.selectQuestion.active = false;
         let self = this;
         cc.loader.loadRes(`images/test/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
             self.border.spriteFrame = spriteFrame;
@@ -99,37 +98,30 @@ cc.Class({
     },
 
     spawnNewStar () {
-        console.log(global.animalScore)
         this.star.removeAllChildren();
-        for(var i = global.animalScore; i > 0; i = i-3){
-            console.log(i);
-            if( i >= 3){
-                var newStar = cc.instantiate(this.star1);
-            }else if(i == 2){
-                var newStar = cc.instantiate(this.star2);
-                this.star.addChild(newStar);
-                // 为星星设置一个随机位置
-                newStar.setPosition(this.getNewStarPosition(i));
-                console.log(newStar.position);
-                break;
-            }else{
-                var newStar = cc.instantiate(this.star3);
-                this.star.addChild(newStar);
-                // 为星星设置一个随机位置
-                newStar.setPosition(this.getNewStarPosition(i));
-                console.log(newStar.position);
-                break;
-            }
-            // 将新增的节点添加到 Canvas 节点下面
+        console.log(global.animalScore);
+        let completeStarNum = Math.floor(global.animalScore / 3);
+        let restStarNum = global.animalScore % 3;
+        let i;
+        for(i = 0; i < completeStarNum; i++){
+            let newStar = cc.instantiate(this.star1);
             this.star.addChild(newStar);
-            // 为星星设置一个随机位置
             newStar.setPosition(this.getNewStarPosition(i));
-            console.log(newStar.position);
+        }
+        let newStar;
+        if(restStarNum){
+            if(restStarNum == 1){
+                newStar = cc.instantiate(this.star3);
+            }else{
+                newStar = cc.instantiate(this.star2);
+            }
+            this.star.addChild(newStar);
+            newStar.setPosition(this.getNewStarPosition(i));
         }
     },
 
     getNewStarPosition: function(i) {
-        var positionX = -50 + Math.floor(-i/3)*50
+        var positionX = -75 + i*50;
         var positionY = -10;
         return cc.v2(positionX, positionY);
     },
@@ -343,9 +335,9 @@ cc.Class({
 
         //当鼠标抬起的时候恢复状态
         node.on(cc.Node.EventType.MOUSE_LEAVE, (event)=>{
-            if(mouseDown){
-                changePosition();
-            }
+            // if(mouseDown){
+            //     changePosition();
+            // }
         });
         node.on(cc.Node.EventType.MOUSE_UP, (event)=>{
             changePosition();

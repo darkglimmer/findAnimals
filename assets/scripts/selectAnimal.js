@@ -28,6 +28,17 @@ cc.Class({
                 // console.log(err);
             });
         }
+        let allSave = true;
+        for(let i in global.saveAnimal){
+            if(i == 0){
+                allSave = false;
+                break;
+            }
+        }
+        if(allSave){
+            cc.director.loadScene('quiz');
+        }
+
     },
 
     intoSelectQuiz: function(){
