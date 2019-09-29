@@ -32,7 +32,9 @@ cc.Class({
             type: cc.Node
         },
         popUp:cc.Node,
-        mask:cc.Node
+        mask:cc.Node,
+        error: cc.Node,
+        right: cc.Node
     },
     
     onLoad(){
@@ -77,20 +79,16 @@ cc.Class({
             cc.director.loadScene("ending");
         }
         if(this.arr.length == 0){
-            this.new.active = false
-            for(var i = 0; i < 5; i++){
-                this.result[i].active = false
-                this.figure[i].active = true
-            }
+            this.right.active = true
         }  
         if(this.arr.length != 0){
             global.score--;
+            this.error.active = true
         }   
         this.showStar()
     },
     correct(){
         if(global.id == 3){
-            console.log(global.score)
             cc.director.loadScene("ending")
         }else{
             global.score = 0
@@ -101,5 +99,16 @@ cc.Class({
         this.redCircle[global.id].active = false;
         this.popUp.active = false
         this.mask.active = false
+    },
+    closeErr(){
+        this.error.active = false
+    },
+    closeRight(){
+        this.right.active = false
+        this.new.active = false
+        for(var i = 0; i < 5; i++){
+            this.result[i].active = false
+            this.figure[i].active = true
+        }
     }
 });
