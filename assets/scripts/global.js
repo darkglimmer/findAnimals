@@ -77,5 +77,6 @@ module.exports={
     saveAnimal,
     animalScore,
     quiz,
-    id
+    id,
+    testResult
 }

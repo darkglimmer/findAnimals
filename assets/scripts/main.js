@@ -37,6 +37,7 @@ cc.Class({
         material: cc.Material,
         time: 0,
         list: cc.Node,
+        camera: cc.Node
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -58,7 +59,6 @@ cc.Class({
             event.stopPropagation();
             this.updateImg();
         }, this);
-        
     },
 
     updateImg(){
@@ -80,6 +80,16 @@ cc.Class({
                 }else if(i == 2){
                     this.material = this.BGImage.getMaterial(0);
                     this.schedule(this.upd, 0,  cc.macro.REPEAT_FOREVER, 0);
+                }else if(i == 3){
+                    cc.tween(this.camera)
+                    .to(0.04, { position: cc.v2(20, 5) })
+                    .to(0.1, { position: cc.v2(-20, -4) })
+                    .to(0.15, { position: cc.v2(20, 3) })
+                    .to(0.2, { position: cc.v2(-20, -2) })
+                    .to(0.24, { position: cc.v2(20, 1) })
+                    .to(0.3, { position: cc.v2(0, 0) })
+                    .start()
+                    // 调用 start 开始执行 cc.tween
                 }else{
                     this.changeFGImg(prefix[i], change[i], change2prop[i]);
                 }
@@ -199,3 +209,4 @@ cc.Class({
         }
     }
 });
+

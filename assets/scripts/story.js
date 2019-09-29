@@ -47,35 +47,36 @@ cc.Class({
         }
         let textArr = plot.story[global.process++].split('@');
         
-        if(this.leftActive === true){
-            this.changeName(this.LNameLabel, this.RNameLabel, textArr[0]);
-        } else {
-            this.changeName(this.RNameLabel, this.LNameLabel, textArr[0]);
+        // if(this.leftActive === true){
+        //     this.changeName(this.LNameLabel, this.RNameLabel, textArr[0]);
+        // } else {
+        //     this.changeName(this.RNameLabel, this.LNameLabel, textArr[0]);
+        // }
+        if(textArr[0] == '甄探'){
+            this.LName.active = true;
+            this.RName.active = false;
+            this.LNameLabel.string = textArr[0];
+        }else if(textArr[0] != ''){
+            this.LName.active = false;
+            this.RName.active = true;
+            this.RNameLabel.string = textArr[0];
         }
     
         this.richTextInfo.string = textArr[1];
     },
     
-    changeName: function(label, newLabel, str){
-        if(label.string == ''){
-            label.string = str;
-            return;
-        }
-        if(label.string !== str){
-            // if(str === "甄探" ^ this.leftActive){
-            //     this.leftActive = !this.leftActive;
-            //     this.LName.active = !this.LName.active;
-            //     this.RName.active = !this.RName.active;
-            //     newLabel.string = str;
-            // } else {
-            //     label.string = str;
-            // }
-            this.leftActive = !this.leftActive;
-            this.LName.active = !this.LName.active;
-            this.RName.active = !this.RName.active;
-            newLabel.string = str;
-        }
-    }
+    // changeName: function(label, newLabel, str){
+    
+    //     if(label.string == ''){
+    //         label.string = str;
+    //         return;
+    //     }else if(label.string !== str && str != ''){
+    //         this.leftActive = !this.leftActive;
+    //         this.LName.active = !this.LName.active;
+    //         this.RName.active = !this.RName.active;
+    //         newLabel.string = str;
+    //     }
+    // }
     
 
 });
