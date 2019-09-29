@@ -15,6 +15,7 @@ cc.Class({
         tip:cc.Node,
         explain:cc.Node,
         result: cc.Node,
+        resultPop: cc.Node,
         animalStar: cc.Node,
         captureStar: cc.Node,
         endStar: cc.Node,
@@ -28,9 +29,9 @@ cc.Class({
     onLoad () {
         var detective = ["新手侦探","入门侦探","初级侦探","中级侦探","高级侦探"]
         var endScore = Math.floor(((global.score * 3 + global.animalScore) / 2) / 3)
-        if(global.score){
+        if(global.score > 0){
             this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
-            this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予" + detective[endScore] + "的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
+            this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予<size=40><color=#FE4C40>" +detective[endScore] + "</color></size>的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
         }else{
             this.text.getComponent(cc.RichText).string = "很遗憾，你没能成功抓到小偷，看来你的侦探之路还很漫长呢！"
             this.letterText.getComponent(cc.RichText).string = "    看来徒儿的道行还不够深啊！通过这次探案，你知道知识有多么重要了吧！为了帮助你成为更优秀的侦探，师父送你一个礼物吧！"
@@ -41,6 +42,7 @@ cc.Class({
         this.expBt.active = false
         this.text.active = false
         this.result.active = false
+        this.resultPop.active = false
         if(global.score > 0){
             this.envelop.active = true
             // this.hand.active = true
@@ -109,6 +111,7 @@ cc.Class({
     showResult(){
         this.explain.active = false
         this.result.active = true
+        this.resultPop.active = true
     },
 
     spawnNewStar () {
@@ -175,8 +178,37 @@ cc.Class({
         return cc.v2(positionX,positionY);
     },
     getEndStarPosition: function(i) {
-        var positionX = 160-i*16;
-        var positionY = -90;
-        return cc.v2(positionX,positionY);
+        var positionX = 160-i*16
+        var positionY = -90
+        return cc.v2(positionX,positionY)
+    },
+    again(){
+        global.process = 0
+        global.id = 0
+        global.quiz = 0
+        global.collection = {}
+        global.firstOpen = true
+        global.firstClose = true
+        global.bookPage = 0
+        global.animalScore = 0
+        global.saveAnimal = {
+            'cat': 0,
+            'dog': 0,
+            'horse': 0,
+            'bird': 0,
+            'pig': 0
+        }
+        global.testResult = {
+            'cat': [true, true, true],
+            'dog': [true, true, true],
+            'horse': [true, true, true],
+            'bird': [true, true, true],
+            'pig': [true, true, true]
+        }
+        global.testResultArr = []
+        cc.director.loadScene("cover")
+    },
+    closeWindow(){
+        window.close();
     }
 });
