@@ -10,7 +10,7 @@ cc.Class({
         qid: 0,
         explain: cc.Node
     },
-
+    
     showExplain(){
         if(global.quiz == 0){
             if(this.qid < 3){
