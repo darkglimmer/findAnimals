@@ -75,16 +75,17 @@ cc.Class({
                 a++;
             }
         }
+        if(this.arr.length != 0){
+            global.score--;
+            this.error.active = true
+        }   
         if(global.score <= 0){
             cc.director.loadScene("ending");
         }
         if(this.arr.length == 0){
             this.right.active = true
         }  
-        if(this.arr.length != 0){
-            global.score--;
-            this.error.active = true
-        }   
+
         this.showStar()
     },
     correct(){
