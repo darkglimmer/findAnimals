@@ -21,12 +21,14 @@ cc.Class({
                 self.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 // console.log(err);
             });
+            this.node.off(cc.Node.EventType.MOUSE_DOWN, this.intoSelectQuiz, this);
         }else if (global.saveAnimal[animal] == -1){
             //失败
             cc.loader.loadRes(`images/animals/${animal}Failed`, cc.SpriteFrame, function (err, spriteFrame) {
                 self.node.getComponent(cc.Sprite).spriteFrame = spriteFrame;
                 // console.log(err);
             });
+            this.node.off(cc.Node.EventType.MOUSE_DOWN, this.intoSelectQuiz, this);
         }
         let allSave = true;
         for(let i in global.saveAnimal){

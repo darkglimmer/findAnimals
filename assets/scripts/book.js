@@ -9,7 +9,6 @@ let animal2page = {
 let bookmarkOn = false;
 let collectOn = false;
 let slang;
-let alreadyAddPrefab = {};
 cc.Class({
     extends: cc.Component,
 
@@ -27,10 +26,10 @@ cc.Class({
         example: cc.Node,
         similar: cc.Node,
         video: cc.Node,
-        audioClip: {
-            default: null,
-            type: cc.AudioClip,
-        },
+        // audioClip: {
+        //     default: null,
+        //     type: cc.AudioClip,
+        // },
         speaker: cc.Node,
         collect: cc.Node,
         collectionPage: cc.Node,
@@ -138,24 +137,29 @@ cc.Class({
             if(word == 0){
                 //word==0 中外对比 title不出现 compare出现
                 this.controlActive(page, false);
+                let self = this;
+                cc.loader.loadRes(`images/compare/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
+                    self.compare.children[0].getComponent(cc.Sprite).spriteFrame = spriteFrame
+                });
                 this.compare.children[1].getComponent(cc.Label).string = wordContent[animal2page[animal]].compare
-                
             }else{
                 slang = wordContent[animal2page[animal]].slangs[word-1];
                 if(slangPage == 0){
+                    
+                    let title = slang.title
                     this.controlActive(page, true, true);
-                    this.title.children[0].getComponent(cc.Label).string = slang.title;
+                    this.title.children[0].getComponent(cc.Label).string = title;
                     
                     //喇叭声音资源改变
-                    let self = this;
-                    cc.loader.loadRes(`sounds/${animal}/${slang.title}`, cc.AudioClip, function (err, audioClip) {
-                        console.log(audioClip);
-                        self.audioClip = audioClip;
-                    });
-                    let audioID;
-                    this.speaker.on(cc.Node.EventType.MOUSE_DOWN, function(){
-                        audioID = cc.audioEngine.playMusic(this.audioClip, false);
-                    }, this);
+                    let slangSoundEventHandler = new cc.Component.EventHandler();
+                    slangSoundEventHandler.target = this.node;
+                    slangSoundEventHandler.component = "book";
+                    slangSoundEventHandler.handler = "loadSound";
+                    slangSoundEventHandler.customEventData = { title, animal };
+            
+                    let speakerBtn = this.speaker.getComponent(cc.Button);
+                    speakerBtn.clickEvents = [slangSoundEventHandler];
+
                     //收藏事件
                     if(!collectOn){
                         this.collect.on(cc.Node.EventType.MOUSE_DOWN, this.clickStar, this)
@@ -202,12 +206,22 @@ cc.Class({
         this.bookMark.active = (page >= 3);
         this.sideBar.active = this.content.active = (page >= 3 && page < 58);
         this.collectionPage.active = (page == 58);
-        console.log(this.collectionPage);
         
         this.title.active = this.meaning.active = this.example.active = this.similar.active = isWordPage && isFirstPage;
         this.video.active = isWordPage && (!isFirstPage);
         this.compare.active = !isWordPage;
         
+    },
+
+    loadSound(event, customEventData){
+        let {title, animal} = customEventData;
+        console.log(`sounds/${animal}/${title}`)
+        cc.loader.loadRes(`sounds/${animal}/${title}`, cc.AudioClip, function (err, audioClip) {
+            console.log(audioClip);
+            cc.audioEngine.playMusic(audioClip, false);
+        });
+        
+
     },
 
     clickAnimal: function(){
@@ -374,7 +388,7 @@ var wordContent = [
     },
     {
         animal: 'horse',
-        compare: '中西方文化中的马的形象大都为褒义的，马在中华民族的文化中地位极高，具有一系列的象征和寓意。龙马精神是中华民族自古以来所崇尚的奋斗不止、自强不息的进取向上的民族精神。在西方文化里，马(horse)被当做一种神圣的动物，它代表速度、优雅和高贵。在西方童话中，马是一种有魔力、能讲话、能预言未来的动物，能给它所信赖的主人提出建议和忠告。',
+        compare: '中西方文化中的马的形象大都为褒义，马在中华民族的文化中地位极高，具有一系列的象征和寓意。龙马精神是中华民族自古以来所崇尚的奋斗不止、自强不息的进取向上的民族精神。在西方文化里，马(horse)被当做一种神圣的动物，它代表速度、优雅和高贵。在西方童话中，马是有魔力、能讲话、能预言未来的动物，能给它所信赖的主人提出建议和忠告。',
         slangs: [{
             title: 'Hold one\'s horse(s)',
             meaning: '忍耐；控制自己的感情',
@@ -412,7 +426,7 @@ var wordContent = [
             similar:'arrogant',
         },
         {
-            title: 'Beat a dead horse ',
+            title: 'Beat a dead horse',
             meaning: '白费劲；徒劳；白费口舌',
             example: [
                 'I hate to beat a dead horse, but it is very important that you understand this before you leave.\n我不想多此一举，但你离开以前必须了解这个。',
@@ -501,7 +515,7 @@ var wordContent = [
             similar:'snore',
         },
         {
-            title: 'Pigs might fly ',
+            title: 'Pigs might fly',
             meaning: '无稽之谈；奇迹可能会发生',
             example: [
                 'Tom said he will become a good person，and pigs might fly.\n汤姆说他会试着做一个好人，这完全是不可能的事。',
@@ -510,7 +524,7 @@ var wordContent = [
             similar:'impossible；no way；out of the question',
         },
         {
-            title: 'Pig out ',
+            title: 'Pig out',
             meaning: '狼吞虎咽；大吃特吃',
             example: [
                 'Would you like to pig out with us tonight?\n今晚想不想跟我们一起去海吃一顿？',

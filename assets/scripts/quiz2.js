@@ -15,7 +15,7 @@ var questiones = {
         },{
             content: '<size=24>小猫们饿的走不动了，不愿意和你走，快帮小猫们找到自己想吃的食物补充体力吧！(点击小喇叭听录音，并将猫粮移动到对应的小猫上哦)</size>',
             answer: ['6','4','5'],
-            sound:['A cat in the pan','Cat on a hot tin roof','Let the cat out of the bag'],
+            sound:['Let the cat out of the bag','A cat in the pan','A cat on a hot tin roof'],
             explain: '【答案】\na cat in the pan 叛徒\na cat on a hot tin roof 十分焦虑\nlet the cat out of the bag 泄露秘密；真相大白',
         }
     ],
@@ -95,7 +95,7 @@ var questiones = {
         },{
             content: '<size=24>小猪们被锁住了,快将锁与钥匙配对,释放小猪吧!（点击小喇叭听录音，并将钥匙移向相应的锁哦）</size>',
             answer: ['4','6','5'],
-            sound:['Make a pig\'s ear','Pigs might fly','Pig out'],
+            sound:['Pig out','Buy a pig in the poke','Make a pig\'s ear'],
             explain: '【答案】\nmake a pig\'s ear 把某事弄糟糕\npigs might fly 无稽之谈；奇迹可能会发生\npig out 狼吞虎咽；大吃特吃',
         }
     ]

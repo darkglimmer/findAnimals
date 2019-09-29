@@ -172,13 +172,13 @@ cc.Class({
 
         //题目图
         let self = this;
-        if(animal == 'dog'){
-            this.quiz2.children[1].getComponent(cc.Sprite).spriteFrame = null;
-        }else{
+        // if(animal == 'dog'){
+        //     this.quiz2.children[1].getComponent(cc.Sprite).spriteFrame = null;
+        // }else{
             cc.loader.loadRes(`images/test/${animal}/set${parseInt(this.setNum) + 1}/quiz2/picture`, cc.SpriteFrame, function (err, spriteFrame) {
                 self.quiz2.children[1].getComponent(cc.Sprite).spriteFrame = spriteFrame;
             });
-        }
+        // }
         //题目
         for(let i in quizContent[1].write){
             this.quiz2.children[parseInt(i)+2].getComponent(cc.Label).string = quizContent[1].write[i];
@@ -252,8 +252,15 @@ cc.Class({
             this.soundsNode[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
                 cc.audioEngine.playMusic(this.soundsArr[i], false);
             }, this);
+            // let quizSoundEventHandler = new cc.Component.EventHandler();
+            // quizSoundEventHandler.target = this.node;
+            // quizSoundEventHandler.component = "testContent"
+            // quizSoundEventHandler.handler = "loadSound";
+            // quizSoundEventHandler.customEventData = {  };
+    
+            // let speakerBtn = this.soundsNode[i].getComponent(cc.Button);
+            // speakerBtn.clickEvents = [quizSoundEventHandler];
         }
-
     },
 
     quiz2Btn: function(){
@@ -369,10 +376,10 @@ cc.Class({
         if(isCorrect){
             tipText = '恭喜你答对啦';
             //取消按钮不出现
-            this.tipPopUp.children[1].children[2].active = false;
+            this.tipPopUp.children[1].children[1].children[1].active = false;
         }else{
             tipText = '很遗憾，答错啦！你可以查看侦探手册后再来作答，或者直接进入下一关，不会再回来了哟~';
-            this.tipPopUp.children[1].children[2].active = true;
+            this.tipPopUp.children[1].children[1].children[1].active = true;
             global.testResult[animal][quizNum] = false;
         }
         this.tipPopUp.children[1].children[0].getComponent(cc.Label).string = tipText;
@@ -383,7 +390,7 @@ cc.Class({
         tipEventHandler.handler = "nextQuiz";
         tipEventHandler.customEventData = {quizNum};
         
-        let nextBtn = this.tipPopUp.children[1].children[1].getComponent(cc.Button);
+        let nextBtn = this.tipPopUp.children[1].children[1].children[0].getComponent(cc.Button);
         // console.log(nextBtn.clickEvents);
         nextBtn.clickEvents = [tipEventHandler];
     },
