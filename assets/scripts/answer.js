@@ -46,10 +46,12 @@ cc.Class({
         }
         if(saveNum == 5){
             //全救回；
+            global.saveResult = true;
         }else{
             //没能救回
             plot.story[21] = '农场主@呜呜呜，我的动物们还是没能都找到'
             plot.story[22] = '甄探@别着急，我们可以从小偷入手，一旦找到了小偷动物们肯定也能找回的'
+            global.saveResult = false;
         }
         global.process = 21;
         cc.director.loadScene('main');

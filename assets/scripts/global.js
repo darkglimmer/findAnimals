@@ -12,6 +12,7 @@ var collection = {
 var score = 5
 
 //侦探手册
+var mode = 0;//0: 探案模式，1：普通模式
 var firstOpen = true;
 var firstClose = true;
 var bookPage = 0;
@@ -42,17 +43,25 @@ bookContent[page] = 'Collection'
 // console.log(bookContent);
 
 //测试分数 score1：解救动物；score2: 指出小偷
-var animalScore = 0;
+// var animalScore = 0;
+var animalScore = 13;
 
 // 0：未拯救；1：拯救成功，-1：拯救失败
-var saveAnimal = {
-    'cat': 0,
-    'dog': 0,
-    'horse': 0,
-    'bird': 0,
-    'pig': 0
-}
+// var saveAnimal = {
+//     'cat': 0,
+//     'dog': 0,
+//     'horse': 0,
+//     'bird': 0,
+//     'pig': 0
+// }
 
+var saveAnimal = {
+    'cat': 1,
+    'dog': 1,
+    'horse': 1,
+    'bird': 1,
+    'pig': 1
+}
 var testResult = {
     'cat': [true, true, true],
     'dog': [true, true, true],
@@ -61,21 +70,13 @@ var testResult = {
     'pig': [true, true, true]
 }
 
-var testResultArr = []
-for(var i = 0; i < 3; i++){
-    testResultArr = testResultArr.concat(testResult.cat[i] ? 1 : 0)
-}for(var i = 0; i < 3; i++){
-    testResultArr = testResultArr.concat(testResult.dog[i] ? 1 : 0)
-}for(var i = 0; i < 3; i++){
-    testResultArr = testResultArr.concat(testResult.horse[i] ? 1 : 0)
-}for(var i = 0; i < 3; i++){
-    testResultArr = testResultArr.concat(testResult.bird[i] ? 1 : 0)
-}for(var i = 0; i < 3; i++){
-    testResultArr = testResultArr.concat(testResult.pig[i] ? 1 : 0)
-}
-
 //test场景
 var animal;
+
+var changeMusic = false;
+var music = '';
+
+var saveResult = true;
 
 module.exports={
     process,
@@ -91,5 +92,8 @@ module.exports={
     quiz,
     id,
     testResult,
-    testResultArr
+    mode,
+    changeMusic,
+    music,
+    saveResult
 }

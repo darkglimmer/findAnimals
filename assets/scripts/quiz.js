@@ -26,7 +26,7 @@ var questiones = {
             answer: '1',
             explain:'【题目•选词填空】\nLook, it begins to ______ outside!\nrain cats and dogs  work like a dog  dog watch\n【答案】\nrain cats and dogs\n【解析】\n图片中展示的是下大雨的场景，因此此处应选“rain cats and dogs”；\n原句意思为：看！外面开始下倾盆大雨了！\n'
         },{
-            content: '<size=20>狗狗终于安静下来了，现在你有30s的时间解开绳子带走狗狗哦，请抓紧时间答题吧！</size>',
+            content: '<size=20>狗狗终于安静下来了，现在快解开绳子带走狗狗吧！</size>',
             write: ['Why can\'t she let ______ dogs lie?',
             'Don\'t lose your hope, every dog has his _______.',
             'If you want to be successful, you\'d better _______ like a dog.'],
@@ -35,7 +35,7 @@ var questiones = {
         },{
             content:'<size=20>可恶的小偷，竟然放出来蝙蝠阻止我解救狗狗，移动正确的武器来消灭围攻的蝙蝠吧（点击小喇叭听录音，并将相应的武器移到蝙蝠上）</size>',
             answer: ['4', '6', '5'],
-            sound:['Rain cats and dogs','Every dog has it\'s day','Dog watch'],
+            sound:['Rain cats and dogs','Every dog has its day','Dog watch'],
             explain:'【答案】\nrain cats and dogs 倾盆大雨\nevery dog has it’s day 时来运转\ndog watch 夜班\n'
         }
     ],
@@ -55,7 +55,7 @@ var questiones = {
         },{
             content: '<size=20>马儿们已经被关了太多天，饿的走不动了，快来帮助马儿们吃到他们想吃的草吧！选择错了马儿可不会跟你走哦~（点击小喇叭听录音，并将对应的草移向马儿）</size>',
             answer: ['6', '4', '5'],
-            sound:['High horse','Beat a dead horse','Hold one\'s horse'],
+            sound:['High horse','Beat a dead horse','Hold one\'s horse(s)'],
             explain:'【答案】\nhigh horse 骄傲；自大；趾高气扬\nbeat a dead horse 白费劲；徒劳；白费口舌\nhold one’s horse 忍耐；控制自己的感情\n'
         }
     ],

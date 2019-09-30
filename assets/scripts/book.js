@@ -26,24 +26,26 @@ cc.Class({
         example: cc.Node,
         similar: cc.Node,
         video: cc.Node,
-        // audioClip: {
-        //     default: null,
-        //     type: cc.AudioClip,
-        // },
         speaker: cc.Node,
         collect: cc.Node,
         collectionPage: cc.Node,
         collectionItemPrefab: cc.Prefab,
+        videoplayer: cc.Prefab
     },
 
     onLoad () {
+        cc.audioEngine.stopAll();
         let sprite = this.node.getComponent(cc.Sprite);
-        console.log(global.firstOpen);
-        if(global.firstOpen === true){
+        if(global.firstOpen === true && global.mode == 0){
+            console.log(global.mode);
             cc.loader.loadRes('images/UI/bookCover', cc.SpriteFrame, function (err, spriteFrame) {
                 sprite.spriteFrame = spriteFrame;
             });
+        }else if( global.mode == 1){
+            global.bookPage = 2;
+            this.updatePage();
         }
+        
         this.node.on('clickLeft', function (event) {
             event.stopPropagation();
             this.nextPage(-1);
@@ -69,10 +71,19 @@ cc.Class({
     },
     
     ifPageLegal: function(page){
-        if(page < 0 || page > 58){
-            return false;   
+        if(global.mode){
+            //普通模式
+            if(page < 2 || page > 58){
+                return false;
+            }
+            return true;
+        }else{
+            if(page < 0 || page > 58){
+                return false;   
+            }
+            return true;
         }
-        return true;
+
     },
     
     
@@ -134,10 +145,10 @@ cc.Class({
             let animal = content[0];
             let word = content[1];
             let slangPage = content[2];
+            let self = this;
             if(word == 0){
                 //word==0 中外对比 title不出现 compare出现
                 this.controlActive(page, false);
-                let self = this;
                 cc.loader.loadRes(`images/compare/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
                     self.compare.children[0].getComponent(cc.Sprite).spriteFrame = spriteFrame
                 });
@@ -184,6 +195,22 @@ cc.Class({
                     this.similar.children[1].getComponent(cc.Label).string = slang.similar;
                 }else{
                     this.controlActive(page, true, false);
+                    if(slang.video == true){
+                        let player = cc.instantiate(this.videoplayer);
+
+                        cc.loader.loadRes(`video/${slang.title}`, cc.Asset, function(err, video){
+                            player.getComponent(cc.VideoPlayer).clip = video;
+                            
+                        console.log(video);
+                        })
+                        this.video.addChild(player);
+                    }else{
+                        let player = this.video.children[1];
+                        this.video.removeChild(player, true);
+                        console.log(this.video.children);
+                        player = cc.instantiate(this.videoplayer);
+                        this.video.addChild(player);
+                    }
                 }
             
 
@@ -201,6 +228,8 @@ cc.Class({
     },
 
     controlActive: function(page, isWordPage = false, isFirstPage){
+        this.leftArrow.active = (page != 0 && global.mode == 0) || (page != 2 && global.mode ==1);
+        this.rightArrow.active = (page < 58);
         this.welcome.active = (page == 1);
         this.selectAnimals.active = (page == 2);
         this.bookMark.active = (page >= 3);
@@ -330,6 +359,7 @@ var wordContent = [
                 'It\'s quite difficult to get a man who can bell the cat.\n很难找到危险时刻能够挺身而出的人了。'
             ],
             similar:'throw oneself into the breach; come out boldly',
+            video: true
         },
         {
             title: 'Cat on a hot tin roof',
@@ -415,6 +445,7 @@ var wordContent = [
                 'Let\'s fight fair, I hate the wooden horse of Trojan.\n让我们公平对决吧，我讨厌阴险狡诈的手段。'
             ],
             similar:'hidden danger',
+            video: true
         },
         {
             title: 'High horse',

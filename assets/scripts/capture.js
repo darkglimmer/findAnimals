@@ -90,8 +90,12 @@ cc.Class({
     },
     correct(){
         if(global.id == 3){
+            global.changeMusic = true;
+            global.music = 'captureSuccess'
             cc.director.loadScene("ending")
         }else{
+            global.changeMusic = true;
+            global.music = 'captureFailed'
             global.score = 0
             cc.director.loadScene("ending")
         }

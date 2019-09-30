@@ -15,7 +15,7 @@ var questiones = {
         },{
             content: '<size=24>小猫们饿的走不动了，不愿意和你走，快帮小猫们找到自己想吃的食物补充体力吧！(点击小喇叭听录音，并将猫粮移动到对应的小猫上哦)</size>',
             answer: ['6','4','5'],
-            sound:['Let the cat out of the bag','A cat in the pan','A cat on a hot tin roof'],
+            sound:['Let the cat out of the bag','A cat in the pan','Cat on a hot tin roof'],
             explain: '【答案】\na cat in the pan 叛徒\na cat on a hot tin roof 十分焦虑\nlet the cat out of the bag 泄露秘密；真相大白',
         }
     ],
@@ -26,7 +26,7 @@ var questiones = {
             answer: '3',
             explain: '【题目·选词填空】\nIf you want to be successful, you\'d better ______.\nlet sleeping dogs lie   dog watch   work like a dog\n【答案】\nwork like a dog\n【解析】\n 图片中的人在非常拼命的工作，因此此处应选“work like a dog”；\n原句意思为：如果你想成功，你最好努力工作。',
         },{
-            content: '<size=24>狗狗终于安静下来了，现在你有30s的时间解开绳子带走狗狗哦，请抓紧时间答题吧！</size>',
+            content: '<size=24>狗狗终于安静下来了，现在快解开绳子带走狗狗吧！</size>',
             write: ['1. In the middle of the picnic it started to _______ cats and dogs, and everybody got soaked.',
             '2. Don\'t lose your hope, every dog has his _______.',
             '3. Does anyone have dog _______ tonight?'],

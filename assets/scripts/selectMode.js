@@ -27,11 +27,13 @@ cc.Class({
     detectMode: function(){
         global.process = 0;
         cc.director.loadScene("main");
+        global.mode = 0;
     },
 
     normalMode: function(){
         global.process = 15;
-        cc.director.loadScene("main");
+        cc.director.loadScene("normal");
+        global.mode = 1;
     }
     // update (dt) {},
 });

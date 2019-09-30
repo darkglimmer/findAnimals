@@ -52,13 +52,18 @@ cc.Class({
                 self.BGImage.spriteFrame = spriteFrame;
             });
             this.updateImg();
+            global.changeMusic = true;
+            global.music = 'judge'
+        }else{
+            global.changeMusic = true;
+            global.music = 'mainBgMusic'
         }
         
-
         this.node.on('onclick', function (event) {
             event.stopPropagation();
             this.updateImg();
         }, this);
+        this.speak();
     },
 
     updateImg(){
@@ -72,6 +77,7 @@ cc.Class({
             self.button.active = true;
             self.tipAnim()
         }
+        this.speak();
         if(change){
             console.log(global.process, change);
             for(let i in change){
@@ -125,6 +131,20 @@ cc.Class({
                 this.closeList();
             }, this);
         }
+    },
+
+    speak(){
+        let name = global.process;
+        if(global.process == 21 || global.process == 22){
+            if(global.saveResult){
+                name+='-1';
+            }else{
+                name+='-2'
+            }
+        }
+        cc.loader.loadRes(`sounds/plot/${name}`, cc.AudioClip, function (err, clip) {
+            cc.audioEngine.playEffect(clip, false);
+        });
     },
 
     handAnim() {
@@ -197,7 +217,8 @@ cc.Class({
     closeList(){
         this.list.active = false
         this.mask.active = false
-        cc.director.loadScene('capture');
+        // cc.director.loadScene('capture');
+        this.Story.onClick()
     },
 
     upd(){

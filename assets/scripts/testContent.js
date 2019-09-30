@@ -44,14 +44,23 @@ cc.Class({
         },
         star1: cc.Prefab,
         star2: cc.Prefab,
-        star3: cc.Prefab   
+        star3: cc.Prefab,
+        rightSound: {
+            default: null,
+            type: cc.AudioClip
+        },
+        wrongSound: {
+            default: null,
+            type: cc.AudioClip
+        },
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         //第几套
-        this.setNum = Math.floor(Math.random()+1);
+        cc.audioEngine.stopAll();
+        this.setNum = Math.round(Math.random());
         console.log('题目',this.setNum);
         
         const {dragNode} = this;
@@ -71,6 +80,7 @@ cc.Class({
                 this.dragNode[i].y = dragPosition[i].y;
             }
             option3 = [];
+            firstRight = [true, true, true];
         }
     },
     
@@ -161,8 +171,7 @@ cc.Class({
             this.quiz1.children[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
                 this.popUpEvent(0, i-1);
             }, this);
-        }
-        
+        }  
     },
 
     updateQuiz2: function(){
@@ -183,7 +192,6 @@ cc.Class({
         for(let i in quizContent[1].write){
             this.quiz2.children[parseInt(i)+2].getComponent(cc.Label).string = quizContent[1].write[i];
         }
-        
     },
 
     updateQuiz3: function(){
@@ -381,6 +389,7 @@ cc.Class({
             tipText = '很遗憾，答错啦！你可以查看侦探手册后再来作答，或者直接进入下一关，不会再回来了哟~';
             this.tipPopUp.children[1].children[1].children[1].active = true;
             global.testResult[animal][quizNum] = false;
+            console.log(global.testResult);
         }
         this.tipPopUp.children[1].children[0].getComponent(cc.Label).string = tipText;
 
@@ -429,10 +438,12 @@ cc.Class({
                     global.animalScore++;
                     this.spawnNewStar();
                 }
+                cc.audioEngine.playEffect(this.rightSound, false);
             }else{
                 //回答错误
                 this.tipPopUpEvent(false, quizNum);
                 firstRight[quizNum] = false;
+                cc.audioEngine.playEffect(this.wrongSound, false);
             }
         }
     },

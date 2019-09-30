@@ -15,6 +15,23 @@ cc.Class({
     onEnable(){
         const {animal} = this;
         let self = this;
+
+        let allSave = true;
+        for(let i in global.saveAnimal){
+            if(global.saveAnimal[i] == 0){
+                allSave = false;
+                break;
+            }
+        }
+        if(allSave){
+            if(global.mode){
+                cc.director.loadScene('normal');
+            }else{
+                cc.director.loadScene('quiz');
+            }
+        }
+
+
         if(global.saveAnimal[animal] == 1){
             //成功
             cc.loader.loadRes(`images/animals/${animal}`, cc.SpriteFrame, function (err, spriteFrame) {
@@ -29,16 +46,6 @@ cc.Class({
                 // console.log(err);
             });
             this.node.off(cc.Node.EventType.MOUSE_DOWN, this.intoSelectQuiz, this);
-        }
-        let allSave = true;
-        for(let i in global.saveAnimal){
-            if(global.saveAnimal[i] == 0){
-                allSave = false;
-                break;
-            }
-        }
-        if(allSave){
-            cc.director.loadScene('quiz');
         }
 
     },

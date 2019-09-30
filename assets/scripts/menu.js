@@ -39,7 +39,7 @@ cc.Class({
     closeReadme: function (event) {
         this.readme.active = false;
         this.BtnClose.node.active = false;
-        if(global.firstClose){
+        if(global.firstClose && global.mode == 0){
             cc.director.loadScene("test");
             global.firstClose = false;
         }

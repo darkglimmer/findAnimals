@@ -7,11 +7,16 @@ cc.Class({
     },
 
     onLoad: function () {
-        cc.game.addPersistRootNode(this.node);
+        if(this.node.name != 'normal'){
+            cc.game.addPersistRootNode(this.node);
+        }
         this.node.on(cc.Node.EventType.MOUSE_DOWN, function(){
             this.book.active = true;
-            this.handTip.active = false;
-            this.maskTip.active = false;
+            if(this.node.name != 'normal'){
+                this.handTip.active = false;
+                this.maskTip.active = false;
+            }else{
+            }
             
         }, this);
     },
