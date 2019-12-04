@@ -42,26 +42,26 @@ for(let i in animals){
 bookContent[page] = 'Collection'
 // console.log(bookContent);
 
-//测试分数 score1：解救动物；score2: 指出小偷
-// var animalScore = 0;
-var animalScore = 13;
+//测试分数 
+var animalScore = 0;
+// var animalScore = 13;
 
 // 0：未拯救；1：拯救成功，-1：拯救失败
-// var saveAnimal = {
-//     'cat': 0,
-//     'dog': 0,
-//     'horse': 0,
-//     'bird': 0,
-//     'pig': 0
-// }
-
 var saveAnimal = {
-    'cat': 1,
-    'dog': 1,
-    'horse': 1,
-    'bird': 1,
-    'pig': 1
+    'cat': 0,
+    'dog': 0,
+    'horse': 0,
+    'bird': 0,
+    'pig': 0
 }
+//测试用
+// var saveAnimal = {
+//     'cat': 1,
+//     'dog': 1,
+//     'horse': 1,
+//     'bird': 1,
+//     'pig': 1
+// }
 var testResult = {
     'cat': [true, true, true],
     'dog': [true, true, true],

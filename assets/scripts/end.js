@@ -194,6 +194,7 @@ cc.Class({
         global.firstOpen = true
         global.firstClose = true
         global.bookPage = 0
+        global.score = 5
         global.animalScore = 0
         global.saveAnimal = {
             'cat': 0,
