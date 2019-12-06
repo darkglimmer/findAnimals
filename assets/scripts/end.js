@@ -22,9 +22,11 @@ cc.Class({
         star1: cc.Prefab,
         star2:cc.Prefab,
         star3:cc.Prefab,
+        postmark:{
+            default: [],
+            type: cc.Node
+        }
     },
-
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         var detective = ["新手侦探","入门侦探","初级侦探","中级侦探","高级侦探"]
@@ -34,6 +36,7 @@ cc.Class({
             global.music = 'goodEnding'
             this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
             this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予<size=40><color=#FE4C40>" +detective[endScore] + "</color></size>的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
+            this.postmark[endScore].active = true
         }else{
             global.changeMusic = true;
             global.music = 'badEnding'
