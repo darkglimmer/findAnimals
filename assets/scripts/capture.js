@@ -60,7 +60,9 @@ cc.Class({
     save(){
         var a = 0
         for(var i = 0; i < 5; i++){
-            var b = this.arr.indexOf(this.input[i].getComponent(cc.EditBox).string)
+            var str = this.input[i].getComponent(cc.EditBox).string;
+            str=str.replace(/^\s+|\s+$/g,'');
+            var b = this.arr.indexOf(str)
             if(b != -1){
                 this.result[this.e] = cc.instantiate(this.prefab[b]);
                 this.node.addChild(this.result[this.e]);
