@@ -10,6 +10,11 @@ let option3 = [];
 let firstRight = [true, true, true];
 let firstLoad = true;
 let dragPosition;
+let connectPosition = [
+    [[200, 200], [200, 400]],
+    [[400, 200], [400, 400]],
+    [[600, 200], [600, 400]]
+]
 
 cc.Class({
     extends: cc.Component,
@@ -34,6 +39,7 @@ cc.Class({
             default: [],
             type: cc.Node
         },
+        line: cc.Graphics,
         soundsArr: {
             default: [],
             type: cc.AudioClip
@@ -66,6 +72,7 @@ cc.Class({
         const {dragNode} = this;
         dragPosition = [dragNode[0].position, dragNode[1].position, dragNode[2].position];
         this.updateContent();
+
     },
 
     onEnable(){
@@ -248,9 +255,11 @@ cc.Class({
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/6hover`, cc.SpriteFrame, function (err, spriteFrame) {
             dragNode[2].getComponent(cc.Button).hoverSprite = spriteFrame;
         });
-        this.quiz3Drag(dragNode[0], dragPosition[0], '4');
-        this.quiz3Drag(dragNode[1], dragPosition[1], '5');
-        this.quiz3Drag(dragNode[2], dragPosition[2], '6');
+        // this.quiz3Drag(dragNode[0], dragPosition[0], '4');
+        // this.quiz3Drag(dragNode[1], dragPosition[1], '5');
+        // this.quiz3Drag(dragNode[2], dragPosition[2], '6');
+
+
         //喇叭声音资源改变
         for(let i = 0; i < 3; i++){
             cc.loader.loadRes(`sounds/${animal}/${quizContent[2].sound[i]}`, cc.AudioClip, function (err, audioClip) {
@@ -268,6 +277,33 @@ cc.Class({
     
             // let speakerBtn = this.soundsNode[i].getComponent(cc.Button);
             // speakerBtn.clickEvents = [quizSoundEventHandler];
+        }
+        this.connect();
+    },
+
+    connect: function(){
+        for(let i = 0; i < 3; i++){
+            let spriteNode = this.quiz3.children[1].children[i];
+            let mouseDown =false;
+            spriteNode.on(cc.Node.EventType.MOUSE_DOWN, (event)=>{
+                mouseDown = true;
+            });
+            spriteNode.on(cc.Node.EventType.MOUSE_MOVE, (event) =>{
+                if(mouseDown){
+                    let x = connectPosition[i][0][0];
+                    let y = connectPosition[i][0][1];
+                    console.log([x, y]);
+                    let line = this.line;
+                    line.moveTo(x, y);
+                    // let delta = event.getDelta();
+                    let position = cc.Event.EventMouse.getLocation();
+                    line.lineTo(position.x, position.y);
+                    line.fillColor = cc.Color.RED;
+    
+                    line.stroke();
+                    line.fill();
+                }
+            }, this);
         }
     },
 
