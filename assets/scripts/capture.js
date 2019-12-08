@@ -8,10 +8,7 @@ cc.Class({
             default: [],
             type: cc.Node
         },
-        figure:{
-            default: [],
-            type: cc.Node
-        },
+        figure: cc.Node,
         input:{
             default:[],
             type:cc.Node
@@ -115,7 +112,7 @@ cc.Class({
         this.new.active = false
         for(var i = 0; i < 5; i++){
             this.result[i].active = false
-            this.figure[i].active = true
         }
+        this.figure.active = true
     }
 });

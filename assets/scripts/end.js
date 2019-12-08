@@ -34,7 +34,7 @@ cc.Class({
         if(global.score > 0){
             global.changeMusic = true;
             global.music = 'goodEnding'
-            this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
+            // this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
             this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予<size=40><color=#FE4C40>" +detective[endScore] + "</color></size>的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
             this.postmark[endScore].active = true
         }else{
@@ -50,6 +50,7 @@ cc.Class({
         this.text.active = false
         this.result.active = false
         this.resultPop.active = false
+        this.postmark[endScore].active = false
         if(global.score > 0){
             this.envelop.active = true
             // this.hand.active = true
