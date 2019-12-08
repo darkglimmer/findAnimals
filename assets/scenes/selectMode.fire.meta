@@ -1,7 +1,7 @@
 {
   "ver": "1.2.1",
   "uuid": "bedd41af-70ce-40e1-a412-1fa3600c2057",
-  "asyncLoadAssets": false,
-  "autoReleaseAssets": false,
+  "asyncLoadAssets": true,
+  "autoReleaseAssets": true,
   "subMetas": {}
 }

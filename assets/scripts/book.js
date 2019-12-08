@@ -404,6 +404,7 @@ var wordContent = [
                 'In the middle of the picnic it started to rain cats and dogs, and everybody got soaked.\n野餐进行中，突然大雨倾盆，每个人身上都湿透了。'
             ],
             similar:'heavy rain',
+            video: true,
         },
         {
             title: 'Every dog has its day',

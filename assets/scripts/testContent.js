@@ -10,11 +10,6 @@ let option3 = [];
 let firstRight = [true, true, true];
 let firstLoad = true;
 let dragPosition;
-let connectPosition = [
-    [[200, 200], [200, 400]],
-    [[400, 200], [400, 400]],
-    [[600, 200], [600, 400]]
-]
 
 cc.Class({
     extends: cc.Component,
@@ -39,7 +34,10 @@ cc.Class({
             default: [],
             type: cc.Node
         },
-        line: cc.Graphics,
+        lines: {
+            default: [],
+            type: cc.Node
+        },
         soundsArr: {
             default: [],
             type: cc.AudioClip
@@ -82,9 +80,9 @@ cc.Class({
             for(let i in this.editBoxArr){
                 this.editBoxArr[i].string = '';
             }
-            for(let i in dragPosition){
-                this.dragNode[i].x = dragPosition[i].x;
-                this.dragNode[i].y = dragPosition[i].y;
+            for(let line of this.lines){
+                line.active = false;
+                
             }
             option3 = [];
             firstRight = [true, true, true];
@@ -255,9 +253,6 @@ cc.Class({
         cc.loader.loadRes(`images/test/${animal}/set${parseInt(self.setNum) + 1}/quiz3/6hover`, cc.SpriteFrame, function (err, spriteFrame) {
             dragNode[2].getComponent(cc.Button).hoverSprite = spriteFrame;
         });
-        // this.quiz3Drag(dragNode[0], dragPosition[0], '4');
-        // this.quiz3Drag(dragNode[1], dragPosition[1], '5');
-        // this.quiz3Drag(dragNode[2], dragPosition[2], '6');
 
 
         //喇叭声音资源改变
@@ -269,42 +264,71 @@ cc.Class({
             this.soundsNode[i].on(cc.Node.EventType.MOUSE_DOWN, function(){
                 cc.audioEngine.playMusic(this.soundsArr[i], false);
             }, this);
-            // let quizSoundEventHandler = new cc.Component.EventHandler();
-            // quizSoundEventHandler.target = this.node;
-            // quizSoundEventHandler.component = "testContent"
-            // quizSoundEventHandler.handler = "loadSound";
-            // quizSoundEventHandler.customEventData = {  };
-    
-            // let speakerBtn = this.soundsNode[i].getComponent(cc.Button);
-            // speakerBtn.clickEvents = [quizSoundEventHandler];
         }
         this.connect();
     },
 
     connect: function(){
+        let dragPosition = [];
+        // let curLineID = -1;
+        for(let i = 0 ; i < 3; i++){
+            let node = this.dragNode[i];
+            let rect = new cc.Rect(node.x-65, node.y-65, 130, 130);
+            dragPosition[i] = rect;
+            console.log(rect);
+        }
         for(let i = 0; i < 3; i++){
             let spriteNode = this.quiz3.children[1].children[i];
-            let mouseDown =false;
-            spriteNode.on(cc.Node.EventType.MOUSE_DOWN, (event)=>{
-                mouseDown = true;
-            });
-            spriteNode.on(cc.Node.EventType.MOUSE_MOVE, (event) =>{
-                if(mouseDown){
-                    let x = connectPosition[i][0][0];
-                    let y = connectPosition[i][0][1];
-                    console.log([x, y]);
-                    let line = this.line;
-                    line.moveTo(x, y);
-                    // let delta = event.getDelta();
-                    let position = cc.Event.EventMouse.getLocation();
-                    line.lineTo(position.x, position.y);
-                    line.fillColor = cc.Color.RED;
-    
-                    line.stroke();
-                    line.fill();
+            // let mousePos;
+            spriteNode.on(cc.Node.EventType.TOUCH_MOVE, (event) =>{
+                let line = this.lines[i];
+                line.active = true;
+                let startPos = spriteNode.position;
+                startPos.y -= 50;
+                line.position = startPos;
+                let mousePos = new cc.Vec2(event.getLocationX(),event.getLocationY());
+                let pos = new cc.Vec2(mousePos.x - startPos.x, mousePos.y - startPos.y);
+                // console.log(pos)
+                // 计算角度
+                let radian = Math.atan2(-pos.x , pos.y); 
+                let rotation = (180 * radian / Math.PI + 90) % 360;
+                // 旋转线条
+                line.angle = rotation;
+                // 设置宽度，我这里是用宽度改变的线条长度
+                line.width =  pos.mag();
+            }, this);
+
+            spriteNode.on(cc.Node.EventType.TOUCH_CANCEL, (event) =>{
+                console.log('?');
+                let line = this.lines[i];
+                this.dragPlace(event, dragPosition, i);
+                if(option3[0] && option3[1] && option3[2]){
+                    this.popUpEvent(2, option3);
+                }else{
+                    console.log(option3);
                 }
             }, this);
         }
+    },
+
+    dragPlace: function (event, dragPosition, nodeID){
+        let rightPlace = false;
+        let mousePos = new cc.Vec2(event.getLocationX(),event.getLocationY());
+
+        for(let i = 0; i < 3; i++){
+            if(dragPosition[i].contains(mousePos)){ 
+                rightPlace = true;
+                option3[nodeID] = i+4;
+                break;
+            }
+        }
+        
+        if(!rightPlace){
+            option3[nodeID] = undefined;
+            this.lines[nodeID].active = false;
+        }
+        console.log(rightPlace, option3);
+        
     },
 
     quiz2Btn: function(){
@@ -314,90 +338,6 @@ cc.Class({
             option.push(this.editBoxArr[i].string);
         }
         this.popUpEvent(1, option);
-    },
-
-    quiz3Drag: function(node, oldPosition, nodeID){
-        let spritePosition = [];
-        for(let i = 0 ; i < 3; i++){
-            let spriteNode = this.quiz3.children[1].children[i];
-            let spriteRect = new cc.Rect(spriteNode.x-80, spriteNode.y-80, 130, 130);
-            spritePosition[i] = spriteRect;
-            console.log(spriteRect);
-        }
-        let mouseDown = false;
-        //当用户点击的时候记录鼠标点击状态
-        node.on(cc.Node.EventType.MOUSE_DOWN, (event)=>{
-            mouseDown = true;
-        });
-        //只有当用户鼠标按下才能拖拽
-        node.on(cc.Node.EventType.MOUSE_MOVE, (event)=>{
-            if(mouseDown){
-                //获取鼠标距离上一次点的信息
-                let delta = event.getDelta();
-                let minX = -node.parent.width / 2 + node.width / 2;
-                let maxX = node.parent.width / 2 - node.width / 2;
-                let minY = -node.parent.height / 2 + node.height / 2;
-                let maxY = node.parent.height / 2 - node.height / 2;
-                let moveX = node.x + delta.x;
-                let moveY = node.y + delta.y;
-                //控制移动范围
-                if(moveX < minX){
-                    moveX = minX;
-                    mouseDown = false;
-                }else if(moveX > maxX){
-                    moveX = maxX;
-                    mouseDown = false;
-                }
-                if(moveY < minY){
-                    moveY = minY;
-                    mouseDown = false;
-                }else if(moveY > maxY){
-                    moveY = maxY;
-                    mouseDown = false;
-                }
-                node.x = moveX;
-                node.y = moveY;
-            }
-        });
-        
-        function changePosition(){
-            let rightPlace = false;
-            for(let i in spritePosition){
-                let position = new cc.Vec2(node.x, node.y);
-                if(spritePosition[i].contains(position)){ 
-                    rightPlace = true;
-                    option3[i] = nodeID;
-                    break;
-                }
-            }
-            
-            if(!rightPlace){
-                node.x = oldPosition.x;
-                node.y = oldPosition.y;
-                for(let j = 0; j < 3; j++){
-                    if(option3[j] == nodeID){
-                        option3[j] = undefined;
-                    }
-                }
-            }
-        }
-
-        //当鼠标抬起的时候恢复状态
-        node.on(cc.Node.EventType.MOUSE_LEAVE, (event)=>{
-            // if(mouseDown){
-            //     changePosition();
-            // }
-            mouseDown = false;
-        });
-        node.on(cc.Node.EventType.MOUSE_UP, (event)=>{
-            mouseDown = false;
-            changePosition();
-            if(option3[0] && option3[1] && option3[2]){
-                this.popUpEvent(2, option3);
-            }else{
-                console.log(option3);
-            }
-        });
     },
 
     popUpEvent: function(quizNum, option){
