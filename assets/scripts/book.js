@@ -89,7 +89,7 @@ cc.Class({
     
     //是否换背景。bookPage=1, direction=-1 -> 1;bookPage=0, direction=1 -> 1
     updatePageImg: function(page, d){
-        let img='book'
+        let img='book';
         if(page == 1 && d == -1){
             img += 'Cover'
             this.leftArrow.active = false;
@@ -108,7 +108,7 @@ cc.Class({
 
     updatePage: function(flag = true){
         let page = global.bookPage;
-        console.log(page);
+        // console.log(page);
         
         if(page == 1){
             this.controlActive(page);
@@ -293,7 +293,13 @@ cc.Class({
                 this.updatePage(false);
             }, this)
             if(i != 0){
-                sides[i].children[0].getComponent(cc.Label).string = wordContent[animal2page[animal]].slangs[i-1].title;
+                let sideTitle;
+                if(wordContent[animal2page[animal]].slangs[i-1].title.length > 13){
+                    sideTitle = wordContent[animal2page[animal]].slangs[i-1].title.substr(0, 13) + '...';
+                }else{
+                    sideTitle = wordContent[animal2page[animal]].slangs[i-1].title;
+                }
+                sides[i].children[0].getComponent(cc.Label).string = sideTitle;
             }
         }
     },
@@ -477,6 +483,7 @@ var wordContent = [
                 'A little bird told me that today is your birthday. \n听说今天是你的生日。'
             ],
             similar:'Someone said to me.',
+            video: true,
         },
         {
             title: 'A bird in the bush',
@@ -535,6 +542,7 @@ var wordContent = [
                 'The used car he bought not long ago has broken down.He always seems to buy a pig in a poke.\n不久前他买的一部旧车现在已经坏了，看来他总是不看清楚就买东西。'
             ],
             similar:'buy sth blindly',
+            video: true,
         },
         {
             title: 'Drive one\'s pigs to market',
