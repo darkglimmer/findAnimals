@@ -82,7 +82,7 @@ cc.Class({
             console.log(global.process, change);
             for(let i in change){
                 if(i == 4){
-                    cc.director.loadScene(change[4]);
+                    cc.director.loadScene("capture");
                 }else if(i == 2){
                     this.material = this.BGImage.getMaterial(0);
                     this.schedule(this.upd, 0,  cc.macro.REPEAT_FOREVER, 0);
@@ -142,6 +142,7 @@ cc.Class({
                 name+='-2'
             }
         }
+        cc.audioEngine.pauseAllEffects();
         cc.loader.loadRes(`sounds/plot/${name}`, cc.AudioClip, function (err, clip) {
             cc.audioEngine.playEffect(clip, false);
         });

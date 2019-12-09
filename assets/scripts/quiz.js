@@ -4,7 +4,7 @@ var questiones = {
         {
             content: '<size=20>【选词填空】嘘！猫猫们正在睡觉，选出正确的词猫猫可以继续睡觉，选择错误猫猫会惊醒大叫引来坏人哦！</size><br/><size=22>Failing to find a job, he is just like____________</size>',
             answer: '2',
-            explain: '【题目•选词填空】\nFailing to find a job, she is just like ______.\na cat out of the bag   a cat on a hot tin roof   a cat in the pan\n【答案】\na cat on a hot tin roof\n【解析】\n图片中的人表现的非常焦虑，从语境和图片可以判断，此处应选“a cat on a hot tin roof”；原句意思为：由于找工作的失败，他像一只热锅上的蚂蚁，十分焦虑。\n'
+            explain: '【题目•选词填空】\nFailing to find a job, sshe is just like ______.\na cat out of the bag   a cat on a hot tin roof   a cat in the pan\n【答案】\na cat on a hot tin roof\n【解析】\n图片中的人表现的非常焦虑，从语境和图片可以判断，此处应选“a cat on a hot tin roof”；原句意思为：由于找工作的失败，他像一只热锅上的蚂蚁，十分焦虑。\n'
         },{
             content: '<size=20>【补全俚语】小猫被关在了笼子里，补全俚语可以将猫猫解开哦！</size>',
             write: ['a cat in the ______  叛徒；背叛者',

@@ -29,14 +29,15 @@ cc.Class({
     },
 
     onLoad () {
-        var detective = ["新手侦探","入门侦探","初级侦探","中级侦探","高级侦探"]
+        // global.animalScore = 15;
+        // global.score = 5;
+        var detective = ["新手侦探","入门侦探","初级侦探","中级侦探","高级侦探",]
         var endScore = Math.floor(((global.score * 3 + global.animalScore) / 2) / 3)
         if(global.score > 0){
             global.changeMusic = true;
             global.music = 'goodEnding'
-            // this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
-            this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予<size=40><color=#FE4C40>" +detective[endScore] + "</color></size>的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
-            this.postmark[endScore].active = true
+            this.text.getComponent(cc.RichText).string = "恭喜你成功找出了小偷!"
+            this.letterText.getComponent(cc.RichText).string = "     干的漂亮，不愧是我的徒儿，师父决定给你授予<size=40><color=#FE4C40>" +detective[endScore == 5? 4:endScore] + "</color></size>的称号。通过这次探案，你知道知识有多么重要了吧！为了鼓励你继续学习，师父再送你一个礼物"
         }else{
             global.changeMusic = true;
             global.music = 'badEnding'
@@ -50,7 +51,6 @@ cc.Class({
         this.text.active = false
         this.result.active = false
         this.resultPop.active = false
-        this.postmark[endScore].active = false
         if(global.score > 0){
             this.envelop.active = true
             // this.hand.active = true
@@ -81,8 +81,10 @@ cc.Class({
         this.hand.runAction(self.handAnim);
     },
     showLetter(){
+        var endScore = Math.floor(((global.score * 3 + global.animalScore) / 2) / 3)
         this.letter.active = true
         this.envelop.active = false
+        this.postmark[endScore == 5? 4:endScore].active = true
         this.spawnNewStar()
     },
     showGift(){
@@ -123,72 +125,63 @@ cc.Class({
     },
 
     spawnNewStar () {
-        for(var i = global.animalScore; i > 0; i = i-3){
-            if( i >= 3){
-                var newStar = cc.instantiate(this.star1);
-            }else if(i == 2){
-                var newStar = cc.instantiate(this.star2);
-                this.animalStar.addChild(newStar);
-                // 为星星设置一个随机位置
-                newStar.setPosition(this.getNewStarPosition(i));
-                break;
-            }else{
-                var newStar = cc.instantiate(this.star3);
-                this.animalStar.addChild(newStar);
-                // 为星星设置一个随机位置
-                newStar.setPosition(this.getNewStarPosition(i));
-                break;
-            }
-            // 将新增的节点添加到 Canvas 节点下面
+        let completeStarNum = Math.floor(global.animalScore / 3);
+        let restStarNum = global.animalScore % 3;
+        let i;
+        for(i = 0; i < completeStarNum; i++){
+            let newStar = cc.instantiate(this.star1);
             this.animalStar.addChild(newStar);
-            // 为星星设置一个随机位置
             newStar.setPosition(this.getNewStarPosition(i));
         }
-        for(var i = global.score; i > 0; i--){
-            var newStar = cc.instantiate(this.star1);
-            // 将新增的节点添加到 Canvas 节点下面
+        let newStar;
+        if(restStarNum){
+            if(restStarNum == 1){
+                newStar = cc.instantiate(this.star3);
+            }else{
+                newStar = cc.instantiate(this.star2);
+            }
+            this.animalStar.addChild(newStar);
+            newStar.setPosition(this.getNewStarPosition(i));
+        }
+        for(i = 0; i < global.score; i++){
+            let newStar = cc.instantiate(this.star1);
             this.captureStar.addChild(newStar);
-            // 为星星设置一个随机位置
             newStar.setPosition(this.getCaptureStarPosition(i));
         }
-        var endScore = Math.floor((global.score * 3 + global.animalScore) / 2)
-        for(var i = endScore; i > 0; i = i-3){
-            if( i >= 3){
-                var newStar = cc.instantiate(this.star1);
-            }else if(i == 2){
-                var newStar = cc.instantiate(this.star2);
-                this.animalStar.addChild(newStar);
-                // 为星星设置一个随机位置
-                newStar.setPosition(this.getEndStarPosition(i));
-                break;
-            }else{
-                var newStar = cc.instantiate(this.star3);
-                this.animalStar.addChild(newStar);
-                // 为星星设置一个随机位置
-                newStar.setPosition(this.getEndStarPosition(i));
-                break;
-            }
-            // 将新增的节点添加到 Canvas 节点下面
+        let endScore = Math.floor((global.score * 3 + global.animalScore) / 2)
+        completeStarNum = Math.floor(endScore / 3);
+        restStarNum = endScore % 3;
+        
+        for(i = 0; i < completeStarNum; i++){
+            let newStar = cc.instantiate(this.star1);
             this.animalStar.addChild(newStar);
-            // 为星星设置一个随机位置
+            newStar.setPosition(this.getEndStarPosition(i));
+        }
+        if(restStarNum){
+            if(restStarNum == 1){
+                newStar = cc.instantiate(this.star3);
+            }else{
+                newStar = cc.instantiate(this.star2);
+            }
+            this.animalStar.addChild(newStar);
             newStar.setPosition(this.getEndStarPosition(i));
         }
     },
 
     getNewStarPosition: function(i) {
-        var positionX = 220-i*15;
+        var positionX = i*50;
         var positionY = 15;
         return cc.v2(positionX, positionY);
     },
     getCaptureStarPosition: function(i) {
-        var positionX = 280-i*50;
+        var positionX = i*50;
         var positionY = 20;
-        return cc.v2(positionX,positionY);
+        return cc.v2(positionX, positionY);
     },
     getEndStarPosition: function(i) {
-        var positionX = 160-i*16
-        var positionY = -90
-        return cc.v2(positionX,positionY)
+        var positionX = -80+i*50;
+        var positionY = -90;
+        return cc.v2(positionX, positionY);
     },
     again(){
         global.process = 0

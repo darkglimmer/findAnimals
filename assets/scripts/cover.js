@@ -1,3 +1,4 @@
+var global = require("global");
 cc.Class({
     extends: cc.Component,
 
@@ -15,6 +16,11 @@ cc.Class({
 
     onLoad () {
         this.startBtn.node.on(cc.Node.EventType.MOUSE_DOWN, this.callback, this);
+        if(global.persistnode){
+            console.log(global.persistnode);
+            global.persistnode.destroy();
+            // cc.game.removePersistRootNode(global.persistnode);
+        }
     },
 
     start () {

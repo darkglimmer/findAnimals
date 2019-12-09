@@ -17,10 +17,10 @@
         "__id__": 2
       },
       {
-        "__id__": 71
+        "__id__": 67
       },
       {
-        "__id__": 80
+        "__id__": 76
       },
       {
         "__id__": 17
@@ -54,15 +54,9 @@
       "y": 1,
       "z": 1
     },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
     "_is3DNode": true,
     "groupIndex": 0,
-    "autoReleaseAssets": false,
+    "autoReleaseAssets": true,
     "_id": "f49910fc-aee5-4275-bb14-bc5a0ad2c810"
   },
   {
@@ -177,7 +171,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 554.2562584220408
+      "z": 275.9156989315218
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -701,7 +695,7 @@
       "__id__": 22
     },
     "guideText2": {
-      "__id__": 46
+      "__id__": 42
     },
     "_id": "13O3Evg9JM9YA6vQXzO+aX"
   },
@@ -720,17 +714,17 @@
         "__id__": 22
       },
       {
-        "__id__": 46
+        "__id__": 42
       }
     ],
     "_active": false,
     "_level": 1,
     "_components": [
       {
-        "__id__": 68
+        "__id__": 64
       },
       {
-        "__id__": 69
+        "__id__": 65
       }
     ],
     "_prefab": null,
@@ -895,7 +889,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "3bkp/DTz1BS65U9SDPV7sA"
+    "_id": "6b01aIIQhHUZWkR8Rz881z"
   },
   {
     "__type__": "cc.Label",
@@ -925,7 +919,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "aaOZKx5aVLfYEKDEtXfOsm"
+    "_id": "12usImRPtMqqqUSwoL3ipT"
   },
   {
     "__type__": "cc.RichText",
@@ -981,19 +975,13 @@
       },
       {
         "__id__": 39
-      },
-      {
-        "__id__": 41
-      },
-      {
-        "__id__": 43
       }
     ],
     "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 45
+        "__id__": 41
       }
     ],
     "_prefab": null,
@@ -1008,7 +996,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 520,
-      "height": 337.8
+      "height": 277.8
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1065,7 +1053,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 506.66,
+      "width": 501.1,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -1075,8 +1063,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": 131.1,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1096,7 +1084,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "3dXqux7SRI2Jm8m4AiTu3M"
+    "_id": "eaESknPoxFEZmDQMmVSaAM"
   },
   {
     "__type__": "cc.Label",
@@ -1112,8 +1100,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "      “神奇动物在哪里之动物英语俚语”教学辅助课件面向有",
-    "_N$string": "      “神奇动物在哪里之动物英语俚语”教学辅助课件面向有",
+    "_string": "     “神奇动物在哪里之动物英语俚语”教学辅助课件面向七",
+    "_N$string": "     “神奇动物在哪里之动物英语俚语”教学辅助课件面向七",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1126,7 +1114,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "f4eBxgyA9Lh5xOMLK2KwTV"
+    "_id": "644Wq78qhOOqQnHFPfiQBk"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1154,7 +1142,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 520,
+      "width": 506.64,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -1164,8 +1152,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": 101.1,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1185,7 +1173,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c7ptYoOFZENZ7cGRw09+fD"
+    "_id": "85pcYFCUJCQpS9YnXPFFz+"
   },
   {
     "__type__": "cc.Label",
@@ -1201,8 +1189,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "一定英语词汇基础的学生（如七年级以上的学生）或有英语",
-    "_N$string": "一定英语词汇基础的学生（如七年级以上的学生）或有英语",
+    "_string": "年级学生，该课件提供“普通模式”和“探案模式”两大模式，",
+    "_N$string": "年级学生，该课件提供“普通模式”和“探案模式”两大模式，",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1215,7 +1203,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "f4eWBbefREhZ1Gv7rSitMq"
+    "_id": "40LRUOwvJEyLZDcbKcZEe5"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1243,7 +1231,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 519.98,
+      "width": 420,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -1253,8 +1241,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": 71.1,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1274,7 +1262,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c5gz15uIZAk7Y1Un4E60Ca"
+    "_id": "c0ZnwGwnlL9JME34gi48wx"
   },
   {
     "__type__": "cc.Label",
@@ -1290,8 +1278,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "俚语学习需求的社会学习者，该课件提供“普通模式”和“探案",
-    "_N$string": "俚语学习需求的社会学习者，该课件提供“普通模式”和“探案",
+    "_string": "你可以根据自己的学习风格倾向进行自由选择。",
+    "_N$string": "你可以根据自己的学习风格倾向进行自由选择。",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1304,7 +1292,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "233Hp2EghKm6T2wD5I2A2G"
+    "_id": "0eWVi/gbJJGbuiKuqze+Qk"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1332,7 +1320,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 506.66,
+      "width": 501.1,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -1342,8 +1330,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": 41.099999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1363,7 +1351,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "4706+qMehHwL6yZ4s8ypvk"
+    "_id": "65mfN0OVZFG5/X0G9/XYmh"
   },
   {
     "__type__": "cc.Label",
@@ -1379,8 +1367,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "模式”两大模式，你可以根据自己的学习风格倾向进行自由",
-    "_N$string": "模式”两大模式，你可以根据自己的学习风格倾向进行自由",
+    "_string": "     在“探案模式”中，你将作为一名新手侦探，首次挑战独",
+    "_N$string": "     在“探案模式”中，你将作为一名新手侦探，首次挑战独",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1393,7 +1381,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "3e9zMKZyhEsIXj3OqsHGqJ"
+    "_id": "60OqQZixtLXrnrDmLCVhWO"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1421,7 +1409,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 60,
+      "width": 502.25,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -1431,8 +1419,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": 11.099999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1452,7 +1440,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "6fbF+Ud29HQ51+qbOt+TUU"
+    "_id": "4aIh3dbuFLdYWdiLoB9Xlq"
   },
   {
     "__type__": "cc.Label",
@@ -1468,8 +1456,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "选择。",
-    "_N$string": "选择。",
+    "_string": "自破案，通过侦探手册中25个动物英语俚语的学习、动画",
+    "_N$string": "自破案，通过侦探手册中25个动物英语俚语的学习、动画",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1482,7 +1470,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "b5Vj8UJ/dHc5muNubmaWjQ"
+    "_id": "ad15fcHf1B+44LT085ZB3t"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1510,7 +1498,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 506.66,
+      "width": 520,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -1520,8 +1508,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": -18.900000000000006,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1541,7 +1529,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "5cKByDVl1CJ7gYBAXqo/+6"
+    "_id": "59rAwRflhHQ4ynRwXM26Ky"
   },
   {
     "__type__": "cc.Label",
@@ -1557,8 +1545,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "      在“探案模式”中，你将作为一名新手侦探，首次挑战独",
-    "_N$string": "      在“探案模式”中，你将作为一名新手侦探，首次挑战独",
+    "_string": "讲解、关键人物对话、闯关挑战、线索破解、嫌疑人比对等",
+    "_N$string": "讲解、关键人物对话、闯关挑战、线索破解、嫌疑人比对等",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1571,7 +1559,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "25NyQYvGtKRI2PuPU6rDVe"
+    "_id": "c9BtJeaFRIkI4mMVbRezFp"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1599,7 +1587,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 502.25,
+      "width": 520,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -1609,8 +1597,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": -48.900000000000006,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1630,7 +1618,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "33EMOMd0lKToqsM5HaSC5R"
+    "_id": "cdl8RrW/RMfKzyWX0k9LQU"
   },
   {
     "__type__": "cc.Label",
@@ -1646,8 +1634,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "自破案，通过侦探手册中25个动物英语俚语的学习、动画",
-    "_N$string": "自破案，通过侦探手册中25个动物英语俚语的学习、动画",
+    "_string": "方式，解救动物，找到小偷！表现突出还将获得高星级评定",
+    "_N$string": "方式，解救动物，找到小偷！表现突出还将获得高星级评定",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1660,7 +1648,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "fcwyvXlzlJrbf0ETp8fXZf"
+    "_id": "22j7/NFaNK1pc/vu08VOhm"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1698,8 +1686,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": -78.9,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1719,7 +1707,7 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "c88MHH12VKd6IPkoGAOXyk"
+    "_id": "b49NW+M7xL27JFQnTVoSub"
   },
   {
     "__type__": "cc.Label",
@@ -1735,8 +1723,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "讲解、关键人物对话、闯关挑战、线索破解、嫌疑人比对等",
-    "_N$string": "讲解、关键人物对话、闯关挑战、线索破解、嫌疑人比对等",
+    "_string": "哦！当然，如果你更倾向于简单直接的学习方式，也可以选",
+    "_N$string": "哦！当然，如果你更倾向于简单直接的学习方式，也可以选",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -1749,7 +1737,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "7c7aNJImhC/pKq8V32x+Xg"
+    "_id": "b2kU11kp5G2ZJXYwia9ofr"
   },
   {
     "__type__": "cc.PrivateNode",
@@ -1777,184 +1765,6 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 520,
-      "height": 37.8
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -260,
-      "y": -108.9,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "showInEditor": false,
-    "_id": "41euSyxgVFx5f6j3sPhwt0"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 39
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": true,
-    "_string": "方式，解救动物，找到小偷！表现突出还将获得高星级评定",
-    "_N$string": "方式，解救动物，找到小偷！表现突出还将获得高星级评定",
-    "_fontSize": 20,
-    "_lineHeight": 30,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "e9XwBh+w9GiZdd17JyeE1b"
-  },
-  {
-    "__type__": "cc.PrivateNode",
-    "_name": "RICHTEXT_CHILD",
-    "_objFlags": 1024,
-    "_parent": {
-      "__id__": 22
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 42
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 520,
-      "height": 37.8
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -260,
-      "y": -138.9,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "showInEditor": false,
-    "_id": "76rAWCZRdEwZo15vVYPXTc"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 41
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": true,
-    "_string": "哦！当然，如果你更倾向于简单直接的学习方式，也可以选",
-    "_N$string": "哦！当然，如果你更倾向于简单直接的学习方式，也可以选",
-    "_fontSize": 20,
-    "_lineHeight": 30,
-    "_enableWrapText": true,
-    "_N$file": null,
-    "_isSystemFontUsed": true,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0,
-    "_N$cacheMode": 0,
-    "_id": "b6MlRJd+5L3roy67y4P4ws"
-  },
-  {
-    "__type__": "cc.PrivateNode",
-    "_name": "RICHTEXT_CHILD",
-    "_objFlags": 1024,
-    "_parent": {
-      "__id__": 22
-    },
-    "_children": [],
-    "_active": false,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 44
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
       "width": 245,
       "height": 37.8
     },
@@ -1965,8 +1775,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -260,
-      "y": -168.9,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -1986,14 +1796,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "a2HfH1LChNQLZwA9abki8L"
+    "_id": "a8h5fMwupEgL8f7gutscOm"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 43
+      "__id__": 39
     },
     "_enabled": true,
     "_materials": [
@@ -2016,7 +1826,7 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "f3AjXizhFF5JluXuyi5UVo"
+    "_id": "fejAZBhi1NgJJEnPiMLujl"
   },
   {
     "__type__": "cc.RichText",
@@ -2028,7 +1838,7 @@
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "      “神奇动物在哪里之动物英语俚语”教学辅助课件面向有一定英语词汇基础的学生（如七年级以上的学生）或有英语俚语学习需求的社会学习者，该课件提供“普通模式”和“探案模式”两大模式，你可以根据自己的学习风格倾向进行自由选择。\n      在“探案模式”中，你将作为一名新手侦探，首次挑战独自破案，通过侦探手册中25个动物英语俚语的学习、动画讲解、关键人物对话、闯关挑战、线索破解、嫌疑人比对等方式，解救动物，找到小偷！表现突出还将获得高星级评定哦！当然，如果你更倾向于简单直接的学习方式，也可以选择“普通模式”进行自主学习~",
+    "_N$string": "     “神奇动物在哪里之动物英语俚语”教学辅助课件面向七年级学生，该课件提供“普通模式”和“探案模式”两大模式，你可以根据自己的学习风格倾向进行自由选择。\n     在“探案模式”中，你将作为一名新手侦探，首次挑战独自破案，通过侦探手册中25个动物英语俚语的学习、动画讲解、关键人物对话、闯关挑战、线索破解、嫌疑人比对等方式，解救动物，找到小偷！表现突出还将获得高星级评定哦！当然，如果你更倾向于简单直接的学习方式，也可以选择“普通模式”进行自主学习~",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -2046,6 +1856,12 @@
       "__id__": 17
     },
     "_children": [
+      {
+        "__id__": 43
+      },
+      {
+        "__id__": 45
+      },
       {
         "__id__": 47
       },
@@ -2069,19 +1885,13 @@
       },
       {
         "__id__": 61
-      },
-      {
-        "__id__": 63
-      },
-      {
-        "__id__": 65
       }
     ],
     "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 67
+        "__id__": 63
       }
     ],
     "_prefab": null,
@@ -2132,14 +1942,14 @@
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 48
+        "__id__": 44
       }
     ],
     "_prefab": null,
@@ -2163,8 +1973,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": 116.1,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2184,14 +1994,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "550sO5LpRFIIOa/akDz6EV"
+    "_id": "e9eNqC2OlHfLD4XB42J1ok"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 47
+      "__id__": 43
     },
     "_enabled": true,
     "_materials": [
@@ -2214,21 +2024,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "4dyVowxLRNoZF4rOqie2w8"
+    "_id": "17cX3FZDJMiqsADY0P5BDr"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 50
+        "__id__": 46
       }
     ],
     "_prefab": null,
@@ -2252,8 +2062,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": 86.1,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2273,14 +2083,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "e61TyoSEpIuLa7YelfANE0"
+    "_id": "46T4REi4lHA582vdjbsXS5"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 49
+      "__id__": 45
     },
     "_enabled": true,
     "_materials": [
@@ -2303,21 +2113,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "87LRIdI9tIM4Ei7a6xt+co"
+    "_id": "67zsDHFMVHHo627Jgjyqmw"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 52
+        "__id__": 48
       }
     ],
     "_prefab": null,
@@ -2341,8 +2151,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": 56.099999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2362,14 +2172,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "0eAnXVVbVBDpuVDQx1SSoV"
+    "_id": "6blDxPQIdHx43iWXH6WMgA"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 51
+      "__id__": 47
     },
     "_enabled": true,
     "_materials": [
@@ -2392,21 +2202,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "d7w9P8ljBJY433z/yXcpGk"
+    "_id": "cbbNPXrplImJx8DQikeZX9"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 54
+        "__id__": 50
       }
     ],
     "_prefab": null,
@@ -2430,8 +2240,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": 26.099999999999994,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2451,14 +2261,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "f7FnRWEbtHppCPs7Oi6nDh"
+    "_id": "f8MNlZq95Mc6N3RCGQCmlj"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 53
+      "__id__": 49
     },
     "_enabled": true,
     "_materials": [
@@ -2481,21 +2291,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "71ryQ606RAMo204Q4UP/4q"
+    "_id": "72QrYBNa9MBJ+/VyjAKdjI"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 56
+        "__id__": 52
       }
     ],
     "_prefab": null,
@@ -2519,8 +2329,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": -3.9000000000000057,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2540,14 +2350,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "6csd6GS6NJJ6MOi67042gU"
+    "_id": "86g4Ew25tNX6nZ3rWYKNNG"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 55
+      "__id__": 51
     },
     "_enabled": true,
     "_materials": [
@@ -2556,8 +2366,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "促进更有效的学习。我们还为学有余力的学习者准备了二",
-    "_N$string": "促进更有效的学习。我们还为学有余力的学习者准备了二",
+    "_string": "促进更有效的学习。我们还为学有余力的学习者准备了微",
+    "_N$string": "促进更有效的学习。我们还为学有余力的学习者准备了微",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -2570,21 +2380,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "b463uFFVdCW50tqn1/kxFf"
+    "_id": "e0k9IoRtZK6pEibw7PUBjJ"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 58
+        "__id__": 54
       }
     ],
     "_prefab": null,
@@ -2598,7 +2408,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 460,
+      "width": 500,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -2608,8 +2418,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": -33.900000000000006,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2629,14 +2439,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "db/E7fRz5AdInl9/TUx4qy"
+    "_id": "ecUnZDSN5K2aWz38un+Lxo"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 57
+      "__id__": 53
     },
     "_enabled": true,
     "_materials": [
@@ -2645,8 +2455,8 @@
       }
     ],
     "_useOriginalSize": true,
-    "_string": "维码形式的拓展内容，聪明的你可以去尝试一下哦！",
-    "_N$string": "维码形式的拓展内容，聪明的你可以去尝试一下哦！",
+    "_string": "信公众号形式的拓展资源，聪明的你可以去尝试一下哦！",
+    "_N$string": "信公众号形式的拓展资源，聪明的你可以去尝试一下哦！",
     "_fontSize": 20,
     "_lineHeight": 30,
     "_enableWrapText": true,
@@ -2659,21 +2469,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "24XHSQNslAc5DbjFCWm7p5"
+    "_id": "48WSi0Nz5I0Is33CDgs1bR"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 60
+        "__id__": 56
       }
     ],
     "_prefab": null,
@@ -2697,8 +2507,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": -63.900000000000006,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2718,14 +2528,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "d9itwaWfpK0Zz+9C8dIQF0"
+    "_id": "326I7LdMtGs43NCKoKOiWF"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 59
+      "__id__": 55
     },
     "_enabled": true,
     "_materials": [
@@ -2748,21 +2558,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "17oqDPLZVNn5ZltlVduLYJ"
+    "_id": "91GnqYdJFNHbqMDlR4Yq6h"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 62
+        "__id__": 58
       }
     ],
     "_prefab": null,
@@ -2786,8 +2596,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": -93.9,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2807,14 +2617,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "fbW9NfMhlJLYN5r07zM1gr"
+    "_id": "70WEbUXY5N1Jr7fkiVhM/7"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 61
+      "__id__": 57
     },
     "_enabled": true,
     "_materials": [
@@ -2837,21 +2647,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "b7ofmy4o1JL508NhiUYKLF"
+    "_id": "7bSsSF70FItLSzzr/C78Nj"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 64
+        "__id__": 60
       }
     ],
     "_prefab": null,
@@ -2875,8 +2685,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": -123.9,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2896,14 +2706,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "8728jd+PFEZ5zSLsRVeZKh"
+    "_id": "e8HZQAgFhESI08Qp9lNM+M"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 63
+      "__id__": 59
     },
     "_enabled": true,
     "_materials": [
@@ -2926,21 +2736,21 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "5eA6tYPSNBvYsXQQFq58pv"
+    "_id": "42iOqcJgpJG7o0d21tc1sK"
   },
   {
     "__type__": "cc.PrivateNode",
     "_name": "RICHTEXT_CHILD",
     "_objFlags": 1024,
     "_parent": {
-      "__id__": 46
+      "__id__": 42
     },
     "_children": [],
     "_active": false,
     "_level": 3,
     "_components": [
       {
-        "__id__": 66
+        "__id__": 62
       }
     ],
     "_prefab": null,
@@ -2964,8 +2774,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -250,
-      "y": -153.9,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -2985,14 +2795,14 @@
     "_is3DNode": false,
     "groupIndex": 0,
     "showInEditor": false,
-    "_id": "092m5LK91O/ptRJf8ADPlR"
+    "_id": "14KXTF+jBLRLcaUotLjMmF"
   },
   {
     "__type__": "cc.Label",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 65
+      "__id__": 61
     },
     "_enabled": true,
     "_materials": [
@@ -3015,19 +2825,19 @@
     "_N$fontFamily": "Arial",
     "_N$overflow": 0,
     "_N$cacheMode": 0,
-    "_id": "bf3GaNAmFNyJ2i/yRNVldf"
+    "_id": "c9JRrNy/RIv7ALB5nWSiZM"
   },
   {
     "__type__": "cc.RichText",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 46
+      "__id__": 42
     },
     "_enabled": true,
     "_fontFamily": "Arial",
     "_isSystemFontUsed": true,
-    "_N$string": "      本课件通过任务驱动、游戏化教学等方式，充分考虑个性化和人性化设计，将帮助你在游戏故事的趣味性背景下锻炼英语俚语的“听 读 写”三大技能，以更加轻松、容易的方式理解记忆课件中所提供的25个动物英语俚语，促进更有效的学习。我们还为学有余力的学习者准备了二维码形式的拓展内容，聪明的你可以去尝试一下哦！\n      同时，本课件具备较好的兼容性，可在Web、iOS、Android、Windows、Mac、微信等平台稳定运行，使学习不再受时间和空间的限制！好了，话不多说，赶快开始你的学习之旅吧！",
+    "_N$string": "      本课件通过任务驱动、游戏化教学等方式，充分考虑个性化和人性化设计，将帮助你在游戏故事的趣味性背景下锻炼英语俚语的“听 读 写”三大技能，以更加轻松、容易的方式理解记忆课件中所提供的25个动物英语俚语，促进更有效的学习。我们还为学有余力的学习者准备了微信公众号形式的拓展资源，聪明的你可以去尝试一下哦！\n      同时，本课件具备较好的兼容性，可在Web、iOS、Android、Windows、Mac、微信等平台稳定运行，使学习不再受时间和空间的限制！好了，话不多说，赶快开始你的学习之旅吧！",
     "_N$horizontalAlign": 0,
     "_N$fontSize": 20,
     "_N$font": null,
@@ -3081,7 +2891,7 @@
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 70
+        "__id__": 66
       }
     ],
     "_N$interactable": true,
@@ -3158,21 +2968,21 @@
     },
     "_children": [
       {
-        "__id__": 72
+        "__id__": 68
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 76
+        "__id__": 72
       },
       {
-        "__id__": 78
+        "__id__": 74
       }
     ],
     "_prefab": {
-      "__id__": 79
+      "__id__": 75
     },
     "_opacity": 255,
     "_color": {
@@ -3221,21 +3031,21 @@
     "_name": "Background",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 71
+      "__id__": 67
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 73
+        "__id__": 69
       },
       {
-        "__id__": 74
+        "__id__": 70
       }
     ],
     "_prefab": {
-      "__id__": 75
+      "__id__": 71
     },
     "_opacity": 255,
     "_color": {
@@ -3284,7 +3094,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 72
+      "__id__": 68
     },
     "_enabled": true,
     "_materials": [
@@ -3316,7 +3126,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 72
+      "__id__": 68
     },
     "_enabled": true,
     "alignMode": 0,
@@ -3341,7 +3151,7 @@
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 71
+      "__id__": 67
     },
     "asset": {
       "__uuid__": "ddd265aa-a74c-44e5-bc7a-6aa7339b6753"
@@ -3354,14 +3164,14 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 71
+      "__id__": 67
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 77
+        "__id__": 73
       }
     ],
     "_N$interactable": true,
@@ -3429,7 +3239,7 @@
       "__uuid__": "53b76cb1-a867-4def-ada6-411dcdcf1557"
     },
     "_N$target": {
-      "__id__": 72
+      "__id__": 68
     },
     "_id": "c6NxeL9WZMQomHttAq0/Jd"
   },
@@ -3448,19 +3258,20 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 71
+      "__id__": 67
     },
     "_enabled": true,
     "audio": {
       "__uuid__": "614f7875-051b-4f12-bbca-bd41a251847c"
     },
     "buttonAudio": null,
+    "playing": true,
     "_id": "dbTfL+0vhPfLJTceIzvufL"
   },
   {
     "__type__": "cc.PrefabInfo",
     "root": {
-      "__id__": 71
+      "__id__": 67
     },
     "asset": {
       "__uuid__": "ddd265aa-a74c-44e5-bc7a-6aa7339b6753"
@@ -3477,14 +3288,14 @@
     },
     "_children": [
       {
-        "__id__": 81
+        "__id__": 77
       }
     ],
     "_active": true,
     "_level": 1,
     "_components": [
       {
-        "__id__": 84
+        "__id__": 80
       }
     ],
     "_prefab": null,
@@ -3535,17 +3346,17 @@
     "_name": "Background",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 80
+      "__id__": 76
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 78
       },
       {
-        "__id__": 83
+        "__id__": 79
       }
     ],
     "_prefab": null,
@@ -3596,7 +3407,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 81
+      "__id__": 77
     },
     "_enabled": true,
     "_materials": [
@@ -3628,7 +3439,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 81
+      "__id__": 77
     },
     "_enabled": true,
     "alignMode": 0,
@@ -3655,17 +3466,17 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 80
+      "__id__": 76
     },
     "_enabled": true,
     "duration": 0.1,
     "zoomScale": 1.2,
     "clickEvents": [
       {
-        "__id__": 85
+        "__id__": 81
       },
       {
-        "__id__": 86
+        "__id__": 82
       }
     ],
     "_N$interactable": true,
@@ -3733,7 +3544,7 @@
       "__uuid__": "7ed97b37-567c-4134-8fb9-d1d7e6c4d61d"
     },
     "_N$target": {
-      "__id__": 81
+      "__id__": 77
     },
     "_id": "49DkZFxrRHjIr3LEwRywWU"
   },

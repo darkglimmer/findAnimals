@@ -4,6 +4,7 @@
 var process = 0;
 var id = 0
 var quiz = 0
+var persistnode = null;
 
 // 收藏夹
 var collection = {
@@ -43,8 +44,8 @@ bookContent[page] = 'Collection'
 // console.log(bookContent);
 
 //测试分数 
-var animalScore = 0;
-// var animalScore = 13;
+// var animalScore = 0;
+var animalScore = 7;
 
 // 0：未拯救；1：拯救成功，-1：拯救失败
 var saveAnimal = {
@@ -55,13 +56,13 @@ var saveAnimal = {
     'pig': 0
 }
 //测试用
-// var saveAnimal = {
-//     'cat': 1,
-//     'dog': 1,
-//     'horse': 1,
-//     'bird': 1,
-//     'pig': 1
-// }
+var saveAnimal = {
+    'cat': 1,
+    'dog': 1,
+    'horse': 1,
+    'bird': 1,
+    'pig': 1
+}
 var testResult = {
     'cat': [true, true, true],
     'dog': [true, true, true],
@@ -95,5 +96,6 @@ module.exports={
     mode,
     changeMusic,
     music,
-    saveResult
+    saveResult,
+    persistnode
 }

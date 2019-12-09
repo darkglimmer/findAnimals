@@ -10,7 +10,8 @@ cc.Class({
         normalModeBtn:{
             default: null,
             type: cc.Button
-        }
+        },
+        
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -18,6 +19,7 @@ cc.Class({
     onLoad () {
         this.detectModeBtn.node.on(cc.Node.EventType.MOUSE_DOWN, this.detectMode, this);
         this.normalModeBtn.node.on(cc.Node.EventType.MOUSE_DOWN, this.normalMode, this);
+
     },
 
     start () {
@@ -31,7 +33,8 @@ cc.Class({
     },
 
     normalMode: function(){
-        global.process = 15;
+        // global.process = 15;
+        
         cc.director.loadScene("normal");
         global.mode = 1;
     }

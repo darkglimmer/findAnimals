@@ -1,3 +1,5 @@
+var global = require('global');
+
 cc.Class({
     extends: cc.Component,
     properties: {
@@ -9,6 +11,7 @@ cc.Class({
     onLoad: function () {
         if(this.node.name != 'normal'){
             cc.game.addPersistRootNode(this.node);
+            global.persistnode = this.node;
         }
         this.node.on(cc.Node.EventType.MOUSE_DOWN, function(){
             this.book.active = true;

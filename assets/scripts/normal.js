@@ -1,3 +1,5 @@
+// var global = require('global');
+
 cc.Class({
     extends: cc.Component,
 
@@ -8,7 +10,7 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        
+        // cc.game.removePersistRootNode(global.persistnode)
     },
     
     toTest(){

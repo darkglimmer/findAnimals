@@ -354,7 +354,8 @@ var wordContent = [
             title: 'A cat may look at a king',
             meaning: '人人平等；最低级的人也有权利',
             example: [
-                'A cat may look at a king, but for you to tell your boss that he is cruel seems hard.\n人人平等是没错啦，不过跟你老板说他很残忍似乎很难。'
+                'A cat may look at a king, but for you to tell your boss that he is cruel seems hard.\n人人平等没错，不过跟你老板说他很残忍似乎很难。',
+                'His arrogant manner with his staff is highly objectionable; he should remember that a cat may look at king!\n他对工作人员的傲慢态度非常令人讨厌，他应该记住每个人的权利都是平等的！'
             ],
             similar:'Everyone is equal; All men are equal',
         },
@@ -362,7 +363,8 @@ var wordContent = [
             title: 'Bell the cat',
             meaning: '挺身而出；主动冒险；为他人利益冒险',
             example: [
-                'It\'s quite difficult to get a man who can bell the cat.\n很难找到危险时刻能够挺身而出的人了。'
+                'It\'s quite difficult to get a man who can bell the cat.\n很难找到危险时刻能够挺身而出的人了。',
+                'Your idea sounds reasonable , but I wonder if anyone will bell the cat. \n你的主意听起来很有道理，但我不知道有谁愿意担这个风险。'
             ],
             similar:'throw oneself into the breach; come out boldly',
             video: true
@@ -384,7 +386,8 @@ var wordContent = [
             title: 'Dog watch',
             meaning: '夜班',
             example: [
-                'Does anyone have dog watch tonight?\n今晚有人值夜班么？'
+                'We arrange dog watch for everyone. \n我们为每位员工安排夜班',
+                'After this dog watch I put an end to my career as a night guard. \n这晚过后，我作为夜班警卫的职业生涯就结束了。'
             ],
             similar:'night shift',
         },
@@ -401,7 +404,8 @@ var wordContent = [
             title: 'Rain cats and dogs',
             meaning: '倾盆大雨',
             example: [
-                'In the middle of the picnic it started to rain cats and dogs, and everybody got soaked.\n野餐进行中，突然大雨倾盆，每个人身上都湿透了。'
+                'When we were well on the way, it began to rain cats and dogs. \n我们正走到半路，天就下起大雨来了',
+                'In a sunny winter morning, it might suddenly rain cats and dogs. \n在冬季的阳光明媚的早上，也可能会有飘泼大雨。'
             ],
             similar:'heavy rain',
             video: true,
@@ -410,7 +414,8 @@ var wordContent = [
             title: 'Every dog has its day',
             meaning: '人皆有得意之时；时来运转',
             example: [
-                'Don\'t lose your hope, every dog has his day.\n不要灰心，每个人都有转运的一天。'
+                'Don\'t lose your hope, every dog has his day.\n不要灰心，每个人都有转运的一天。',
+                'A lot of my classmates have found a job. But I told myself to be patient and remember that every dog has his day. \n我许多同学都找到工作了，但是我告诉自己要耐心点，记得每个人都有走运的一天。'
             ],
             similar:'get a break; be in good luck',
         },
@@ -418,7 +423,8 @@ var wordContent = [
             title: 'Work like a dog',
             meaning: '拼命工作',
             example: [
-                'If you want to be successful, you\'d better work like a dog.\n如果你想要获得成功，你就要拼命工作。'
+                'If you want to be successful, you\'d better work like a dog.\n如果你想要获得成功，你就要拼命工作。',
+                'Oh. You really work like a dog.\n哦，你工作真努力！'
             ],
             similar:'work hard',
         }]

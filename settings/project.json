@@ -8,10 +8,6 @@
   "design-resolution-height": 640,
   "design-resolution-width": 960,
   "excluded-modules": [
-    "TiledMap",
-    "PageView",
-    "PageViewIndicator",
-    "Physics",
     "3D",
     "3D Primitive"
   ],
@@ -37,5 +33,6 @@
     "width": 960
   },
   "use-customize-simulator": true,
-  "use-project-simulator-setting": false
+  "use-project-simulator-setting": false,
+  "start-scene": "current"
 }
